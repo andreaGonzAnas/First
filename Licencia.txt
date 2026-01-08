@@ -1,0 +1,9 @@
+Todos los archivos del juego (excepto los efectos de sonido) son de nuestra propiedad y están bajo la licencia: Reconocimiento-NoComercial-CompartirIgual (CC BY-NC-SA).
+
+Los efectos de sonido, ubicados en la ruta: Assets/sfx, cuentan las siguientes licencias:
+- Licencia de contenido de Pixabay: https://pixabay.com/es/service/license-summary/
+- Créditos:
+	- DRAGON-STUDIO en pixabay
+	- Universfield en pixabay
+	- freesound_community en pixabay
+- Licencia de freesound Creative Commons
