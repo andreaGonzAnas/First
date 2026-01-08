@@ -1,6 +1,8 @@
 # First
 Repositorio del juego serio First desarrollado durante la asignatura Juegos Serios en la Universidad Complutense de Madrid
 
+Se puede jugar de manera web en el siguiente enlace: https://imvictorvm.itch.io/first
+
 First es una simulación social en la que el personaje que manejas, una oveja llamada Clover, tendrá que participar en las votaciones que están sucediendo en su pueblo y vivir las consecuencias de sus resultados.
 
 El objetivo de este juego es fomentar la empatía de los jugadores hacia otros grupos sociales y concienciar sobre los efectos que tiene la inacción en tiempos de marginalización social.
