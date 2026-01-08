@@ -1,0 +1,181 @@
+{
+	"NPC1.1":
+	{
+		"dialogs": [
+			{"text": "Hola Clover.", "author": "npc"},
+			{
+			"author": "clover",
+			"quadrant_thought": {
+				"pos_act_pos_mor": "*Es Pepita. ¡Qué bien verla! TOMA LAISMO*",
+				"pos_act_neg_mor": "*Es Pepita. Uf, ¿qué querrá ahora?*",
+				"neg_act_pos_mor": "*Es Pepita, mi amiga. Me pregunto si está bien.*",
+				"neg_act_neg_mor": "*Es Pepita. Otro problema, seguro.*"
+				}
+			},
+			{"text": "Me quieren echar de aquí.", "author": "npc"},
+			{"text": "¿Qué te parece?", "author": "npc"},
+			{"text": "COOOMOOO?", "author": "clover"}
+		],
+
+		"options": [
+			{ 
+				"response": "No tiene ningún sentido. ¿Cómo te puedo ayudar?", 
+				"gain": 1,
+				"next": "NPC1.1.1" 
+			},
+			{ 
+				"response": "Buah, yo de eso no sé.", 
+				"gain": 0,
+				"next": "NPC1.1.2" 
+			},
+			{ 
+				"response": "Me parece genial, fuera!", 
+				"gain": -1,
+				"next": "NPC1.1.3" 
+			}
+				
+		]
+	},
+
+	"NPC1.1.1":
+	{
+		"dialogs": [
+			{"text": "Ya, parece ser que va a ser por votación.", "author": "npc"},
+			{"text": "Todo el pueblo votará si quieren echarnos.", "author": "npc"},
+			{"text": "¿Tú qué vas a hacer?", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Votar a favor de que te echen, sin duda.", 
+				"gain": -1,
+				"next": "FinalMalo1.1" 
+			},
+			{ 
+				"response": "No haré nada.", 
+				"gain": 0,
+				"next": "FinalNeutro1.1" 
+			},
+			{ 
+				"response": "Obviamente, votar en contra.", 
+				"gain": 1,
+				"next": "FinalBueno1.1" 
+			}
+				
+		]
+	},
+
+	"NPC1.1.2":
+	{
+		"dialogs": [
+			{"text": "Pues deberías informarte un poco.", "author": "npc"},
+			{"text": "Todo el pueblo votará si quieren echarnos.", "author": "npc"},
+			{"text": "¿Tú qué vas a hacer?", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Votar a favor de que te echen, sin duda.", 
+				"gain": -1,
+				"next": "FinalMalo1.1" 
+			},
+			{ 
+				"response": "No haré nada.", 
+				"gain": 0,
+				"next": "FinalNeutro1.1" 
+			},
+			{ 
+				"response": "Obviamente, votar en contra.", 
+				"gain": 1,
+				"next": "FinalNeutro1.1" 
+			}
+				
+		]
+	},
+
+	"NPC1.1.3":
+	{
+		"dialogs": [
+			{"text": "Pero si yo no te he hecho nada malo.", "author": "npc"},
+			{"text": "Todo el pueblo votará si quieren echarnos.", "author": "npc"},
+			{"text": "¿Tú qué vas a hacer?", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Votar a favor de que te echen, sin duda.", 
+				"gain": -1,
+				"next": "FinalMalo1.1" 
+			},
+			{ 
+				"response": "No haré nada.", 
+				"gain": 0,
+				"next": "FinalMalo1.1" 
+			},
+			{ 
+				"response": "Obviamente, votar en contra.", 
+				"gain": 1,
+				"next": "FinalMalo1.1" 
+			}
+				
+		]
+	},
+
+	"FinalBueno1.1":
+	{
+		"dialogs": [
+			{"text": "Gracias Clover, se agradece toda la ayuda.", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Haré lo que pueda para ayudar.", 
+				"gain": 1,
+				"next": "Final1.1" 
+			}
+				
+		]
+	},
+
+	"FinalNeutro1.1":
+	{
+		"dialogs": [
+			{"text": "No sé como tomármelo.", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Bueno, adiós.", 
+				"gain": -1,
+				"next": "Final1.1" 
+			}
+				
+		]
+	},
+
+	"FinalMalo1.1":
+	{
+		"dialogs": [
+			{"text": "Okay, Clover, que te den!.", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Eso mismo digo yo.", 
+				"gain": -1,
+				"next": "Final1.1" 
+			}
+				
+		]
+	},
+
+	"Final1.1":
+	{
+		"dialogs": [
+			{"text": "¿Qué voy a hacer...?", "author": "npc"}
+		],
+
+		"options": [
+		]
+	}
+}

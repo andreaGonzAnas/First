@@ -1,0 +1,262 @@
+[gd_scene load_steps=40 format=3 uid="uid://bodqxllcwjita"]
+
+[ext_resource type="Script" uid="uid://cnay8grp0re3f" path="res://Scenes/GameScenes/Scene4Cinematic.gd" id="1_ftfgp"]
+[ext_resource type="PackedScene" uid="uid://cww17u4c26p4h" path="res://Scenes/trial_scene.tscn" id="1_vci8h"]
+[ext_resource type="PackedScene" uid="uid://b81yillhx7bia" path="res://Buildings/fountain/restaurant_closed.tscn" id="2_0yubi"]
+[ext_resource type="PackedScene" uid="uid://cqnfebyi0digl" path="res://Buildings/fountain/closed_flowerShop.tscn" id="2_ftfgp"]
+[ext_resource type="PackedScene" uid="uid://cjumhiw5bki6j" path="res://Buildings/fountain/closed_library.tscn" id="2_x734e"]
+[ext_resource type="Texture2D" uid="uid://bravfabj7apqw" path="res://Assets/Finales/pennyAnim2.png" id="3_4gkmb"]
+[ext_resource type="PackedScene" uid="uid://c0rrgjk4w5jti" path="res://Characters/npc5.tscn" id="3_ftfgp"]
+[ext_resource type="Texture2D" uid="uid://012ghe0227w3" path="res://Assets/Finales/pennyAnim3.png" id="4_4hff6"]
+[ext_resource type="PackedScene" uid="uid://jbid7xsced7i" path="res://Characters/npc2.tscn" id="4_x734e"]
+[ext_resource type="Texture2D" uid="uid://cfoiq8p1mccyo" path="res://Assets/Finales/SadPenny.png" id="5_0yubi"]
+[ext_resource type="Texture2D" uid="uid://sxk0hx56053o" path="res://Assets/Finales/WhiteM.png" id="5_01d0n"]
+[ext_resource type="Texture2D" uid="uid://cnfhajgk2i2jn" path="res://Assets/Finales/pennyAnim4.png" id="5_md1y7"]
+[ext_resource type="Texture2D" uid="uid://bdf6l73m3x3he" path="res://Assets/Finales/WhiteF.png" id="6_6tyy8"]
+[ext_resource type="Texture2D" uid="uid://b6xi18rwm3chp" path="res://Assets/Skybox/skyfin.png" id="7_u7y3p"]
+[ext_resource type="Texture2D" uid="uid://d4auoacv3ocll" path="res://Assets/Finales/PennyAnim1.png" id="7_x734e"]
+[ext_resource type="Script" uid="uid://dxak12m63mq8d" path="res://Buildings/shop/ShopItemData.gd" id="7_xkfhg"]
+[ext_resource type="PackedScene" uid="uid://ctnkrj7jolsne" path="res://Characters/npc4.tscn" id="8_4hff6"]
+[ext_resource type="Texture2D" uid="uid://cqrhfi5pstj3q" path="res://Assets/Finales/trebol.png" id="8_u7y3p"]
+[ext_resource type="Texture2D" uid="uid://dqkvkoq57338h" path="res://Assets/Finales/trebolOveja.PNG" id="9_6tyy8"]
+[ext_resource type="Texture2D" uid="uid://dvvxepepq1qrc" path="res://Assets/Finales/cascos.png" id="10_mkl2k"]
+[ext_resource type="Texture2D" uid="uid://djuhycwhaun4w" path="res://Assets/Finales/cascosOveja.png" id="11_jxyhk"]
+[ext_resource type="Texture2D" uid="uid://rt35ooxd07t1" path="res://Assets/Finales/panuelo.png" id="12_wyk1w"]
+[ext_resource type="Texture2D" uid="uid://bidpbmxgn0fug" path="res://Assets/Finales/panueloOveja.png" id="13_7h7lx"]
+[ext_resource type="Texture2D" uid="uid://cqaadpopdgpss" path="res://Assets/Finales/gafas.png" id="14_nkqtt"]
+[ext_resource type="Texture2D" uid="uid://dt75waibj2nev" path="res://Assets/Finales/gafasOveja.png" id="15_vy5x6"]
+[ext_resource type="Texture2D" uid="uid://mv6tekr1hegb" path="res://Assets/Finales/certificado.png" id="16_geupt"]
+[ext_resource type="Shader" uid="uid://ivr18hjbjf27" path="res://Scenes/trial_scene.gdshader" id="18_u7y3p"]
+[ext_resource type="Texture2D" uid="uid://dwvul5ok38gly" path="res://Assets/Finales/cachocesped.png" id="19_6tyy8"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_rw7ca"]
+panorama = ExtResource("7_u7y3p")
+
+[sub_resource type="Sky" id="Sky_o2ql6"]
+sky_material = SubResource("PanoramaSkyMaterial_rw7ca")
+
+[sub_resource type="Environment" id="Environment_6tyy8"]
+background_mode = 2
+background_color = Color(0.792, 0.87413335, 0.88, 1)
+sky = SubResource("Sky_o2ql6")
+volumetric_fog_density = 0.0341
+adjustment_enabled = true
+adjustment_saturation = 0.4
+
+[sub_resource type="Resource" id="Resource_wgon7"]
+script = ExtResource("7_xkfhg")
+item_id = "trebol"
+dialog_event = "Shop"
+cost = 10
+texture = ExtResource("9_6tyy8")
+itemInShop = ExtResource("8_u7y3p")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_pqhdr"]
+script = ExtResource("7_xkfhg")
+item_id = "auriculares"
+dialog_event = "Shop"
+cost = 15
+texture = ExtResource("11_jxyhk")
+itemInShop = ExtResource("10_mkl2k")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_1738n"]
+script = ExtResource("7_xkfhg")
+item_id = "panuelo"
+dialog_event = "Shop"
+cost = 20
+texture = ExtResource("13_7h7lx")
+itemInShop = ExtResource("12_wyk1w")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_rxp0a"]
+script = ExtResource("7_xkfhg")
+item_id = "gafas"
+dialog_event = "Shop"
+cost = 10
+texture = ExtResource("15_vy5x6")
+itemInShop = ExtResource("14_nkqtt")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_ikvon"]
+script = ExtResource("7_xkfhg")
+item_id = "certificado"
+dialog_event = "Shop"
+cost = 100
+texture = ExtResource("16_geupt")
+itemInShop = ExtResource("16_geupt")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yao5g"]
+render_priority = 0
+shader = ExtResource("18_u7y3p")
+shader_parameter/albedo_texture = ExtResource("19_6tyy8")
+shader_parameter/edge_softness = 0.6670000316825
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s1vyc"]
+material = SubResource("ShaderMaterial_yao5g")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0w1t4"]
+albedo_texture = ExtResource("19_6tyy8")
+uv1_scale = Vector3(1.5, 1.5, 1.5)
+uv1_offset = Vector3(2, 0, 0)
+uv1_triplanar = true
+
+[node name="Node3D2" type="Node3D" node_paths=PackedStringArray("penelope_npc", "oliver_npc", "albert_npc", "npc3", "npc4", "npc5", "marker_start", "marker_vote", "ui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210.96068, 25.324768, -9.721649)
+script = ExtResource("1_ftfgp")
+penelope_npc = NodePath("TrialScene/PENNY")
+oliver_npc = NodePath("TrialScene/OLIVER")
+albert_npc = NodePath("TrialScene/ALBERT")
+npc3 = NodePath("TrialScene/NPC3")
+npc4 = NodePath("TrialScene/NPC4")
+npc5 = NodePath("TrialScene/NPC5")
+marker_start = NodePath("StartMarker")
+marker_vote = NodePath("VoteMarker")
+ui = NodePath("TrialScene/UI")
+walking_frames = Array[Texture2D]([ExtResource("7_x734e"), ExtResource("3_4gkmb"), ExtResource("4_4hff6"), ExtResource("5_md1y7")])
+penelope_idle_frame = ExtResource("6_6tyy8")
+
+[node name="TrialScene" parent="." instance=ExtResource("1_vci8h")]
+
+[node name="Camera3D" parent="TrialScene/Player/Camera_Controller/Camera_Target" index="0"]
+environment = SubResource("Environment_6tyy8")
+
+[node name="ShopBuilding" parent="TrialScene" index="5"]
+round_items = Array[ExtResource("7_xkfhg")]([SubResource("Resource_wgon7"), SubResource("Resource_pqhdr"), SubResource("Resource_1738n"), SubResource("Resource_rxp0a"), SubResource("Resource_ikvon")])
+
+[node name="HouseBuilding" parent="TrialScene" index="6"]
+current_dialog_event = "Home"
+
+[node name="Library" parent="TrialScene" index="8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -539.0044, 35, -48.741203)
+visible = false
+
+[node name="Restaurant" parent="TrialScene" index="9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 620.4744, 35.142723, -105.38143)
+visible = false
+
+[node name="FlowerShop" parent="TrialScene" index="11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -1316.344, 34.457962, -206.9293)
+visible = false
+
+[node name="Lado4" parent="TrialScene" index="22"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -201.96364, 31.401306, 23.000002)
+
+[node name="Cosa" parent="TrialScene/Lado4" index="0"]
+transform = Transform3D(-3.4202023, 0, 9.396926, 0, 10, 0, -9.396926, 0, -3.4202023, -500.7423, -5.5555325, 209.53426)
+top_level = false
+
+[node name="Cosa" parent="TrialScene/Lado4/Cosa" index="0"]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999999, 4.000001, -0.39999998, 1.6000061)
+top_level = false
+
+[node name="Cosa" parent="TrialScene/Lado4/Cosa/Cosa/Cosa" index="0"]
+transform = Transform3D(0.99999994, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 0.99999994, 3.999998, -0.39999998, 1.1000004)
+top_level = false
+
+[node name="Cosa" parent="TrialScene/Lado4/Cosa/Cosa/Cosa/Cosa/Cosa" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.000004, 0.60000014, 2.3999977)
+top_level = false
+
+[node name="Cosa" parent="TrialScene/Lado4/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa" index="0"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 15.000003, -0.40000033, 4.800001)
+top_level = false
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="TrialScene"]
+transform = Transform3D(700, 0, 0, 0, 700, 0, 0, 0, 583.334, 0, -10, -1135.5426)
+mesh = SubResource("PlaneMesh_s1vyc")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_0w1t4")
+
+[node name="ClosedLibrary" parent="TrialScene" instance=ExtResource("2_x734e")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -246.20102, 35, -48.741203)
+current_dialog_event = "BookShop2"
+build_name = "BookShop"
+
+[node name="ClosedFlowerShop" parent="TrialScene" instance=ExtResource("2_ftfgp")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -124.91037, 34.457962, -206.9293)
+current_dialog_event = "FlowerShop2"
+build_name = "FlowerShop"
+
+[node name="Closed_Restaurant" parent="TrialScene" instance=ExtResource("2_0yubi")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 242.01147, 35.142723, -105.38143)
+current_dialog_event = "Restaurant2"
+build_name = "Restaurant"
+
+[node name="PENNY" parent="TrialScene" instance=ExtResource("8_4hff6")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 116.67773, 10, 46.989044)
+
+[node name="Sprite3D" parent="TrialScene/PENNY" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 7.0359545, 0, 0)
+texture = ExtResource("7_x734e")
+
+[node name="OLIVER" parent="TrialScene" instance=ExtResource("8_4hff6")]
+transform = Transform3D(-5, -3.090862e-07, -3.090862e-07, 0, 3.535534, -3.535534, 4.371139e-07, -3.535534, -3.535534, 88.205635, 10, 50.489487)
+
+[node name="Sprite3D" parent="TrialScene/OLIVER" index="0"]
+texture = ExtResource("5_01d0n")
+
+[node name="ALBERT" parent="TrialScene" instance=ExtResource("8_4hff6")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 45.366547, 10, -168.87189)
+
+[node name="Sprite3D" parent="TrialScene/ALBERT" index="0"]
+transform = Transform3D(-1, -4.371139e-08, -7.5710346e-08, 0, 0.8660254, -0.5, 8.742278e-08, -0.5, -0.8660254, 0, 0, 0)
+texture = ExtResource("5_01d0n")
+
+[node name="NPC3" parent="TrialScene" instance=ExtResource("4_x734e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -21.326828, 10, -170.6831)
+visible = false
+npc_id = 3
+
+[node name="Sprite3D" parent="TrialScene/NPC3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -1.5100002, 0, -3.3589363)
+
+[node name="CollisionShape3D" parent="TrialScene/NPC3" index="1"]
+transform = Transform3D(5.4, 0, 0, 0, 4.00736, 0, 0, 0, 3, 0.6502609, 1.4985001, -1.7911739)
+
+[node name="Interactable" parent="TrialScene/NPC3" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.9995117)
+visible = false
+
+[node name="CollisionShape3D" parent="TrialScene/NPC3/Interactable" index="0"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0.83374023, 0, 2.4831753)
+visible = false
+
+[node name="Sprite3D2" parent="TrialScene/NPC3" index="3"]
+transform = Transform3D(-0.021820636, 0.9822448, 0.18633115, -0.64599085, -0.1560968, 0.74721473, 0.7630333, -0.10406367, 0.63792723, 2.6962223, -0.47655404, -1.0283508)
+texture = ExtResource("5_0yubi")
+
+[node name="NPC4" parent="TrialScene" instance=ExtResource("3_ftfgp")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 72.96684, 10, -132.95863)
+visible = false
+npc_id = 4
+
+[node name="Sprite3D2" parent="TrialScene/NPC4" index="4"]
+texture = ExtResource("5_01d0n")
+
+[node name="Sprite3D4" parent="TrialScene/NPC4" index="5"]
+texture = ExtResource("5_01d0n")
+
+[node name="NPC5" parent="TrialScene" instance=ExtResource("8_4hff6")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -97.34584, 10, -29.27356)
+visible = false
+npc_id = 5
+
+[node name="Sprite3D" parent="TrialScene/NPC5" index="0"]
+texture = ExtResource("5_01d0n")
+
+[node name="StartMarker" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.707, 10, 41.364)
+
+[node name="VoteMarker" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.3963, 10, -165.248)
+
+[editable path="TrialScene"]
+[editable path="TrialScene/PENNY"]
+[editable path="TrialScene/OLIVER"]
+[editable path="TrialScene/ALBERT"]
+[editable path="TrialScene/NPC3"]
+[editable path="TrialScene/NPC4"]
+[editable path="TrialScene/NPC5"]

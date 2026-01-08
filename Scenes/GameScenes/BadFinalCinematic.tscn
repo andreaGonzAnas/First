@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7adafoenygle"]
+
+[ext_resource type="Script" path="res://Scenes/GameScenes/ending.gd" id="1_pqjav"]
+[ext_resource type="VideoStream" uid="uid://b8tk5iftgljes" path="res://Assets/Videos/FinalMalo.ogv" id="2_pqjav"]
+
+[node name="FinalCinematic" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pqjav")
+ending_type = "bad"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_pqjav")
+autoplay = true
+expand = true

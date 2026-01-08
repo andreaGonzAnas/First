@@ -1,0 +1,286 @@
+[gd_scene load_steps=20 format=3 uid="uid://ouscwucbr30x"]
+
+[ext_resource type="Script" uid="uid://blckpd7h68j7h" path="res://Menus/MainMenu.gd" id="1_7ihqj"]
+[ext_resource type="FontFile" uid="uid://cvtyjvr7vc0pi" path="res://Assets/Fonts/lucidagrande-bold.otf" id="1_tt5f1"]
+[ext_resource type="FontFile" uid="uid://buklh0o58ew5g" path="res://Assets/Fonts/lucidagrande.ttf" id="2_853f1"]
+[ext_resource type="Texture2D" uid="uid://cw8q3heatfsuj" path="res://Assets/Finales/FondilloMenuSerios1.png" id="2_n6o36"]
+[ext_resource type="Texture2D" uid="uid://8efcejjhgw1m" path="res://Assets/Finales/menuButtons.png" id="4_0xbyl"]
+[ext_resource type="Texture2D" uid="uid://0f5upaglx1nv" path="res://Assets/Finales/first_tittle.png" id="4_5ncg0"]
+[ext_resource type="Texture2D" uid="uid://ciy7xilybv3nj" path="res://Assets/Finales/menuButtonHover.png" id="5_1txdl"]
+[ext_resource type="Texture2D" uid="uid://cpkxgc5opgt0k" path="res://Assets/Finales/marcoMenuOpciones.png" id="8_ju15h"]
+[ext_resource type="Texture2D" uid="uid://bla6r6vclt8g4" path="res://Assets/Finales/opcionesTittulo.png" id="8_m16r1"]
+[ext_resource type="Texture2D" uid="uid://7n7jrqqf74ra" path="res://Assets/Finales/unmuted.png" id="10_0bjyp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnhvo"]
+bg_color = Color(0.91056764, 0.80964386, 0.7848353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1txdl"]
+texture = ExtResource("4_0xbyl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sulrv"]
+texture = ExtResource("5_1txdl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m16r1"]
+texture = ExtResource("5_1txdl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5kkds"]
+texture = ExtResource("4_0xbyl")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1txdl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8saeu"]
+font = ExtResource("1_tt5f1")
+font_size = 100
+font_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ju15h"]
+texture = ExtResource("4_0xbyl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0bjyp"]
+texture = ExtResource("5_1txdl")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ihqj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MainMenuPanel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bnhvo")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MainMenuPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_n6o36")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MainMenuPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -683.0
+offset_top = -169.0
+offset_right = -162.0
+offset_bottom = 217.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 1)
+theme_override_constants/separation = -11
+
+[node name="Start" type="Button" parent="CanvasLayer/MainMenuPanel/VBoxContainer"]
+custom_minimum_size = Vector2(521, 136)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.8
+theme_override_colors/font_color = Color(0.34901962, 0.21568628, 0.17254902, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_hover_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_fonts/font = ExtResource("2_853f1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_1txdl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sulrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m16r1")
+text = "START_BUTTON"
+icon_alignment = 1
+
+[node name="Config" type="Button" parent="CanvasLayer/MainMenuPanel/VBoxContainer"]
+custom_minimum_size = Vector2(521, 136)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.34901962, 0.21568628, 0.17254902, 1)
+theme_override_colors/font_focus_color = Color(0.34901962, 0.21568628, 0.17254902, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_hover_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.34901962, 0.21568628, 0.17254902, 1)
+theme_override_fonts/font = ExtResource("2_853f1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_1txdl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sulrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m16r1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_5kkds")
+text = "OPTIONS_BUTTON"
+icon_alignment = 1
+
+[node name="Exit" type="Button" parent="CanvasLayer/MainMenuPanel/VBoxContainer"]
+custom_minimum_size = Vector2(521, 136)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.34901962, 0.21568628, 0.17254902, 1)
+theme_override_colors/font_focus_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_hover_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_disabled_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/font_outline_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_colors/icon_pressed_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_fonts/font = ExtResource("2_853f1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_1txdl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sulrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m16r1")
+text = "EXIT_BUTTON"
+icon_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/MainMenuPanel"]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 168.0
+offset_right = 789.0
+offset_bottom = 365.0
+texture = ExtResource("4_5ncg0")
+
+[node name="blocker" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5411765)
+
+[node name="OptionsMenuPanel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -943.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_1txdl")
+
+[node name="TextureRect" type="ColorRect" parent="CanvasLayer/OptionsMenuPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.48, 0.32512, 0.2688, 0.90588236)
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/OptionsMenuPanel"]
+layout_mode = 0
+offset_left = -31.0
+offset_right = 944.0
+offset_bottom = 1080.0
+texture = ExtResource("8_ju15h")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/OptionsMenuPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -264.5
+offset_top = 189.0
+offset_right = 333.5
+offset_bottom = 333.0
+grow_horizontal = 2
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("8_m16r1")
+
+[node name="Label" type="Label" parent="CanvasLayer/OptionsMenuPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -403.5
+offset_top = 114.0
+offset_right = 403.5
+offset_bottom = 314.0
+grow_horizontal = 2
+text = "OPTIONS_TITLE"
+label_settings = SubResource("LabelSettings_8saeu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spanish" type="Button" parent="CanvasLayer/OptionsMenuPanel"]
+custom_minimum_size = Vector2(521, 136)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.5
+offset_top = -162.0
+offset_right = 260.5
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.32941177, 0.23137255, 0.19607843, 1)
+theme_override_colors/font_hover_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_fonts/font = ExtResource("2_853f1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_ju15h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sulrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0bjyp")
+text = "SPANISH_BUTTON"
+
+[node name="English" type="Button" parent="CanvasLayer/OptionsMenuPanel"]
+visible = false
+custom_minimum_size = Vector2(521, 136)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.5
+offset_top = 21.0
+offset_right = 260.5
+offset_bottom = 157.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.32941177, 0.23137255, 0.19607843, 1)
+theme_override_colors/font_hover_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_fonts/font = ExtResource("2_853f1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_ju15h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sulrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0bjyp")
+text = "ENGLISH_BUTTON"
+
+[node name="Back" type="Button" parent="CanvasLayer/OptionsMenuPanel"]
+custom_minimum_size = Vector2(521, 136)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 55.0
+offset_top = -192.0
+offset_right = 576.0
+offset_bottom = -56.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.32941177, 0.23137255, 0.19607843, 1)
+theme_override_colors/font_hover_color = Color(0.972549, 0.92156863, 0.84313726, 1)
+theme_override_fonts/font = ExtResource("2_853f1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_ju15h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sulrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0bjyp")
+text = "BACK_BUTTON"
+
+[node name="MuteButton" type="TextureButton" parent="CanvasLayer/OptionsMenuPanel"]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 542.0
+offset_right = 887.0
+offset_bottom = 1009.0
+scale = Vector2(0.445, 0.445)
+texture_normal = ExtResource("10_0bjyp")

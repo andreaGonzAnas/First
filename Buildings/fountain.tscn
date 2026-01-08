@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://busw1q0io68fv"]
+
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="1_jd02k"]
+[ext_resource type="Texture2D" uid="uid://68b72dc1pr7y" path="res://Assets/Finales/fountain.png" id="2_68rw6"]
+[ext_resource type="Script" uid="uid://cd6tnrx73uwqe" path="res://Buildings/fountain/fountain.gd" id="2_yci78"]
+
+[node name="NPC" instance=ExtResource("1_jd02k")]
+script = ExtResource("2_yci78")
+
+[node name="Sprite3D" parent="." index="0"]
+texture = ExtResource("2_68rw6")
+
+[node name="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 3, 0, 0, 0.5)
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0, 0)

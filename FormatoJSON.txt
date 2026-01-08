@@ -1,0 +1,11 @@
+DialogX.Y
+DialogX.Y.Z
+
+DialogX.Y_A
+DialogX.Y_A.Z
+
+X= num de personaje (1,2,3...)
+Y= num de ronda
+Z= num de pensamiento
+
+A=letra de respuesta (a,b,c...)

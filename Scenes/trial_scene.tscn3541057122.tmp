@@ -1,0 +1,109 @@
+[gd_scene load_steps=10 format=3 uid="uid://cww17u4c26p4h"]
+
+[ext_resource type="Texture2D" uid="uid://62o77j0kmork" path="res://Assets/Temporales/ovejaM.png" id="1_47pop"]
+[ext_resource type="Texture2D" uid="uid://nmx8al30ti8y" path="res://Assets/Temporales/image.jpg" id="1_s1vyc"]
+[ext_resource type="PackedScene" uid="uid://wb43sj03rdhh" path="res://Components/interacting_component.tscn" id="2_47pop"]
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="3_7khpe"]
+[ext_resource type="PackedScene" uid="uid://tqvckr0nktmj" path="res://Scenes/dialogTestScene/PruebaDialogo.tscn" id="5_1ygjx"]
+
+[sub_resource type="GDScript" id="GDScript_s1vyc"]
+script/source = "extends CharacterBody3D
+
+@export var speed: float = 100.0
+
+func get_input() -> void:
+	var input_dir = Vector3.ZERO
+	
+	# Dir
+	if Input.is_action_pressed(\"Up\"):
+		input_dir.z -= 1
+	if Input.is_action_pressed(\"Down\"):
+		input_dir.z += 1
+	if Input.is_action_pressed(\"Left\"):
+		input_dir.x -= 1
+	if Input.is_action_pressed(\"Right\"):
+		input_dir.x += 1
+
+	input_dir = input_dir.normalized()
+
+	velocity.x = input_dir.x * speed
+	velocity.z = input_dir.z * speed
+	
+
+func _physics_process(_delta):
+	if not GameState.can_move:
+		velocity = Vector3.ZERO
+		move_and_slide() # mantiene el movimiento estable aunque esté parado
+		return
+
+	get_input()
+	move_and_slide()
+	$Camera_Controller.position = lerp($Camera_Controller.position, position, 0.1)
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s1vyc"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s1vyc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7khpe"]
+shading_mode = 0
+albedo_texture = ExtResource("1_s1vyc")
+
+[node name="TrialScene" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 10, 7)
+motion_mode = 1
+script = SubResource("GDScript_s1vyc")
+
+[node name="Sheep" type="Sprite3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+layers = 2
+pixel_size = 0.05
+texture = ExtResource("1_47pop")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
+shape = SubResource("BoxShape3D_s1vyc")
+debug_color = Color(0.88235295, 0, 0.5137255, 1)
+
+[node name="Camera_Controller" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 10, 7)
+top_level = true
+
+[node name="Camera_Target" type="Node3D" parent="Player/Camera_Controller"]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 260, 290)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Camera_Controller/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0)
+doppler_tracking = 2
+current = true
+fov = 30.0
+near = 0.01
+far = 1000.0
+
+[node name="InteractingComponent" parent="Player" instance=ExtResource("2_47pop")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+
+[node name="Background" type="Sprite3D" parent="."]
+transform = Transform3D(1, -1.7484555e-07, 7.1054274e-15, 0, -4.3711385e-08, -1, 1.7484554e-07, 1, -4.3711385e-08, 2.1316282e-14, -3, -1.3113416e-07)
+visible = false
+visibility_range_begin = 30.25
+flip_v = true
+pixel_size = 0.15
+texture = ExtResource("1_s1vyc")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.19041917, -0.48103794, 0.4233233, 0, 0.7826081, 0.43576026, -0.23182008, -0.39512902, 0.3477217, 214.202, 61.675, 131.31)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(300, 0, 0, 0, 300, 0, 0, 0, 300, 2.1316282e-14, -3, -1.3113416e-07)
+mesh = SubResource("PlaneMesh_s1vyc")
+skeleton = NodePath("../Background")
+surface_material_override/0 = SubResource("StandardMaterial3D_7khpe")
+
+[node name="NPC" parent="." instance=ExtResource("3_7khpe")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -95, 10.489868, -82)
+
+[node name="PruebaDialogo" parent="." instance=ExtResource("5_1ygjx")]

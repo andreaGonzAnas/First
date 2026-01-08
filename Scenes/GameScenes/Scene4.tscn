@@ -1,0 +1,129 @@
+[gd_scene load_steps=16 format=3 uid="uid://bks35bcpghy0c"]
+
+[ext_resource type="PackedScene" uid="uid://cww17u4c26p4h" path="res://Scenes/trial_scene.tscn" id="1_vqe6m"]
+[ext_resource type="Script" uid="uid://cdd4u6rgp6r6s" path="res://Scenes/GameScenes/Scene5Logic.gd" id="1_yhn16"]
+[ext_resource type="PackedScene" uid="uid://cjumhiw5bki6j" path="res://Buildings/fountain/closed_library.tscn" id="2_12r4e"]
+[ext_resource type="PackedScene" uid="uid://cqnfebyi0digl" path="res://Buildings/fountain/closed_flowerShop.tscn" id="2_j1nel"]
+[ext_resource type="PackedScene" uid="uid://b81yillhx7bia" path="res://Buildings/fountain/restaurant_closed.tscn" id="3_12r4e"]
+[ext_resource type="PackedScene" uid="uid://bfoa6kax1rg5k" path="res://Buildings/hairdresser/HairdresserGame.tscn" id="3_ht88n"]
+[ext_resource type="Script" uid="uid://upxe2oq3f34a" path="res://Buildings/hairdresser/mingame_building.gd" id="3_j1nel"]
+[ext_resource type="Texture2D" uid="uid://b6xi18rwm3chp" path="res://Assets/Skybox/skyfin.png" id="3_yhn16"]
+[ext_resource type="PackedScene" uid="uid://jbid7xsced7i" path="res://Characters/npc2.tscn" id="4_ht88n"]
+[ext_resource type="PackedScene" uid="uid://bkdu6v8gewrsx" path="res://Buildings/bar/BarGame.tscn" id="4_yhn16"]
+[ext_resource type="Texture2D" uid="uid://sxk0hx56053o" path="res://Assets/Finales/WhiteM.png" id="7_2wyae"]
+[ext_resource type="Script" uid="uid://b8h6olodjsfov" path="res://Characters/ViktorAriadna.gd" id="10_yhn16"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_rw7ca"]
+panorama = ExtResource("3_yhn16")
+
+[sub_resource type="Sky" id="Sky_o2ql6"]
+sky_material = SubResource("PanoramaSkyMaterial_rw7ca")
+
+[sub_resource type="Environment" id="Environment_s28dt"]
+background_mode = 2
+background_color = Color(0.792, 0.87413335, 0.88, 1)
+sky = SubResource("Sky_o2ql6")
+volumetric_fog_density = 0.0341
+adjustment_enabled = true
+adjustment_saturation = 0.2
+
+[node name="Node3D" type="Node3D" node_paths=PackedStringArray("viktor_npc", "good_ending_marker")]
+script = ExtResource("1_yhn16")
+viktor_npc = NodePath("TrialScene/NPC2")
+good_ending_marker = NodePath("GoodEndingPos")
+
+[node name="TrialScene" parent="." instance=ExtResource("1_vqe6m")]
+
+[node name="Camera3D" parent="TrialScene/Player/Camera_Controller/Camera_Target" index="0"]
+environment = SubResource("Environment_s28dt")
+
+[node name="nDinero" parent="TrialScene/UI" index="0"]
+offset_left = 45.0
+offset_top = 154.0
+offset_right = 194.0
+offset_bottom = 238.0
+
+[node name="nPoblacion" parent="TrialScene/UI" index="1"]
+offset_left = 43.0
+offset_top = 45.0
+offset_right = 189.0
+offset_bottom = 133.0
+
+[node name="OpinionBar" parent="TrialScene/UI" index="3"]
+visible = false
+
+[node name="HouseBuilding" parent="TrialScene" index="6"]
+current_dialog_event = "HomeFinal"
+
+[node name="VotingPlace" parent="TrialScene" index="7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 25, -2243.1987)
+visible = false
+
+[node name="Library" parent="TrialScene" index="8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -923.60486, 35, -48.741203)
+visible = false
+
+[node name="Restaurant" parent="TrialScene" index="9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 620.4744, 35.142723, -105.38143)
+visible = false
+
+[node name="Peluqueria" parent="TrialScene" index="10" node_paths=PackedStringArray("ui")]
+script = ExtResource("3_j1nel")
+ui = NodePath("../UI")
+minigame_scene = ExtResource("3_ht88n")
+reward_amount = 20
+allowed_round = 4
+dialog_closed = "Hairdresser_Closed"
+dialog_intro = "Hairdresser_Intro"
+dialog_already_played = "Minigame_AlreadyPlayed"
+
+[node name="FlowerShop" parent="TrialScene" index="11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -1316.344, 34.457962, -206.9293)
+visible = false
+
+[node name="Bar" parent="TrialScene" index="13" node_paths=PackedStringArray("ui")]
+script = ExtResource("3_j1nel")
+ui = NodePath("../UI")
+minigame_scene = ExtResource("4_yhn16")
+reward_amount = 25
+allowed_round = 4
+dialog_closed = "Bar_Closed"
+dialog_intro = "Bar_Intro"
+dialog_already_played = "Minigame_AlreadyPlayed"
+
+[node name="ClosedLibrary" parent="TrialScene" instance=ExtResource("2_12r4e")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -246.20102, 35, -48.741203)
+current_dialog_event = "BookShop2"
+build_name = "BookShop"
+
+[node name="ClosedFlowerShop" parent="TrialScene" instance=ExtResource("2_j1nel")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -124.91037, 34.457962, -206.9293)
+current_dialog_event = "FlowerShop2"
+build_name = "FlowerShop"
+
+[node name="Closed_Restaurant" parent="TrialScene" instance=ExtResource("3_12r4e")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 242.01147, 35.142723, -105.38143)
+current_dialog_event = "Restaurant2"
+build_name = "Restaurant"
+
+[node name="NPC2" parent="TrialScene" instance=ExtResource("4_ht88n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 230, 10, -181.83687)
+script = ExtResource("10_yhn16")
+final_cutscene_scene = "res://Scenes/GameScenes/GoodFinalCinematic.tscn"
+
+[node name="NPC3" parent="TrialScene" instance=ExtResource("4_ht88n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 148.06952, 10, 59.03125)
+npc_id = 3
+
+[node name="NPC4" parent="TrialScene" instance=ExtResource("4_ht88n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -66.72917, 10, 22.91153)
+npc_id = 4
+
+[node name="Sprite3D2" parent="TrialScene/NPC4" index="3"]
+texture = ExtResource("7_2wyae")
+
+[node name="GoodEndingPos" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 105.253944)
+
+[editable path="TrialScene"]
+[editable path="TrialScene/NPC4"]

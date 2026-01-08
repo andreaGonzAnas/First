@@ -1,0 +1,161 @@
+[gd_scene load_steps=27 format=3 uid="uid://bkdu6v8gewrsx"]
+
+[ext_resource type="Script" uid="uid://c1n5n5wvq8dxo" path="res://Buildings/bar/BarGame.gd" id="1_46jcd"]
+[ext_resource type="PackedScene" uid="uid://cn6li2fdflvyj" path="res://Buildings/bar/cliente.tscn" id="2_3deqe"]
+[ext_resource type="Texture2D" uid="uid://bu17bsvweqt6s" path="res://Assets/Finales/barFondo.png" id="2_46jcd"]
+[ext_resource type="Texture2D" uid="uid://bbsb23wh3u55j" path="res://Assets/Finales/cafe_icon.png" id="3_gr40j"]
+[ext_resource type="Texture2D" uid="uid://byg114nij2tjg" path="res://Assets/Finales/agua_icon.png" id="3_vfomf"]
+[ext_resource type="Texture2D" uid="uid://cn0a1o3cof6ng" path="res://Assets/Finales/agua_hover.png" id="4_651ac"]
+[ext_resource type="Texture2D" uid="uid://cfqm5mwsc5ky" path="res://Assets/Finales/cafe_hover.png" id="4_yvkbx"]
+[ext_resource type="Texture2D" uid="uid://b4skw4k1ejsay" path="res://Assets/Finales/zumo_icon.png" id="5_i8uk1"]
+[ext_resource type="Texture2D" uid="uid://c0j1yg63qi2oc" path="res://Assets/Finales/zumo_hover.png" id="6_ms182"]
+[ext_resource type="Texture2D" uid="uid://07uvv58hy2a5" path="res://Assets/Finales/barraBar.png" id="11_xthjl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i8uk1"]
+texture = ExtResource("3_vfomf")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4af0c"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kqn1q"]
+texture = ExtResource("4_651ac")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7fp0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bvh81"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_46jcd"]
+texture = ExtResource("3_gr40j")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vfomf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_651ac"]
+texture = ExtResource("4_yvkbx")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3deqe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xthjl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gr40j"]
+texture = ExtResource("5_i8uk1")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_651ac"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3deqe"]
+texture = ExtResource("6_ms182")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wjfx0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0cwtd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6p677"]
+font_size = 46
+
+[node name="HairdresserGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_46jcd")
+customer_scene = ExtResource("2_3deqe")
+min_spawn_time = 0.5
+max_spawn_time = 4.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+z_index = -2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_xthjl")
+
+[node name="ButtonWater" type="Button" parent="CanvasLayer"]
+offset_left = 1250.0
+offset_top = 849.0
+offset_right = 1518.0
+offset_bottom = 1117.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/normal = SubResource("StyleBoxTexture_i8uk1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4af0c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kqn1q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_m7fp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bvh81")
+
+[node name="ButtonSoda" type="Button" parent="CanvasLayer"]
+offset_left = 458.0
+offset_top = 841.0
+offset_right = 726.0
+offset_bottom = 1109.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/normal = SubResource("StyleBoxTexture_46jcd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vfomf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_651ac")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3deqe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xthjl")
+
+[node name="ButtonJuice" type="Button" parent="CanvasLayer"]
+offset_left = 852.0
+offset_top = 829.0
+offset_right = 1120.0
+offset_bottom = 1097.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/normal = SubResource("StyleBoxTexture_gr40j")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_651ac")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3deqe")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wjfx0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0cwtd")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+visible = false
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(13.205, 11.065)
+offset_left = 234.0
+offset_top = 273.0
+offset_right = 559.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 71
+text = "SIRVE REFRESCO"
+label_settings = SubResource("LabelSettings_6p677")
+autowrap_mode = 3
+
+[node name="ToolCursor" type="TextureRect" parent="CanvasLayer"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+
+[node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="Seats" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="Seats"]
+z_index = -1
+position = Vector2(226, 539)
+
+[node name="Marker2D2" type="Marker2D" parent="Seats"]
+z_index = -1
+position = Vector2(832, 532)
+
+[node name="Marker2D3" type="Marker2D" parent="Seats"]
+z_index = -1
+position = Vector2(1418, 524)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_46jcd")
+
+[connection signal="pressed" from="CanvasLayer/ButtonWater" to="." method="_on_water_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonSoda" to="." method="_on_soda_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonJuice" to="." method="_on_juice_pressed"]

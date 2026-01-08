@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://bo5cg12mfbtau"]
+
+[ext_resource type="Script" uid="uid://wttyxxoi83po" path="res://Menus/HouseScene.cs" id="1_3wbqb"]
+[ext_resource type="Texture2D" uid="uid://b6y1v5dh7eump" path="res://Assets/Temporales/MorningBackground.jpg" id="1_667n4"]
+[ext_resource type="PackedScene" uid="uid://tqvckr0nktmj" path="res://Scenes/dialogTestScene/PruebaDialogo.tscn" id="2_5vvci"]
+[ext_resource type="Script" uid="uid://bdj0n76103fxw" path="res://Characters/Parents.gd" id="3_r830t"]
+[ext_resource type="Texture2D" uid="uid://bhdc6vprmqb83" path="res://Assets/Temporales/NightBackground.jpg" id="6_r830t"]
+
+[node name="HouseScene" type="Node3D"]
+script = ExtResource("1_3wbqb")
+
+[node name="PruebaDialogo" parent="." instance=ExtResource("2_5vvci")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 384.86334)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Parents" type="Node3D" parent="." node_paths=PackedStringArray("canvas")]
+script = ExtResource("3_r830t")
+canvas = NodePath("../CanvasLayer")
+morning_background = ExtResource("1_667n4")
+night_background = ExtResource("6_r830t")
+id = null

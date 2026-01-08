@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://dof62bbfme1oo"]
+
+[ext_resource type="Script" uid="uid://c7st04khen7h7" path="res://Buildings/shop/ShopUI.gd" id="1_mmq7d"]
+[ext_resource type="Texture2D" uid="uid://37dhi5yi154l" path="res://Assets/Finales/tienda_interior.png" id="2_rutph"]
+[ext_resource type="FontFile" uid="uid://cvtyjvr7vc0pi" path="res://Assets/Fonts/lucidagrande-bold.otf" id="3_67kld"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qah3i"]
+font = ExtResource("3_67kld")
+font_size = 40
+font_color = Color(0.3882353, 0.3647059, 0.3529412, 1)
+
+[node name="ShopInterface" type="Panel" node_paths=PackedStringArray("label_price")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mmq7d")
+label_price = NodePath("Label")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rutph")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -808.0
+offset_top = -70.0
+offset_right = -358.0
+offset_bottom = 226.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.55, 0.55)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1191.0
+offset_top = 667.0
+offset_right = 1270.0
+offset_bottom = 708.0
+rotation = 0.024676451
+text = "100"
+label_settings = SubResource("LabelSettings_qah3i")
+horizontal_alignment = 1
+vertical_alignment = 1

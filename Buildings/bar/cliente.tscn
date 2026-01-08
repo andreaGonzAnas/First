@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn6li2fdflvyj"]
+
+[ext_resource type="Script" uid="uid://b06q8frkaroym" path="res://Buildings/bar/BarCustomer.gd" id="1_2gt3i"]
+[ext_resource type="Script" uid="uid://bmkf7fyt1t228" path="res://Buildings/bar/button.gd" id="2_qfv8q"]
+[ext_resource type="Texture2D" uid="uid://bbsb23wh3u55j" path="res://Assets/Finales/cafe_icon.png" id="3_qfv8q"]
+[ext_resource type="Texture2D" uid="uid://dmloblniqxt1v" path="res://Assets/Finales/burbujapensamiento.png" id="3_yxfyc"]
+[ext_resource type="Texture2D" uid="uid://nm03wyn5qhrh" path="res://Assets/Finales/Sam.png" id="5_pl87p"]
+
+[node name="NPC" type="Node2D"]
+script = ExtResource("1_2gt3i")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -216.0
+offset_top = -204.0
+offset_right = -204.23033
+offset_bottom = -185.62744
+scale = Vector2(35.684944, 25.30949)
+script = ExtResource("2_qfv8q")
+
+[node name="Bubble" type="Sprite2D" parent="."]
+position = Vector2(326, -286.00003)
+scale = Vector2(0.65, 0.628)
+texture = ExtResource("3_yxfyc")
+
+[node name="Icon" type="Sprite2D" parent="Bubble"]
+position = Vector2(22.500015, -40.10345)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_qfv8q")
+
+[node name="BodySprite" type="Sprite2D" parent="."]
+texture = ExtResource("5_pl87p")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

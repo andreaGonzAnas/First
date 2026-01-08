@@ -1,0 +1,4903 @@
+{
+	"HomeRound1": {
+		"dialogs": [
+			{
+				"text": "*Estoy cansado y no entiendo nada.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*¿Debería irme a casa?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 2.0,
+				"next": "HomeRound.Success"
+			},
+			{
+				"response": "No",
+				"gain": 2.0,
+				"next": "HomeRound.Exit"
+			}
+		]
+	},
+	"Home": {
+		"dialogs": [
+			{
+				"text": "*¿Debería volver a casa sin votar?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 2.0,
+				"next": "HomeRound.Success"
+			},
+			{
+				"response": "No",
+				"gain": 2.0,
+				"next": "HomeRound.Exit"
+			}
+		]
+	},
+	"HomeFinal": {
+		"dialogs": [
+			{
+				"text": "*No hay nada que pueda hacer.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*¿Debería irme a casa?*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 2.0,
+				"next": "HomeRound.Success"
+			},
+			{
+				"response": "No",
+				"gain": 2.0,
+				"next": "HomeRound.Exit"
+			}
+		]
+	},
+	"HomeRound.Success": {
+		"dialogs": [
+			{
+				"text": "*Pues a casa.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"HomeRound.Exit": {
+		"dialogs": [
+			{
+				"text": "*Todavía no.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"VotePlaceRound1": {
+		"dialogs": [
+			{
+				"text": "*Decisión popular: ¿Deberían las ovejas adherirse a las pautas de apariencia establecidas o ser expulsadas?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*¿Debería votar?*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Creo que no entiendo lo que está pasando lo suficiente.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Además, solo soy una oveja.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Otras ovejas tendrá más idea que yo.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Es mejor que no me meta.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"VotePlaceRound2": {
+		"dialogs": [
+			{
+				"text": "*Decisión popular: ¿Deberían de ser expulsadas las ovejas delincuentes?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*¿Debería votar?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 2.0,
+				"next": "Votation.Success"
+			},
+			{
+				"response": "No",
+				"gain": 2.0,
+				"next": "Votation.Exit"
+			}
+		]
+	},
+	"VotePlaceRound3": {
+		"dialogs": [
+			{
+				"text": "*Decisión popular: ¿Deberían ser expulsadas todas aquellas ovejas con conductas indecentes?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*¿Debería votar?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 2.0,
+				"next": "Votation.Success"
+			},
+			{
+				"response": "No",
+				"gain": 2.0,
+				"next": "Votation.Exit"
+			}
+		]
+	},
+	"VotePlaceRound4": {
+		"dialogs": [
+			{
+				"text": "*Decisión popular: ¿Deberían ser canceladas las votaciones populares?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*¿Debería votar?*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 2.0,
+				"next": "Votation.Success"
+			},
+			{
+				"response": "No",
+				"gain": 2.0,
+				"next": "Votation.Exit"
+			}
+		]
+	},
+	"Votation.Success": {
+		"dialogs": [
+			{
+				"text": "*Votemos entonces.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Votation.Exit": {
+		"dialogs": [
+			{
+				"text": "*Quizá debería dar una vuelta e informarme más.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Fountain": {
+		"dialogs": [
+			{
+				"text": "*La fuente de la plaza.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Siempre está llena de flores.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"BookShop": {
+		"dialogs": [
+			{
+				"text": "*La librería de la señora Julieta.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Tiene un montón de libros sobre todo tipo de temas.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Mis favoritos son los de piratas.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"BookShop2": {
+		"dialogs": [
+			{
+				"text": "*Está cerrada.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Parece que nadie ha venido a trabajar.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"FlowerShop": {
+		"dialogs": [
+			{
+				"text": "*La floristería de Michael y Jeremy.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Lleva aquí desde antes de que yo naciera.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Ellos son los responsables de que toda la plaza esté llena de flores.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"FlowerShop2": {
+		"dialogs": [
+			{
+				"text": "*...*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*No queda ninguna flor.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*¿Cuánto faltará para que todas las flores de la plaza se marchiten?*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Restaurant": {
+		"dialogs": [
+			{
+				"text": "*El restaurante de la familia de la señora Lola.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*La comida de este sitio es muy diferente a la del resto del pueblo.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*A mis padres no les gusta mucho.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Pero Oliver a veces viene conmigo a comer aquí.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Restaurant2": {
+		"dialogs": [
+			{
+				"text": "*...*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*La plaza se está vaciando.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"OliverHouse": {
+		"dialogs": [
+			{
+				"text": "*La casa de Oliver.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Vengo bastante a menudo a jugar videojuegos con él.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"OliverHouse2": {
+		"dialogs": [
+			{
+				"text": "¡Hola! ¿Puede salir Oliver?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oh, hola Clover.",
+				"author": "clover",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Mira cariño, acabamos de comprar nuestros certificados y estamos discutiendo un par de cosas.",
+				"author": "clover",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "¿Tenéis tus padres y tú ya el tuyo?",
+				"author": "clover",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "No, aún no.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Vuelve cuando lo tengas, ¿vale?",
+				"author": "clover",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Pero-",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"GenericHouse": {
+		"dialogs": [
+			{
+				"text": "*Mejor no molestar.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Hairdresser_Closed": {
+		"dialogs": [
+			{
+				"text": "*La peluquería del pueblo.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*La verdad es que no hacen mucha variedad de peinados.*",
+				"name": "Clover",
+				"author": "clover"
+			},
+			{
+				"text": "*Tampoco tiñen el pelo.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Probablemente por eso todo el mundo se parece tanto.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		],
+		"options": []
+	},
+	"Hairdresser_Intro": {
+		"dialogs": [
+			{
+				"text": "*La peluquería está hasta arriba.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Podría ayudar y ganar algo de dinero.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		],
+		"options": [
+			{
+				"response": "¡Claro, trabajaré!",
+				"gain": 0.0,
+				"next": "Start_Minigame"
+			},
+			{
+				"response": "No, ahora no.",
+				"gain": 0.0,
+				"next": "Minigame_Cancel"
+			}
+		]
+	},
+	"Bar_Closed": {
+		"dialogs": [
+			{
+				"text": "*El bar del pueblo.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Mi padre suele quedar aquí con sus amigos.*",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "*Nunca me ha gustado mucho el ambiente que tiene.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		],
+		"options": []
+	},
+	"Bar_Intro": {
+		"dialogs": [
+			{
+				"text": "*El bar está hasta arriba.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "*Podría trabajar un rato y ganar algo de dinero.*",
+				"author": "clover",
+				"name": "Clover"
+			}
+		],
+		"options": [
+			{
+				"response": "Vale.",
+				"gain": 0.0,
+				"next": "Start_Minigame"
+			},
+			{
+				"response": "Mejor no.",
+				"gain": 0.0,
+				"next": "Minigame_Cancel"
+			}
+		]
+	},
+	"Minigame_Cancel": {
+		"dialogs": [
+			{
+				"text": "*Quizá vuelvo más tarde.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Minigame_Perfect": {
+		"dialogs": [
+			{
+				"text": "*¡Increíble! ¡No has fallado ni una!*",
+				"author": "clover",
+				"name": "Jefe",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Minigame_Good": {
+		"dialogs": [
+			{
+				"text": "*Ha sido un turno muy productivo.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Minigame_Regular": {
+		"dialogs": [
+			{
+				"text": "*Podría haberlo hecho mejor.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Minigame_Fail": {
+		"dialogs": [
+			{
+				"text": "*Menudo desastre...*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Minigame_AlreadyPlayed": {
+		"dialogs": [
+			{
+				"text": "*Ya he trabajado hoy aquí.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Shop_SoldOut": {
+		"dialogs": [
+			{
+				"text": "Lo siento, ¡no tenemos nada a la venta!",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Shop": {
+		"dialogs": [
+			{
+				"text": "¡Esto es lo que hay hoy a la venta!",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¿Te gustaría comprarlo?",
+				"author": "npc",
+				"name": "Tendera"
+			}
+		],
+		"options": [
+			{
+				"response": "¡Sí, me lo quedo!",
+				"gain": 2.0,
+				"next": "Shop_AttemptPurchase"
+			},
+			{
+				"response": "No, gracias.",
+				"gain": 2.0,
+				"next": "Shop_Exit"
+			}
+		]
+	},
+	"Shop_Success": {
+		"dialogs": [
+			{
+				"text": "¡Genial! Aquí lo tienes.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "¡Gracias!",
+				"gain": 2.0,
+				"next": "Shop_Exit"
+			}
+		]
+	},
+	"Shop_Fail": {
+		"dialogs": [
+			{
+				"text": "Oh... no tienes suficientes monedas.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Vaya, qué pena.",
+				"gain": 2.0,
+				"next": "Shop_Exit"
+			}
+		]
+	},
+	"Shop_Exit": {
+		"dialogs": [
+			{
+				"text": "¡Vuelve cuando quieras!",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": []
+	},
+
+	"ShopFinal": {
+		"dialogs": [
+			{
+				"text": "Si quieres seguir viviendo en el pueblo, debes comprar esto.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¿Vas a comprarlo?",
+				"author": "npc",
+				"name": "Tendera"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí.",
+				"gain": 2.0,
+				"next": "Shop_AttemptPurchase"
+			},
+			{
+				"response": "No, gracias.",
+				"gain": 2.0,
+				"next": "Shop_DeclinePurchase"
+			}
+		]
+	},
+
+	"Shop_FailFinal": {
+		"dialogs": [
+			{
+				"text": "Oh... no tienes suficientes monedas.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "La peluquería y el bar necesitan ayuda hoy.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¿Por qué no intentas ganar algo de dinero allí?",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "...",
+				"gain": 2.0,
+				"next": "Shop_FailEnd"
+			}
+		]
+	},
+	"Shop_FailEnd": {
+		"dialogs": [
+			{
+				"text": "*Parece que no tengo otra opción...*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+
+	"Shop_ExitFinal": {
+		"dialogs": [
+			{
+				"text": "Si no tienes dinero siempre puede trabajar para ganar algo.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "La peluquería y el bar necesitan ayuda hoy.",
+				"author": "npc",
+				"name": "Tendera",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": []
+	},
+	
+	"Npc0.1": {
+		"dialogs": [
+			{
+				"text": "Papá, ¿a qué se refiere?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oh, cierto.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Esta es la primera vez que ves un aviso de decisión popular.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "No te preocupes, seguramente no sea nada serio.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "¿Por qué no sales un rato y preguntas alrededor?",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Seguro que así te enteras mejor.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Haz caso a tu padre.",
+				"author": "clover",
+				"name": "Adelaida",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Muchas ovejas ni siquiera saben que van a votar hasta que hablan con los demás.",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "¿Tú también vas a preguntar, papá?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Luego daré una vuelta para enterarme de por qué se ha convocado la votación.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Aún hay tiempo.",
+				"author": "clover",
+				"name": "Tobi"
+			}
+		]
+	},
+	"Npc1.1": {
+		"dialogs": [
+			{
+				"text": "¡Oh!",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "Hola, Clover.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "Hola, Ellie.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Sabes qué está pasando?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¡¿No te has enterado aún?!",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "¡No nos dejan en paz!",
+				"author": "npc",
+				"name": "Sam"
+			},
+			{
+				"text": "¡Se creen que pueden decidir por nosotros y que vamos a hacerles caso!",
+				"author": "npc",
+				"name": "Sam"
+			},
+			{
+				"text": "Sam, tranquilízate.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "Si gritas tanto solo se van a enfadar más con nosotros.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "Eso no es justo.",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "¿Nos están intentando echar y encima no me puedo enfadar por ello?",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "Espera, ¿qué?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Algunas ovejas del pueblo están tan...",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			},
+			{
+				"text": "en desacuerdo con el aspecto que queremos adoptar, que han iniciado una votación para decidir si echar a todo el mundo que no siga sus pautas.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Pero entonces no es que os quieran echar, ¿no?",
+				"gain": 0.0,
+				"next": "Npc1.1.1"
+			},
+			{
+				"response": "¿Por qué tendríais que seguir las pautas de otras ovejas?",
+				"gain": 1.0,
+				"next": "Npc1.1.2"
+			},
+			{
+				"response": "La verdad es que es muy raro que os veáis tan diferentes a los demás.",
+				"gain": -1.0,
+				"next": "Npc1.1.3"
+			}
+		]
+	},
+	"Npc1.1.1": {
+		"dialogs": [
+			{
+				"text": "No, para nada.",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "Solo quieren que cambiemos totalmente nuestras vidas conforme a ellos les apetece, bajo pena de exilio.",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "Déjalo.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "No esperaba que Clover lo entendiese.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "No debería hacer falta entender nada.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			},
+			{
+				"text": "Solo queremos que nos dejen en paz.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png",
+				"next": "Npc1.1.Final"
+			}
+		],
+		"options": []
+	},
+	"Npc1.1.2": {
+		"dialogs": [
+			{
+				"text": "Esa es la cosa.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			},
+			{
+				"text": "Nadie nos ha dado ningún motivo lógico.",
+				"author": "npc",
+				"name": "Charlie"
+			},
+			{
+				"text": "Simplemente dicen que es \"malo\" que Ellie se haya limado los cuernos o que yo me haya teñido la lana.",
+				"author": "npc",
+				"name": "Charlie"
+			},
+			{
+				"text": "¡Y a mi no me dejan de decir que deje de fingir que tengo cuernos!",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "¡No estoy fingiendo!",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "Sé que no son cuernos de verdad, pero me gusta tenerlos igualmente.",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "Solo quiero que nos dejen en paz.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png",
+				"next": "Npc1.1.Final"
+			}
+		]
+	},
+	"Npc1.1.3": {
+		"dialogs": [
+			{
+				"text": "Guau.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "No me esperaba eso de ti, Clover.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "¡¿Sabes lo que es raro de verdad?!",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "¡Que nadie pueda dejar de meterse en los asuntos de los demás!",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			},
+			{
+				"text": "Clover, yo no me meto en si el resto de ovejas quieren parecer copias las unas de las otras.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			},
+			{
+				"text": "No sé qué le da derecho a nadie a decidir sobre mí en mis asuntos privados.",
+				"author": "npc",
+				"name": "Charlie",
+				"next": "Npc1.1.Final"
+			}
+		]
+	},
+	"Npc1.1.Final": {
+		"dialogs": [
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*No me puedo creer que todo este barullo se haya montado por algo tan tonto. Deberían de dejarlos tranquilos.*",
+					"pos_act_neg_mor": "*No me puedo creer que todo este barullo se haya montado por algo tan tonto. Deberían de dejarlos tranquilos.*",
+					"neg_act_pos_mor": "*¿Tanto les cuesta hacer lo mismo que los demás? Así estarían tranquilos.*",
+					"neg_act_neg_mor": "*¿Tanto les cuesta hacer lo mismo que los demás? Así estarían tranquilos.*"
+				}
+			},
+			{
+				"text": "Solo espero que la votación vaya a nuestro favor.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			},
+			{
+				"text": "No estoy segura de eso, Charlie.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "No puedo más con este pueblo.",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			}
+		]
+	},
+	"Npc1.1.Repetir": {
+		"dialogs": [
+			{
+				"text": "Solo espero que la votación vaya a nuestro favor.",
+				"author": "npc",
+				"name": "Charlie",
+				"portrait": "res://Assets/Finales/charliePortrait.png"
+			},
+			{
+				"text": "No estoy segura de eso, Charlie.",
+				"author": "npc",
+				"name": "Ellie",
+				"portrait": "res://Assets/Finales/elliePortrait.png"
+			},
+			{
+				"text": "No puedo más con este pueblo.",
+				"author": "npc",
+				"name": "Sam",
+				"portrait": "res://Assets/Finales/samPortrait.png"
+			}
+		]
+	},
+	"Npc2.1": {
+		"dialogs": [
+			{
+				"text": "Buenos días, Clover.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Buenos días, señor y señora Rowan.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Cómo está Oliver?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿Se encuentra mejor ya?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "El pobre ha estado sin salir de la cama un par de días ya.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Pero parece que va mejorando.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Está deseando ir a tu casa a ver la película de la que hablasteis cuando se recupere del todo.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Guay.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Puedo preguntaros algo?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Claro, cariño.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¿Sabéis de qué es esto de la votación?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Lo siento, pero no estoy muy segura.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "No suelo prestar mucha atención a estas cosas.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Creo haber oído algo sobre Samanta, la hija de Rosa.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Parece que estaba teniendo una pataleta sobre ello.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Es Samanta la que insiste en llevar esos cuernos falsos?",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Esa misma.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Si hay que tomar una decisión popular sobre ello, parece más que una pataleta.*",
+					"pos_act_neg_mor": "*Si hay que tomar una decisión popular sobre ello, parece más que una pataleta.*",
+					"neg_act_pos_mor": "*¿Por qué alguien se pondría cuernos falsos?*",
+					"neg_act_neg_mor": "*¿Por qué alguien se pondría cuernos falsos?*"
+				}
+			},
+			{
+				"text": "Ya se le pasará.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Con lo mona que es, y siempre intentando llevarle la contraria a sus padres.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Bueno, yo me voy ya.",
+				"gain": 0.0,
+				"next": "Npc2.1.Final"
+			},
+			{
+				"response": "¿No deberíais informaros un poco más si vais a votar?",
+				"gain": 1.0,
+				"next": "Npc2.1.1"
+			}
+		]
+	},
+	"Npc2.1.1": {
+		"dialogs": [
+			{
+				"text": "No nos solemos meter en este tipo de temas.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Ya llegarán a alguna decisión.",
+				"author": "npc",
+				"name": "Sr. Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oh, vale.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Daré una vuelta para preguntar a otros.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"next": "Npc2.1.Final"
+			}
+		]
+	},
+	"Npc2.1.Final": {
+		"dialogs": [
+			{
+				"text": "Adiós Clover, pasa un buen día.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Igualmente.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc2.1.Repetir": {
+		"dialogs": [
+			{
+				"text": "Ten un buen día, Clover.",
+				"author": "npc",
+				"name": "Sra. Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc3.1": {
+		"dialogs": [
+			{
+				"text": "¡Hola, Clover!",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¡Vincent!",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿Qué tal?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Pues un poco hasta las narices del pueblo, la verdad.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Oh.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿Qué ha pasado?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Esas ovejas al lado de la fuente han pasado.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¿Has visto qué pintas?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Es una vergüenza vivir en el mismo pueblo que ellas.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Qué agresividad. Ni que le hubiesen hecho algo a él.*",
+					"pos_act_neg_mor": "*Qué agresividad. Ni que le hubiesen hecho algo a él.*",
+					"neg_act_pos_mor": "*La verdad es que son bastante ridículas, pero tampoco hace falta ser tan agresivo.*",
+					"neg_act_neg_mor": "*La verdad es que son bastante ridículas, pero tampoco hace falta ser tan agresivo.*"
+				}
+			}
+		],
+		"options": [
+			{
+				"response": "Tío, ¿qué estás diciendo? Que no te han hecho nada.",
+				"gain": 1.0,
+				"next": "Npc3.1.1"
+			},
+			{
+				"response": "A ver, son un poco raritas. Pero no es para tanto.",
+				"gain": 0.0,
+				"next": "Npc3.1.2"
+			},
+			{
+				"response": "A mi también me dan vergüenza ajena.",
+				"gain": -1.0,
+				"next": "Npc3.1.3"
+			}
+		]
+	},
+	"Npc3.1.1": {
+		"dialogs": [
+			{
+				"text": "¿Nada?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Tengo que verlas todos los días.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¿Quién en su sano juicio se lima los cuernos?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¿Y has visto a esa con dos pares?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Que grima.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Estoy bastante seguro de que Charlie nació con ambos pares de cuernos.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Estás siendo terrible.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿Terrible yo?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Imagina que esto se extiende.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¡Eso sí que sería terrible!",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Menos mal que nos vamos a poder librar de ellas pronto.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "…",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Npc3.1.2": {
+		"dialogs": [
+			{
+				"text": "Imagínate que se extendiera.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Clover, tienes que tomarte esto más en serio.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Menos mal que nos vamos a poder librar de ellas pronto.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¿Cómo?",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Npc3.1.3": {
+		"dialogs": [
+			{
+				"text": "¡Son un peligro!",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¿Quién en su sano juicio se lima los cuernos?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "¿Y has visto a esa con dos pares?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Que grima.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "No podemos dejar que estas ideas se extiendan por el pueblo.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Menos mal que nos vamos a poder librar de ellas pronto.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "…",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Npc3.1.Repetir": {
+		"dialogs": [
+			{
+				"author": "clover",
+				"name": "Clover",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*No sé qué le pasa a Vincent, me está dando miedo.*",
+					"pos_act_neg_mor": "*No sé qué le pasa a Vincent, me está dando miedo.*",
+					"neg_act_pos_mor": "*Parece que sabe más sobre el tema de votación que yo.*",
+					"neg_act_neg_mor": "*Parece que sabe más sobre el tema de votación que yo.*"
+				}
+			}
+		]
+	},
+	"Npc4.1": {
+		"dialogs": [
+			{
+				"text": "Buenos días, mi niño.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Buenos días, abu.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Te encuentras bien?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Pareces algo triste.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Estoy algo enfadada con las ovejas del pueblo, la verdad.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "¿Conoces a mi nieta?",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "¿Ellie?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Esa misma.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Había estado mucho más contenta desde que mi hijo dejó de ser un idiota y volvió a hablarle otra vez.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			},
+			{
+				"text": "Y ahora está triste otra vez porque todo el pueblo se está metiendo en sus asuntos.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Las ovejas del pueblo suelen tener demasiadas opiniones sobre temas que no les atañen.*",
+					"pos_act_neg_mor": "*Las ovejas del pueblo suelen tener demasiadas opiniones sobre temas que no les atañen.*",
+					"neg_act_pos_mor": "*A ver, es normal que les llame la atención el cambio que ha dado.*",
+					"neg_act_neg_mor": "*A ver, es normal que les llame la atención el cambio que ha dado.*"
+				}
+			},
+			{
+				"text": "Siento aburrirte, mi niño.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Es solo que no entiendo por qué no pueden dejar a mi nieta tranquila.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			},
+			{
+				"text": "Bastante tiene ya la pobre sin necesidad de nadie más.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			}
+		],
+		"options": [
+			{
+				"response": "Pero, abu, ¿no estarán las ovejas preocupadas por… su cambio?",
+				"gain": 0.0,
+				"next": "Npc4.1.1"
+			},
+			{
+				"response": "Siento que las ovejas sean tan pesadas. Ellie no se lo merece.",
+				"gain": 1.0,
+				"next": "Npc4.1.2"
+			},
+			{
+				"response": "Elliot está siendo un poco dramático sobre el tema.",
+				"gain": -1.0,
+				"next": "Npc4.1.3"
+			}
+		]
+	},
+	"Npc4.1.1": {
+		"dialogs": [
+			{
+				"text": "Si estuviesen de verdad preocupados se darían cuenta del daño que le están haciendo a la pobre.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "No.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			},
+			{
+				"text": "Solo quieren poder controlar lo que todos hacen con sus vidas.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			},
+			{
+				"text": "Lo siento, Clover.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"next": "Npc4.1.Final"
+			}
+		]
+	},
+	"Npc4.1.2": {
+		"dialogs": [
+			{
+				"text": "Gracias, Clover.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Espero que más ovejas piensen como tú.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"next": "Npc4.1.Final"
+			}
+		]
+	},
+	"Npc4.1.3": {
+		"dialogs": [
+			{
+				"text": "… Estoy muy decepcionada contigo Clover.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Sabes que a mi nieta no le gusta ese nombre.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"next": "Npc4.1.Final"
+			}
+		]
+	},
+	"Npc4.1.Final": {
+		"dialogs": [
+			{
+				"text": "Creo que necesito estar sola un rato.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "No me encuentro muy bien.",
+				"author": "npc",
+				"name": "Sra. Lola"
+			}
+		]
+	},
+	"Npc4.1.Repetir": {
+		"dialogs": [
+			{
+				"text": "Creo que necesito estar sola un rato.",
+				"author": "npc",
+				"name": "Sra. Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			}
+		]
+	},
+	"Npc0.2": {
+		"dialogs": [
+			{
+				"text": "¿Una votación? ",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No esperaba otra tan pronto, la verdad.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "La última vez que hubo una echaron a Ellie, Charlie y Sam.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*No se lo merecían, que asco de pueblo.*",
+					"neg_act_pos_mor": "*Honestamente, no esperaba que pasase de verdad.*",
+					"neg_act_neg_mor": "*Me alegro, la verdad. El pueblo es más tranquilo ahora.*",
+					"pos_act_neg_mor": "*No ha cambiado mucho.*"
+				}
+			},
+			{
+				"text": "Bueno no hay mucho que podamos hacer.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Voy a dar una vuelta por la plaza.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": " A lo mejor voy a votar esta vez.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Lo que decidas, hijo.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "No vuelvas muy tarde, que tu madre va a preparar pizza casera.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Siempre le sale riquísima.",
+				"author": "clover",
+				"name": "Tobi"
+			}
+		]
+	},
+	"Npc1.2": {
+		"dialogs": [
+			{
+				"text": "Buenos días, abu.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Buenos días, mi niño.",
+				"author": "npc",
+				"name": "Sra Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "¿Cómo te encuentras?",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "Ha tenido que ser duro ver a ovejas expulsadas por primera vez.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "No me lo esperaba.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Pero era tu nieta, abu.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿No estás enfadada?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Claro que estoy enfadada, pero sobre todo triste.",
+				"author": "npc",
+				"name": "Sra Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Esperaba algo mejor de este pueblo.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "Mamá, creo que no es el momento para esta discusión.",
+				"author": "npc",
+				"name": "Rober",
+				"portrait": "res://Assets/Finales/brownMascPortrait.png"
+			},
+			{
+				"text": "Si no hacemos algo nos van a echar a nosotros los siguientes.",
+				"author": "npc",
+				"name": "Rober"
+			},
+			{
+				"text": "Deja que nuestra madre se desahogue un poco.",
+				"author": "npc",
+				"name": "Nora",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "A este paso la pobre se va a morir de un disgusto antes siquiera de que pase la votación.",
+				"author": "npc",
+				"name": "Nora"
+			},
+			{
+				"text": "¿Qué ha pasado?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Un desgraciado ha robado en la librería y ahora nos están echando la culpa a todos.",
+				"author": "npc",
+				"name": "Rober",
+				"portrait": "res://Assets/Finales/brownMascPortrait.png"
+			},
+			{
+				"text": "Julieta, que trabaja allí, dice que ha sido una oveja marrón.",
+				"author": "npc",
+				"name": "Nora",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Así que alguien ha tenido la brillante idea de convocar una votación para echarnos a todas.",
+				"author": "npc",
+				"name": "Nora"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*¿Alguien ha convocado la votación? ¿Quién decide eso? Toda la situación es muy rara.*",
+					"neg_act_pos_mor": "*¿Y por eso quieren deshacerse de todas las ovejas marrones? Vaya tontería.*",
+					"neg_act_neg_mor": "*Si las ovejas marrones están robando, no deberían de poder quedarse.*",
+					"pos_act_neg_mor": "*A ver, si solo ha sido una oveja es un poco exagerado. Pero también se lo han buscado.*"
+				}
+			},
+			{
+				"text": "Lo que más me duele es que solo os importe ahora.",
+				"author": "npc",
+				"name": "Sra Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Cuando iban a echar a Ellie ni siquiera fuisteis a votar.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "Mamá, no volvamos a ese tema.",
+				"author": "npc",
+				"name": "Nora"
+			},
+			{
+				"text": "Lo importante ahora es asegurarnos de que no nos echen a nosotros también.",
+				"author": "npc",
+				"name": "Nora"
+			},
+			{
+				"text": "¿Ves por qué estoy tan cansada, Clover?",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "Hasta mis propios hijos solo se preocupan por sí mismos.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "Mi pobre Ellie…",
+				"author": "npc",
+				"name": "Sra Lola"
+			}
+		],
+		"options": [
+			{
+				"response": "Lo siento mucho, abu. Yo también tenía que haber ido a votar.",
+				"gain": 1.0,
+				"next": "Npc1.2.1"
+			},
+			{
+				"response": "Tienen razón, deberíais pensar en la votación de hoy.",
+				"gain": 0.0,
+				"next": "Npc1.2.2"
+			},
+			{
+				"response": "Si la mayoría del pueblo quería echarlos, no había nada que pudieseis hacer.",
+				"gain": -1.0,
+				"next": "Npc1.2.3"
+			}
+		]
+	},
+	"Npc1.2.1": {
+		"dialogs": [
+			{
+				"text": "Gracias por la disculpa, mi niño.",
+				"author": "npc",
+				"name": "Sra Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Pero si de verdad te arrepientes, asegúrate de no volver a cometer el mismo error.",
+				"author": "npc",
+				"name": "Sra Lola"
+			}
+		]
+	},
+	"Npc1.2.2": {
+		"dialogs": [
+			{
+				"text": "¿Ves, mamá?",
+				"author": "npc",
+				"name": "Rober",
+				"portrait": "res://Assets/Finales/brownMascPortrait.png"
+			},
+			{
+				"text": "Hasta Clover está de acuerdo.",
+				"author": "npc",
+				"name": "Rober"
+			},
+			{
+				"text": "¿Y qué os hace pensar que a las ovejas del pueblo le vamos a importar nosotros?",
+				"author": "npc",
+				"name": "Sra Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Si votaron para echar a tres pobres ovejas que no habían hecho nada…",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "O ni se molestaron en levantarse del sofá e ir votar.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "¿De verdad crees que nos van a ayudar a nosotros?",
+				"author": "npc",
+				"name": "Sra Lola"
+			}
+		]
+	},
+	"Npc1.2.3": {
+		"dialogs": [
+			{
+				"text": "¡La mayoría del pueblo ni siquiera votó a favor!",
+				"author": "npc",
+				"name": "Sra Lola",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			},
+			{
+				"text": "Muchas ovejas ni se molestaron en levantarse del sofá para ir a votar.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "Que no les incumbía, me dijo Carmen.",
+				"author": "npc",
+				"name": "Sra Lola"
+			},
+			{
+				"text": "No te alteres más, mamá.",
+				"author": "npc",
+				"name": "Nora"
+			},
+			{
+				"text": "Que no me altere, dice",
+				"author": "npc",
+				"name": "Sra Lola"
+			}
+		]
+	},
+	"Npc1.2.Repetir": {
+		"dialogs": [
+			{
+				"text": "Creo que es mejor que vuelvas más tarde, Clover",
+				"author": "npc",
+				"name": "Nora",
+				"portrait": "res://Assets/Finales/brownFemPortrait.png"
+			}
+		]
+	},
+	"Npc2.2": {
+		"dialogs": [
+			{
+				"text": "Hola, Clover.",
+				"author": "npc",
+				"name": "Christopher",
+				"portrait": "res://Assets/Finales/mixedPortrait.png"
+			},
+			{
+				"text": "¿Has oído lo que ha pasado?",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Al parecer una oveja marrón ha robado de la librería.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Menos mal que ya se ha convocado una votación para echar a las ovejas marrones.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "¿Vas a votar a favor?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¡Claro que sí!",
+				"author": "npc",
+				"name": "Christopher",
+				"portrait": "res://Assets/Finales/mixedPortrait.png"
+			},
+			{
+				"text": "Si una oveja comete un crimen tiene que atenerse a las consecuencias.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "¿No significa eso que también van a echar a la familia de la abuela Lola?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Y a tu madre?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Y… ¿a ti?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿A mí?",
+				"author": "npc",
+				"name": "Christopher",
+				"portrait": "res://Assets/Finales/mixedPortrait.png"
+			},
+			{
+				"text": "Pero si yo no soy una oveja marrón.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Igualmente, solo van a echar a las ovejas criminales.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Mi madre no se ha saltado ninguna regla del pueblo.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Y la familia de la señora Lola no se libra,",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "¿No viste lo que dejaron que hiciera Elliot?",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Normal que las quieran echar a ellas también. ",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*No sabía que Christopher era tan tonto. ¿De verdad no se da cuenta de que esto le va a afectar a él también?*",
+					"neg_act_pos_mor": "*No creo que valga la pena discutir con él. Pero espero por su bien que esta votación no tenga mayoría a favor.*",
+					"neg_act_neg_mor": "*Por lo menos uno de ellos es racional. Ojalá más ovejas marrones fuesen como él.*",
+					"pos_act_neg_mor": "*¿De verdad se cree que no es una oveja marrón?*"
+				}
+			}
+		],
+		"options": [
+			{
+				"response": "Si eso es lo que piensas…",
+				"gain": 0.0,
+				"next": "Npc2.2.1"
+			},
+			{
+				"response": "Se llamaba Ellie. Y la votación también te va a afectar a ti y a tu madre.",
+				"gain": 1.0,
+				"next": "Npc2.2.2"
+			},
+			{
+				"response": "El pueblo estará más seguro cuando echen a las ovejas que cometen crímenes.",
+				"gain": -1.0,
+				"next": "Npc2.2.1"
+			}
+		]
+	},
+	"Npc2.2.1": {
+		"dialogs": [
+			{
+				"text": "¡Claro que sí!",
+				"author": "npc",
+				"name": "Christopher",
+				"portrait": "res://Assets/Finales/mixedPortrait.png"
+			},
+			{
+				"text": "Ya verás, Clover.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Una vez que pase esta votación, las ovejas buenas del pueblo estarán mucho más tranquilas.",
+				"author": "npc",
+				"name": "Christopher"
+			}
+		]
+	},
+	"Npc2.2.2": {
+		"dialogs": [
+			{
+				"text": "¿No me digas que tú también compras esas tonterías?",
+				"author": "npc",
+				"name": "Christopher",
+				"portrait": "res://Assets/Finales/mixedPortrait.png"
+			},
+			{
+				"text": "Elliot y sus amigos estaban mal de la cabeza.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Y el pueblo no tiene ningún motivo para echar a ovejas que no han hecho nada, como mi madre y yo.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Ten cuidado con lo que dices, porque a lo mejor te echan a ti también si simpatizas con esos criminales.",
+				"author": "npc",
+				"name": "Christopher"
+			},
+			{
+				"text": "Christopher, estás delirando.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc2.2.Repetir": {
+		"dialogs": [
+			{
+				"text": "Sin ellos, todos estaremos más tranquilos.",
+				"author": "npc",
+				"name": "Christopher",
+				"portrait": "res://Assets/Finales/mixedPortrait.png"
+			}
+		]
+	},
+	"Npc3.2": {
+		"dialogs": [
+			{
+				"text": "Buenos días, señorita Julieta.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Qué raro es que estés fuera de la librería.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Ay, Clover.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Ha sido un desastre.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "¡Me han robado!",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "¿Te lo puedes creer?",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "Oh, lo siento mucho.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Lo tenían que sentir esas puñeteras ovejas marrones.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Siempre igual.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "¿Quién ha sido?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No lo sé seguro, si no ya te aseguro que habría echado a esa oveja yo misma.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Pero no me extrañaría que hubiesen sido varias, son todas iguales.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "Y encima luego se cubren entre ellas.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "Pero si no sabes quién ha sido, ¿cómo sabes que ha sido una oveja marrón?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Porque le vi la lana mientras se escabullía.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Me alegro de que por fin haya una decisión popular para echarlas a todas.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "Sé que muchos estaban deseando hacerlo ya.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "Esta es la gota que ha colmado el vaso.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "Siempre robando, o trayendo esas comidas raras a nuestro pueblo, quitándole el trabajo a las ovejas que estaban antes…",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "¿No fue el hijo de la señora Carmen la última oveja que robó algo?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Lucas se llamaba?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Mi madre me dijo que le hicieron devolver lo que había cogido.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No te dejes engañar, Clover.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "La mayoría de crímenes en este pueblo son culpa de esas malditas que parece que se han rebozado por la tierra.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*O sea, que si Lucas roba algo, tiene que devolverlo. Pero si una supuesta oveja marrón no identificada lo hace, hay que echarlas a todas del pueblo.*",
+					"neg_act_pos_mor": "*Ni siquiera sabe quién le ha robado. ¿No debería de centrarse en descubrir eso antes que nada?*",
+					"neg_act_neg_mor": "*No creo que encuentre al ladrón si el resto de ovejas le están cubriendo. Supongo que todas son cómplices entonces.*",
+					"pos_act_neg_mor": "*De verdad que cada día entiendo menos lo que pasa en este pueblo.*"
+				}
+			}
+		],
+		"options": [
+			{
+				"response": "No te preocupes, seguro que se solucionará todo con la votación de hoy.",
+				"gain": -1.0,
+				"next": "Npc3.2.1"
+			},
+			{
+				"response": "Haya sido quien haya sido, el castigo me parece desproporcionado.",
+				"gain": 1.0,
+				"next": "Npc3.2.2"
+			}
+		]
+	},
+	"Npc3.2.1": {
+		"dialogs": [
+			{
+				"text": "Eso espero, Clover.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Eso espero.",
+				"author": "npc",
+				"name": "Srta Julieta"
+			}
+		]
+	},
+	"Npc3.2.2": {
+		"dialogs": [
+			{
+				"text": "¿Desproporcionado?",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¿Y cuál es tu solución?",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "¿Dejar que sigan robando sin repercusiones?",
+				"author": "npc",
+				"name": "Srta Julieta"
+			},
+			{
+				"text": "¿Quizás no castigar a un grupo entero por las acciones de una oveja?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Esperar a saber siquiera quién ha robado?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Quiero decir, he visto a ovejas blancas robar antes.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "E incluso tener peleas en la calle.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No sabes de lo que estás hablando, Clover.",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc3.2.Repetir": {
+		"dialogs": [
+			{
+				"text": "Como encuentre a quien me ha robado...",
+				"author": "npc",
+				"name": "Srta Julieta",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc4.2": {
+		"dialogs": [
+			{
+				"text": "¡Oliver! ",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¡Clover!",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Creía que hoy ibas a salir con Félix.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Ese era el plan, pero ha cancelado los planes conmigo por culpa de la votación.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Ni me había dado cuenta que había sonado un aviso de votación popular hasta que me lo ha dicho.",
+				"author": "npc",
+				"name": "Oliver"
+			}
+		],
+		"options": [
+			{
+				"response": "Qué putada que te haya dejado tirado.",
+				"gain": 0.0,
+				"next": "Npc4.2.1"
+			},
+			{
+				"response": "Tío, tienes que enterarte un poco más de estas cosas.",
+				"gain": 1.0,
+				"next": "Npc4.2.2"
+			}
+		]
+	},
+	"Npc4.2.1": {
+		"dialogs": [
+			{
+				"text": "¿Qué se le va a hacer?",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Me ha dicho que un amigo suyo estaba involucrado en el tema de la votación, así que es entendible.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Sí que te gusta este chico.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Cuando yo cancelo planes contigo te enfadas muchísimo.",
+				"author": "clover",
+				"name": "Clover",
+				"next": "Npc4.2.Final"
+			}
+		]
+	},
+	"Npc4.2.2": {
+		"dialogs": [
+			{
+				"text": "Eso mismo ha dicho Félix.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Pero bueno, ahora no sé qué hacer hoy.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Oh, ya veo.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Estás tan pillado que pasar tiempo con tu mejor amigo ya no es suficiente.",
+				"author": "clover",
+				"name": "Clover",
+				"next": "Npc4.2.Final"
+			}
+		]
+	},
+	"Npc4.2.Final": {
+		"dialogs": [
+			{
+				"text": "Calla un rato, Clover.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "¿O quieres que hablemos de cuánto tiempo estuviste colgado por Penélope?",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Eso es un golpe bajo.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Piensa que por lo menos no fue por ti.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Nunca tuviste ninguna oportunidad.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Vamos a cambiar de tema.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Vale, vale.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "¿Tú vas a ir a votar hoy?",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "No estoy seguro.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Creo que voy a seguir preguntando alrededor antes de tomar una decisión.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Nos vemos, Oliver.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Pasa buen día.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Y acuérdate de pasar por mi casa este fin de semana.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Mis padres me han comprado el nuevo juego de miedo del que te hablé.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Es más divertido jugarlo con compañía.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Solo quieres verme asustado para reírte de mí.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Por supuesto.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "¿Qué sería mi vida sin verte saltar hasta el techo cada vez que suena un ruido?",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Ya te lo digo yo, un aburrimiento.",
+				"author": "npc",
+				"name": "Oliver"
+			}
+		]
+	},
+	"Npc4.2.Repetir": {
+		"dialogs": [
+			{
+				"text": "Acuérdate de pasar por mi casa este fin de semana.",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Que tengo ganas de verte asustado.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Allí estaré.",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Npc0.3": {
+		"dialogs": [
+			{
+				"text": "Uh. ¿Otra votación?",
+				"author": "clover",
+				"name": "Tobi",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Adelaida, cariño, ¿sabes tú algo sobre esto?",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "No ha pasado ni un mes desde la última.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Nada que yo sepa.",
+				"author": "clover",
+				"name": "Adelaida",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Aunque las ovejas del pueblo han estado más… tensas desde la última decisión popular.",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "Qué raro.",
+				"author": "clover",
+				"name": "Tobi",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Papá, ¿No estás un poco preocupado?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No pasa nada, Clover.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Ni tú, ni yo, ni tu madre hemos hecho nada para que nos afecte.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Como si alguna de las ovejas a las que han echado hubiesen hecho algo.*",
+					"neg_act_pos_mor": "*Eso mismo decía Christopher y mira lo que le ha pasado.*",
+					"neg_act_neg_mor": "*Obviamente no hemos hecho nada. Pero aún quedan ovejas que nos podrían querer echar a nosotros.*",
+					"pos_act_neg_mor": "*Por cada votación que sucede, hay una posibilidad más de que nos afecte. De verdad, qué pereza da todo. Podrían dejar de convocarlas de una vez.*"
+				}
+			},
+			{
+				"text": "Bueno, yo voy a salir, que he quedado con Oliver.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Pásalo bien, cariño.",
+				"author": "clover",
+				"name": "Adelaida"
+			}
+		]
+	},
+	"Npc1.3": {
+		"dialogs": [
+			{
+				"text": "… Hola, Clover.",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¡Hola! Eh… ¿No habíamos quedado hoy?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Lo siento mucho, cariño.",
+				"author": "npc",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Ha habido un pequeño problema por culpa de la votación.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "En cuanto Oliver entre en razón y todo esto se solucione, puede irse contigo.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "El único problema es que no entiendo qué problema tenéis con Félix.",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oliver, hijo, el tema de discusión no es tu cuestionable gusto.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "Incluso si Félix fuese de mi agrado, no podrías seguir saliendo con él.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "¿O es que quieres que te expulsen del pueblo?",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "Yo tampoco lo entiendo.",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Lo que se decide es si se echan a las ovejas que tengan conductas indecentes en público.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "¿Y yo que tengo siquiera que ver en todo esto?",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Penny, tus padres están preocupados sobre que te veas salpicada por esto.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "Y una de las acciones que se considerarían indecentes es estar en una relación con una oveja del mismo sexo.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "Pero no pasa nada, porque hemos encontrado la solución ideal.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "Oliver y tú podéis salir entre vosotros, así nadie podría acusaros de nada.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "¡A Penny ni siquiera le gustan los hombres!",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Y yo no quiero salir con ella.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Es mi amiga.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Además, nadie tiene que saber lo que yo hago o dejo de hacer en privado.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Eso da igual.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "Es la forma más segura de manteneros fuera del punto de mira.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			}
+		],
+		"options": [
+			{
+				"response": "Ni siquiera sabemos si las ovejas van a votar a favor.",
+				"gain": 0.0,
+				"next": "Npc1.3.2"
+			},
+			{
+				"response": "No es para tanto, Oliver.",
+				"gain": -1.0,
+				"next": "Npc1.3.1"
+			},
+			{
+				"response": "¿Cómo es indecente que Oliver salga con su novio?",
+				"gain": 1.0,
+				"next": "Npc1.3.3"
+			}
+		]
+	},
+	"Npc1.3.1": {
+		"dialogs": [
+			{
+				"text": "¿Cómo que no es para tanto?",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No quiero cortar con Félix y no quiero salir con Penélope.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "No sé cómo esto involucra a nadie más el pueblo.",
+				"author": "npc",
+				"name": "Oliver",
+				"next": "Npc1.3.Final"
+			}
+		]
+	},
+	"Npc1.3.2": {
+		"dialogs": [
+			{
+				"text": "Da igual que lo sea o no",
+				"author": "npc",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Si la regla es votada, va a haber que adherirse a ella.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "Honestamente, mamá.",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Creo que el que yo salga con Félix no está en la misma escala que ir por la calle sin nada de lana…",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "o el resto de cosas que ponen en la misma categoría.",
+				"author": "npc",
+				"name": "Oliver",
+				"next": "Npc1.3.Final"
+			}
+		]
+	},
+	"Npc1.3.3": {
+		"dialogs": [
+			{
+				"text": "¡Eso mismo!",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¿Y por qué tengo que fingir que estoy saliendo con Oliver?",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Prefiero estar sola, no me pueden echar por eso.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "No seáis ilusos.",
+				"author": "npc",
+				"name": "Sr Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "La regla va a ser pasada, porque a la mayoría de ovejas no les importa lo suficiente como para votar.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "Pero si esta votación ha sido convocada, hay ovejas que quieren pasarla.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "Y cuantas menos preguntas tengáis que responder, mejor.",
+				"author": "npc",
+				"name": "Sr Rowan",
+				"next": "Npc1.3.Final"
+			}
+		]
+	},
+	"Npc1.3.Final": {
+		"dialogs": [
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*¿No deberían los padres de Oliver preocuparse porque la regla no se haga oficial? ¿En vez de inventarse este plan de mierda?*",
+					"neg_act_pos_mor": "*Las votaciones que se convocan cada vez son más estúpidas. ¿Qué les importará con quién salgan Oliver o Penélope?*",
+					"neg_act_neg_mor": "*No sé por qué Oliver está tan enfadado. A él también le gustan las chicas y además es Penélope. Qué desagradecido.*",
+					"pos_act_neg_mor": "*La opción del señor y la señora Rowan es la más segura. Espero que Oliver y Penélope les hagan caso.*"
+				}
+			},
+			{
+				"text": "Bueno Clover, parece que esto va para largo.",
+				"author": "npc",
+				"name": "Sr Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Creo que será mejor que quedéis otro día.",
+				"author": "npc",
+				"name": "Sr Rowan"
+			},
+			{
+				"text": "Creo que sí.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Eh… suerte, Oliver...",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "... y Penélope.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "...",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Gracias, Clover.",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc1.3.Repetir": {
+		"dialogs": [
+			{
+				"text": "...",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "...",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc2.3": {
+		"dialogs": [
+			{
+				"text": "Buenos días, señor Michael y señor Jeremy.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Clover, ¿cuántas veces te hemos dicho que solo nuestros nombres están bien?",
+				"author": "npc",
+				"name": "Michael",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oh, lo siento.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Jajaja, no te preocupes, chaval.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Es solo que me hace sentir muy viejo.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Michael, amor, hay problemas más urgentes ahora mismo.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "¿Por eso estáis fuera de vuestra floristería?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿Está cerrada o algo?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No sé si has visto lo que se está decidiendo en la votación de hoy.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Pero... digamos que puede que sea nuestro último día en este pueblo.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "¿Cuál es el tema de la votación?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Básicamente, están cubriendo que quieren prohibir relaciones como la nuestra bajo una montaña de cosas a las que llaman “indecencia pública”.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "¡Pero no todo está perdido aún!",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Piénsalo, Jeremy.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Es verdad que hemos tenido algunos problemas en el pasado con ovejas como la pandilla de Vincent.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Pero fuera de eso las ovejas siempre han sido agradable con nosotros.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Igual que siempre fueron agradables con la señora Lola.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Y mira dónde está ahora.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Ni siquiera sabemos qué significa que “echen” a alguien.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "No ha habido ni una palabra sobre a dónde han ido las ovejas expulsadas.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Al final, todo el mundo mira por sí mismo.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Creo que es hora de asumirlo y despedirnos de lo que nos queda aquí.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Jeremy tiene toda la razón. Las últimas votaciones no se ganaron con mayoría absoluta. Muchas ovejas ni se preocuparon de ir a votar o incluso enterarse de qué estaba pasando.*",
+					"neg_act_pos_mor": "*Me da pena, pero Jeremy tiene razón. No hay mucho que puedan hacer para cambiar el resultado de la votación.*",
+					"neg_act_neg_mor": "*Qué triste es esperar que otras ovejas te salven. Si hay una votación para echarlas, por algo será.*",
+					"pos_act_neg_mor": "*Pues claro que las ovejas no se van a meter donde no las llaman. Es más fácil actuar solo cuando te afecta directamente el problema.*"
+				}
+			}
+		],
+		"options": [
+			{
+				"response": "Yo voy a votar para que os podáis quedar.",
+				"gain": 1.0,
+				"next": "Npc2.3.1"
+			},
+			{
+				"response": "Que os vaya bien.",
+				"gain": 0.0,
+				"next": "Npc2.3.2"
+			},
+			{
+				"response": "Siempre podríais dejar de estar juntos.",
+				"gain": -1.0,
+				"next": "Npc2.3.3"
+			}
+		]
+	},
+	"Npc2.3.1": {
+		"dialogs": [
+			{
+				"text": "Todo lo que está pasando con estas votaciones es una locura.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Nadie me ha dicho aún cómo se convocan las votaciones.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "La mayoría de ovejas del pueblo las ignoran o solo quieren echar a otras ovejas porque no les gustan a secas.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Y encima luego dicen que el pueblo está mejor cuando es mentira.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "La plaza está más vacía que nunca, el restaurante se ha cerrado y la mayor parte de las ovejas expulsadas no han hecho nada más que existir.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Lo siento mucho, Clover.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Sé que es una situación horrible para todos.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Pero no veo una salida, y estoy muy cansado.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Jeremy…",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "No.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Yo soy el que lo siente.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Es a vosotros a los que os van a echar.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No debería ser yo el que está lloriqueando.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No digas eso, Clover.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Que estés triste por nosotros es importante.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Significa que te preocupas por los demás.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Ojalá más ovejas fuesen como tú.",
+				"author": "npc",
+				"name": "Jeremy"
+			}
+		]
+	},
+	"Npc2.3.2": {
+		"dialogs": [
+			{
+				"text": "…",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Eso espero.",
+				"author": "npc",
+				"name": "Michael"
+			}
+		]
+	},
+	"Npc2.3.3": {
+		"dialogs": [
+			{
+				"text": "¿Qué clase de solución es esa?",
+				"author": "npc",
+				"name": "Michael",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Nunca.",
+				"author": "npc",
+				"name": "Michael"
+			},
+			{
+				"text": "Clover, si tu conclusión después de escuchar que están amenazando nuestra capacidad de vivir en el pueblo...",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "... es que debería separarme de mi pareja, con la cual he estado más tiempo del que tú llevas existiendo, vivo y tengo un negocio...",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "... todo porque un grupo de ovejas quieren dictar lo que es apropiado o no con ningún tipo de argumento...",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "... Tienes un serio problema.",
+				"author": "npc",
+				"name": "Jeremy"
+			},
+			{
+				"text": "Y espero, por tu bien, que recapacites sobre ello antes de que sea demasiado tarde.",
+				"author": "npc",
+				"name": "Jeremy"
+			}
+		]
+	},
+	"Npc2.3.Repetir": {
+		"dialogs": [
+			{
+				"text": "Tenemos que irnos.",
+				"author": "npc",
+				"name": "Jeremy",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Pero todavía no está todo perdido.",
+				"author": "npc",
+				"name": "Michael"
+			}
+		]
+	},
+	"Npc3.3": {
+		"dialogs": [
+			{
+				"text": "¡Clover!",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Has visto?",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Por fin nos vamos a poder librar de los raritos que quedaban.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Y menos mal.",
+				"author": "npc",
+				"name": "Emily",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "No se les debería de haber dejado ser así de asquerosos en público.",
+				"author": "npc",
+				"name": "Emily"
+			},
+			{
+				"text": "¿Qué ejemplo están dando a los niños?",
+				"author": "npc",
+				"name": "Emily"
+			},
+			{
+				"text": "Les quieren lavar el cerebro.",
+				"author": "npc",
+				"name": "Albert",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Me contó el otro día Lucas, que los dos de la floristería le estuvieron comiendo el coco a su hermano pequeño.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Son unos retorcidos.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Parece que Vincent ha encontrado más imbéciles para que le sigan. No saben ni lo que dicen.*",
+					"neg_act_pos_mor": "*¿Qué le importará a los niños que dos ovejas estén juntas? No creo ni que se fijen en ello.*",
+					"neg_act_neg_mor": "*No solo a los niños. La verdad es que a mi tampoco me apetece ver… eso.*",
+					"pos_act_neg_mor": "*Tienen razón. Hay cosas que es mejor mantenerlas en privado. A lo mejor, si hubieran hecho eso desde el principio, no habríamos llegado a esto.*"
+				}
+			},
+			{
+				"text": "A alguna que otra oveja, una paliza no le vendría nada mal.",
+				"author": "npc",
+				"name": "Albert",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Ya verás como así aprenden a no hacerlo en público.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Jajaja.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Jajaja, colega, cómo te pasas.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Jijiji.",
+				"author": "npc",
+				"name": "Emily",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "Jajaja ",
+				"gain": -1.0,
+				"next": "Npc3.3.1"
+			},
+			{
+				"response": "…",
+				"gain": 0.0,
+				"next": "Npc3.3.2"
+			},
+			{
+				"response": "Eso no tiene ninguna gracia, Albert.",
+				"gain": 1.0,
+				"next": "Npc3.3.3"
+			}
+		]
+	},
+	"Npc3.3.1": {
+		"dialogs": [
+			{
+				"text": "Jajaja, Clover, deberías venirte con nosotros mañana.",
+				"author": "npc",
+				"name": "Albert",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Será divertido.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Y si Oliver decide entrar en razón, puede venir también.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Pero a la mínima que Oliver me mire con ojitos le echamos también.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Jajaja.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Creo que Oliver no es así.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Nunca sabes cómo van a ser.",
+				"author": "npc",
+				"name": "Emily",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Esos asque- tipos de ovejas, lo esconden muy bien,",
+				"author": "npc",
+				"name": "Emily"
+			},
+			{
+				"text": "y cuando menos te lo esperas… ¡Pum!",
+				"author": "npc",
+				"name": "Emily"
+			},
+			{
+				"text": "Intentan algo contigo.",
+				"author": "npc",
+				"name": "Emily"
+			}
+		]
+	},
+	"Npc3.3.2": {
+		"dialogs": [
+			{
+				"text": "Creo que ahora no es momento de hacer este tipo de bromas.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No te preocupes, Clover,",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "si dentro de poco no habrá nadie a quien le ofenda.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Por fin vamos a poder hablar con libertad.",
+				"author": "npc",
+				"name": "Albert"
+			}
+		]
+	},
+	"Npc3.3.3": {
+		"dialogs": [
+			{
+				"text": "No sé ni cómo puedes decir eso.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Especialmente, con la situación actual.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Buff, relájate, Clover.",
+				"author": "npc",
+				"name": "Albert",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Es solo una broma.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "No todo hay que tomárselo tan en serio.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Ya sabes que el humor de Albert es así.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Y admite que un poco de gracia sí que tiene.",
+				"author": "npc",
+				"name": "Emily",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Jijiji.",
+				"author": "npc",
+				"name": "Emily"
+			}
+		]
+	},
+	"Npc3.3.Repetir": {
+		"dialogs": [
+			{
+				"text": "*Siguen riendose descontroladamente, mejor dejarles solos.*",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc4.3": {
+		"dialogs": [
+			{
+				"text": "Buenos días, señora Rosa.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Qué raro es verla en la plaza.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Buenos días, Clover.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Es verdad que no suelo venir al centro del pueblo.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Normalmente hay demasiadas ovejas para mí.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "O solía haberla.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Sí, no se puede decir que el pueblo esté en su mejor momento.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Por lo menos, tú te das cuenta de ello.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Mi esposo jura que todo ha cambiado para bien.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "¿Cómo puede decir eso?",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Después de que expulsaran a nuestra hij- nuestro hijo.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			}
+		],
+		"options": [
+			{
+				"response": "No hay nada que hubieses podido hacer.",
+				"gain": 0.0,
+				"next": "Npc4.3.1"
+			},
+			{
+				"response": "Lo siento mucho por Sam.",
+				"gain": 1.0,
+				"next": "Npc4.3.2"
+			},
+			{
+				"response": "No tienes que fingir que no era una chica.",
+				"gain": -1.0,
+				"next": "Npc4.3.3"
+			}
+		]
+	},
+	"Npc4.3.1": {
+		"dialogs": [
+			{
+				"text": "¡Claro que podría haber hecho algo!",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "¡Ni siquiera fui a votar ese día!",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"next": "Npc4.3.Final"
+			}
+		]
+	},
+	"Npc4.3.2": {
+		"dialogs": [
+			{
+				"text": "No sabía qué hacer ese día.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Y al final decidí irme a mi casa e ignorar el tema.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Lo siento mucho.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Clover, no te disculpes.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Yo hice lo mismo.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"next": "Npc4.3.Final"
+			}
+		]
+	},
+	"Npc4.3.3": {
+		"dialogs": [
+			{
+				"text": "¿Fingir?",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Fingir es lo que estaba haciendo pensando que Sam iba a ser lo que yo quería que fuese.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Creí que una vez que la regla fuese establecida, mi hijo no tendría otra alternativa que hacernos caso a su padre y a mí.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Que podría recuperar a la niña pequeña a la que yo recordaba.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "¿No me hace eso una madre horrible?",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Y ahora ya no está.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Nunca pensé que preferiría dejar todo atrás antes que seguir esas malditas pautas.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"next": "Npc4.3.Final"
+			}
+		]
+	},
+	"Npc4.3.Final": {
+		"dialogs": [
+			{
+				"text": "Espera, ¿no has vuelto a hablar con Sam desde su expulsión?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No hay forma de contactar con él.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Al principio creí que me estaba evitando, pero la señora Lola me dijo que tampoco pudo volver a hablar con Ellie.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Y Nora me prometió contactar conmigo una vez que se establecieran en otro lugar.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Ha pasado casi un mes, y aún nada.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Todo esto mientras las ovejas del pueblo no paran de convocar votación tras votación.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "El ambiente está mucho más agresivo y tengo miedo, Clover.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "A estas alturas, me espero lo peor.",
+				"author": "npc",
+				"name": "Sra Rosa"
+			},
+			{
+				"text": "Oh.",
+				"author": "clover",
+				"name": "Clover"
+			}
+		]
+	},
+	"Npc4.3.Repetir": {
+		"dialogs": [
+			{
+				"text": "A estas alturas, me espero lo peor.",
+				"author": "npc",
+				"name": "Sra Rosa",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc0.4": {
+		"dialogs": [
+			{
+				"text": "¿Otra más? ¿Y encima ahora?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "La verdad es que el momento es horrible.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Avisaron hace un par de días de que había una alerta de seguridad.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Pensé que teníamos que minimizar el tiempo que pasábamos en la calle.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Sobre todo las mujeres y los niños.",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Yo no pienso salir.",
+				"author": "clover",
+				"name": "Adelaida",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "A mí me gustaría saber por lo menos de qué va esta votación.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": " ¿Seguro, hijo? ",
+				"author": "clover",
+				"name": "Adelaida",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "...",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "Al menos ten cuidado, y no te metas en problemas.",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "Claro, mamá.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc1.4": {
+		"dialogs": [
+			{
+				"text": "¡Penny! ¿A dónde vas?",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿A dónde voy a ir?",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "A intentar parar esta estupidez, ya que ninguno de vosotros parecéis por la labor.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "¿Cómo que una decisión popular para saber si podemos seguir votando?",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Ya lo que me faltaba.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "No es suficiente con todas las chorradas que se han vuelto reglas porque las ovejas de este pueblo no hacen nada.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Ahora encima nos van a quitar la poca decisión que nos queda.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Y casualmente dos días después de una alerta de seguridad.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Se están aprovechando de nosotros e intentando asustarnos.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Penélope, el pueblo es muy peligroso ahora mismo.",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Todo el mundo está muy tenso y no se sabe cuándo alguien va a explotar.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": " ¿Y de quién es la culpa de eso?",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png",
+				"next": "Cinematic_Walk"
+			}
+		]
+	},
+	"Npc2.4": {
+		"dialogs": [
+			{
+				"text": "¿Qué haces aquí, niña?",
+				"author": "npc",
+				"name": "Albert",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿No te han dicho que te quedes en casa?",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Tenemos la misma edad, así que no me llames niña.",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Y tengo el mismo derecho a votar que tú.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "Así que déjame pasar si ya has terminado.",
+				"author": "npc",
+				"name": "Penélope"
+			},
+			{
+				"text": "¿A quién te crees que le estás hablando así?",
+				"author": "npc",
+				"name": "Albert",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Vete de una vez antes de que me enfade de verdad.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "¿Dónde está tu novio?",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "Debería tenerte mejor controlada.",
+				"author": "npc",
+				"name": "Albert"
+			},
+			{
+				"text": "¡Déjame pasar!",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png",
+				"next": "Cinematic_Punch"
+			}
+		]
+	},
+	"Npc2.4.1": {
+		"dialogs": [
+			{
+				"text": "¡PENÉLOPE!",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"next": "Cinematic_WakeUp"
+			}
+		]
+	},
+	"Npc3.4": {
+		"dialogs": [
+			{
+				"text": "¡Penny! ¡Penny!",
+				"author": "npc",
+				"name": "Oliver",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Me escuchas?",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "Por favor, dime algo.",
+				"author": "npc",
+				"name": "Oliver"
+			},
+			{
+				"text": "...",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc3.4.Repetir": {
+		"dialogs": [
+			{
+				"text": "...",
+				"author": "npc",
+				"name": "Penélope",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc4.4": {
+		"dialogs": [
+			{
+				"text": "¡Vincent!",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Qué narices le pasa a Albert?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Penélope-",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No sé qué quieres que te digamos, Clover.",
+				"author": "npc",
+				"name": "Lucas",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Se lo ha buscado ella sola.",
+				"author": "npc",
+				"name": "Lucas"
+			},
+			{
+				"text": "Le avisamos múltiples veces de que se quedase en casa y no obedeció.",
+				"author": "npc",
+				"name": "Sr Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "De alguna manera tenía que aprender su lugar.",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*¿Aprender su lugar? Su lugar es poder salir a la maldita plaza del pueblo sin que un loco le agreda.*",
+					"neg_act_pos_mor": "*¿Se están poniendo del lado de Albert? ¿En serio?*",
+					"pos_act_neg_mor": "*Si las ovejas escuchasen de vez en cuando, habría muchos menos problemas.*",
+					"neg_act_neg_mor": "*...*"
+				}
+			}
+		],
+		"options": [
+			{
+				"response": "¿Por qué nadie está ayudando a Penélope?",
+				"gain": 0.0,
+				"next": "Npc4.4.1"
+			},
+			{
+				"response": "Sois unos desgraciados.",
+				"gain": 1.0,
+				"next": "Npc4.4.2"
+			}
+		]
+	},
+	"Npc4.4.1": {
+		"dialogs": [
+			{
+				"text": "No hay mucho que nadie pueda hacer para ayudarla ahora mismo.",
+				"author": "npc",
+				"name": "Sr Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Además, mejor que se quede donde todo el mundo pueda verlo.",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "A ver si así se dan por aludidos.",
+				"author": "npc",
+				"name": "Vincent"
+			}
+		]
+	},
+	"Npc4.4.2": {
+		"dialogs": [
+			{
+				"text": "Clover, no pierdas las maneras.",
+				"author": "npc",
+				"name": "Sr Rowan",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Eso. No querrás ser tú el próximo, ¿cierto?",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc4.4.Repetir": {
+		"dialogs": [
+			{
+				"text": "Ya aprenderá.",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc5.4": {
+		"dialogs": [
+			{
+				"text": "Viktor, ¿has visto eso?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Cómo ha podido pasar? Y en medio de la plaza...",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Ha podido pasar porque hemos dejado pasar todo lo demás.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No puedo decir que no me lo esperaba.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Jeremy nos avisó a Ariadna y a mí de que las cosas se iban a poner aún más feas.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "¿Por eso tu hermana no ha salido?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": [
+			{
+				"response": "¿Ya habéis tirado la toalla vosotros también?",
+				"gain": 1.0,
+				"next": "Npc5.4.1"
+			},
+			{
+				"response": "Probablemente haya sido la mejor decisión que podíais tomar.",
+				"gain": -1.0,
+				"next": "Npc5.4.2"
+			}
+		]
+	},
+	"Npc5.4.1": {
+		"dialogs": [
+			{
+				"text": "No. Claro que no.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Quizás ya no tenga esperanzas en este pueblo.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Pero no voy a dejar que mi hermana y yo acabemos así.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Menos después de que echaran a Jeremy y Michael.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Echo de menos a tu hermano.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Él y Michael siempre decoraban la plaza con flores frescas.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Y echo de menos a la abu Lola.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Y a Charlie, Sam y Ellie.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¡Hasta a Christopher!",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Y...",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "a Penélope.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "...",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Clover.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Ariadna está preparando algo.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "No puedo decirte mucho por ahora, pero si podemos nos pasaremos a hablar contigo cuando esté preparado.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Aguanta hasta entonces y no dejes que esta bazofia de lugar te lave el cerebro.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Ninguna oveja se merecía lo que le ha pasado.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Vale, gracias Viktor.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc5.4.2": {
+		"dialogs": [
+			{
+				"text": "Si tú lo dices, Clover... ",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Si tú lo dices.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Es solo que no entiendo por qué nadie ha intentado ayudar a Penélope.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Lo has intentado tú?",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No. Pero yo no se-",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Ahí tienes tu respuesta.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc5.4.Repetir": {
+		"dialogs": [
+			{
+				"text": "A ver qué hacemos...",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc0.5": {
+		"dialogs": [
+			{
+				"text": "¿Cómo que hay que pagar por un nuevo certificado de residencia?",
+				"author": "clover",
+				"name": "Tobi",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Quién ha decidido esto?",
+				"author": "clover",
+				"name": "Tobi"
+			},
+			{
+				"text": "Tobías, no te alteres.",
+				"author": "clover",
+				"name": "Adelaida",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Seguro que hay una explicación para todo esto.",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "Clover, hijo.",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "¿Por qué no vas a la tienda a comprar el certificado?",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "Llévate dinero, que tenemos para ello.",
+				"author": "clover",
+				"name": "Adelaida"
+			},
+			{
+				"text": "Vale, mamá.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		],
+		"options": []
+	},
+	"Npc1.5": {
+		"dialogs": [
+			{
+				"text": "Buenos días.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Oh, hola a los dos.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Queréis pasar a casa?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Tenía que ir a la tienda, pero si queréis hablar será mejor que no nos quedemos en la calle.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No hace falta, Clover.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Es algo rápido.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Viktor y yo nos vamos a ir del pueblo por nuestra propia voluntad.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Hemos encontrado una salida de la valla que parece totalmente desatendida.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "Queríamos darte la opción de irte con nosotros.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "Espera, ¿qué?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Por qué querríais iros?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿No es eso lo que les han obligado hacer a todo el resto de ovejas?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "La cosa es que no hemos encontrado ninguna otra salida.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Y si la que vamos a usar está abandonada y francamente bien escondida...",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Lo más probable es que las ovejas \"expulsadas\" nunca hayan abandonado el pueblo.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Nos negamos a ser los próximos enviados al matadero.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "Por eso nos vamos.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "Pero mis padres...",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Y Oliver...",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "¿Vendrían con nosotros si les preguntaras?",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Creo que no.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Clover, no podemos seguir sentados sin hacer nada hasta que nos llegue el turno.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Ya no hay ni forma de oponerse a la decisiones de lo que sea que crea estas reglas.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "Es nuestra última oportunidad de tomar una decisión por nosotros mismos.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "¿Vienes?",
+				"author": "npc",
+				"name": "Ariadna"
+			}
+		],
+		"options": [
+			{
+				"response": "Sí",
+				"gain": 0.0,
+				"next": "Npc1.5.1"
+			},
+			{
+				"response": "No",
+				"gain": 0.0,
+				"next": "Npc1.5.2"
+			}
+		]
+	},
+	"Npc1.5.1": {
+		"dialogs": [
+			{
+				"text": "Bien.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Ve a guardar tus pertenencias.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "Te esperamos aquí.",
+				"author": "npc",
+				"name": "Ariadna"
+			}
+		]
+	},
+	"Npc1.5.2": {
+		"dialogs": [
+			{
+				"text": "Bueno, es tu decisión al final del día.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Buena suerte, Clover.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc2.5": {
+		"dialogs": [
+			{
+				"text": "Viktor, Ariadna.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Qué hacéis tan apartados de la plaza?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Nos vamos, Clover.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "No aguantamos más esta basura de lugar.",
+				"author": "npc",
+				"name": "Ariadna"
+			},
+			{
+				"text": "¿Cómo?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Pero no es eso lo que todo el mundo está intentando evitar?",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Irse.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No tenemos tiempo para explicarte las cosas.",
+				"author": "npc",
+				"name": "Viktor",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Ya eres mayorcito.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Y no creo que tardes mucho en darte cuenta tú solo.",
+				"author": "npc",
+				"name": "Viktor"
+			},
+			{
+				"text": "Te deseo la mejor de las suertes, Clover.",
+				"author": "npc",
+				"name": "Ariadna",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Adiós.",
+				"author": "npc",
+				"name": "Ariadna"
+			}
+		]
+	},
+	"Npc3.5": {
+		"dialogs": [
+			{
+				"text": "¡Hola!",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¿Puede salir Oliver?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oh, hola Clover.",
+				"author": "npc",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Mira cariño, acabamos de comprar nuestros certificados y estamos discutiendo un par de cosas.",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "¿Tenéis tus padres y tú ya el tuyo?",
+				"author": "npc",
+				"name": "Sra Rowan"
+			},
+			{
+				"text": "No, aún no.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Vuelve cuando lo tengas, ¿vale?",
+				"author": "npc",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			},
+			{
+				"text": "Pero-",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc3.5.Repetir": {
+		"dialogs": [
+			{
+				"text": "Vuelve cuando lo tengas, ¿vale?",
+				"author": "npc",
+				"name": "Sra Rowan",
+				"portrait": "res://Assets/Finales/whiteFemPortrait.png"
+			}
+		]
+	},
+	"Npc4.5": {
+		"dialogs": [
+			{
+				"text": "¡Maldito Albert!",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Mira que dejarnos aquí tirados.",
+				"author": "npc",
+				"name": "Lucas",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "¡Vaya capullo!",
+				"author": "npc",
+				"name": "Lucas"
+			},
+			{
+				"text": "...",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No nos mires así.",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "El cabrón se ha negado a ayudarnos a conseguir un certificado de esos.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Y no tenemos dinero para comprar uno.",
+				"author": "npc",
+				"name": "Vincent"
+			}
+		],
+		"options": [
+			{
+				"response": "Es lo que os merecéis.",
+				"gain": 0.0,
+				"next": "Npc4.5.1"
+			},
+			{
+				"response": "¿Ahora os dais cuenta de que es un capullo?",
+				"gain": 0.0,
+				"next": "Npc4.5.2"
+			},
+			{
+				"response": "¿Por qué os ayudaría en primer lugar?",
+				"gain": 0.0,
+				"next": "Npc4.5.1"
+			}
+		]
+	},
+	"Npc4.5.1": {
+		"dialogs": [
+			{
+				"text": "Albert siempre ha mirado por sí mismo.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "No sé por qué esperabais algo diferente de él.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "No te pongas tan digno, Clover.",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Sé que tú estás en la misma situación que nosotros.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Sí.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Pero por lo menos no apoyaba a una oveja que no tiene problemas con agredir a alguien.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Aunque tienen algo de razón. Yo también he sido una mierda de oveja. Debería haber hecho algo antes.*",
+					"pos_act_neg_mor": "*Me pregunto si algo hubiese cambiado si yo hubiese hecho algo.*",
+					"neg_act_neg_mor": "*Si estás son las ovejas del pueblo, normal que todo haya acabado así.*",
+					"neg_act_pos_mor": "*No he sido ni de lejos tan malo como ellos. No me merezco esto.*"
+				}
+			}
+		]
+	},
+	"Npc4.5.2": {
+		"dialogs": [
+			{
+				"text": "¿No os disteis cuenta cuando le metió una paliza a Penélope?",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Por el gran crimen de salir a la calle.",
+				"author": "clover",
+				"name": "Clover"
+			},
+			{
+				"text": "Lo dices cómo si tú hubieses hecho algo.",
+				"author": "npc",
+				"name": "Lucas",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Al final vas a acabar igual que nosotros.",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Así que no te pongas tan digno.",
+				"author": "npc",
+				"name": "Vincent"
+			},
+			{
+				"text": "Sois horribles.",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png",
+				"quadrant_thought": {
+					"pos_act_pos_mor": "*Aunque tienen algo de razón. Yo también he sido una mierda de oveja. Debería haber hecho algo antes.*",
+					"pos_act_neg_mor": "*Me pregunto si algo hubiese cambiado si yo hubiese hecho algo.*",
+					"neg_act_neg_mor": "*Si estás son las ovejas del pueblo, normal que todo haya acabado así.*",
+					"neg_act_pos_mor": "*No he sido ni de lejos tan malo como ellos. No me merezco esto.*"
+				}
+			}
+		]
+	},
+	"Npc4.5.Repetir": {
+		"dialogs": [
+			{
+				"text": "No tenemos dinero...",
+				"author": "npc",
+				"name": "Vincent",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			}
+		]
+	},
+	"Npc0.0": {
+		"dialogs": [
+			{
+				"text": "Aiba, que si que las han echado :(",
+				"author": "clover",
+				"name": "Clover",
+				"portrait": "res://Assets/Finales/whiteMascPortrait.png"
+			},
+			{
+				"text": "Oh, cierto.",
+				"author": "clover",
+				"name": "Tobi"
+			}
+		]
+	}
+}

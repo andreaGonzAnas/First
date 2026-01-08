@@ -1,0 +1,205 @@
+{
+	"Fountain":
+	{
+		"dialogs": [
+			{"text": "*Una fuente.*", "author": "clover"},
+			{"text": "*Efectivamente, es una fuente.*", "author": "clover"}
+		],
+
+		"options": [
+		]
+	},
+
+	"Shop_SoldOut":
+	{
+		"dialogs": [
+			{"text": "Lo siento, ¡hoy no tenemos nada a la venta!", "author": "npc", "name": "Tendero"}
+		],
+		"options": []
+	},
+
+	"Shop_Round0":
+	{
+		"dialogs": [
+			{"text": "¡El item de hoy es un Lazo Rojo! Cuesta 15 monedas.", "author": "npc", "name": "Tendero","portrait": "res://Assets/Finales/whiteFemPortrait.png"},
+			{"text": "¿Te gustaría comprarlo?", "author": "npc", "name": "Tendero"}
+		],
+		"options": [
+			{ "response": "¡Sí, me lo quedo!", "gain": 2, "next": "Shop_AttemptPurchase_R0" },
+			{ "response": "No, gracias.", "gain": 2, "next": "Shop_Round0_Exit" }
+		]
+	},
+	"Shop_Round0_Success":
+	{
+		"dialogs": [{"text": "¡Genial! Aquí tienes tu Lazo Rojo.", "author": "npc", "name": "Tendero"}],
+		"options": [ { "response": "¡Gracias!", "gain": 2, "next": "Shop_Round0_Exit_PostPurchase" } ]
+	},
+	"Shop_Round0_Fail":
+	{
+		"dialogs": [{"text": "Oh... no tienes suficientes monedas.", "author": "npc", "name": "Tendero"}],
+		"options": [ { "response": "Vaya, qué pena.", "gain": 2, "next": "Shop_Round0_Exit" } ]
+	},
+	"Shop_Round0_Exit_PostPurchase":
+	{
+		"dialogs": [{"text": "¡Disfruta de tu Lazo Rojo!", "author": "npc", "name": "Tendero"}],
+		"options": []
+	},
+	"Shop_Round0_Exit":
+	{
+		"dialogs": [{"text": "¡Vuelve cuando quieras!", "author": "npc", "name": "Tendero"}],
+		"options": []
+	},
+
+	"Shop_Round1":
+	{
+		"dialogs": [
+			{"text": "¡El item de hoy es un Sombrero! Cuesta 20 monedas.", "author": "npc", "name": "Tendero", "portrait": "res://Assets/Temporales/retratoFeliz.png"},
+			{"text": "¿Te gustaría comprarlo?", "author": "npc", "name": "Tendero"}
+		],
+		"options": [
+			{ "response": "¡Sí, me lo quedo!", "gain": 2, "next": "Shop_AttemptPurchase_R1" },
+			{ "response": "No, gracias.", "gain": 2, "next": "Shop_Round1_Exit" }
+		]
+	},
+	"Shop_Round1_Success":
+	{
+		"dialogs": [{"text": "¡Genial! Aquí tienes tu Sombrero.", "author": "npc", "name": "Tendero"}],
+		"options": [ { "response": "¡Gracias!", "gain": 2, "next": "Shop_Round1_Exit_PostPurchase" } ]
+	},
+	"Shop_Round1_Fail":
+	{
+		"dialogs": [{"text": "Oh... no tienes suficientes monedas.", "author": "npc", "name": "Tendero"}],
+		"options": [ { "response": "Vaya, qué pena.", "gain": 2, "next": "Shop_Round1_Exit" } ]
+	},
+	"Shop_Round1_Exit_PostPurchase":
+	{
+		"dialogs": [{"text": "¡Disfruta de tu Sombrero!", "author": "npc", "name": "Tendero"}],
+		"options": []
+	},
+	"Shop_Round1_Exit":
+	{
+		"dialogs": [{"text": "¡Vuelve cuando quieras!", "author": "npc", "name": "Tendero"}],
+		"options": []
+	},
+
+	"Npc0.0.1":
+	{
+		"dialogs": [
+			{"text": "Soy tu padre", "author": "clover", "name": "Papa", "portrait": "res://Assets/Finales/whiteMascPortrait.png"},
+			{"text": "Soy tu madre", "author": "clover", "name": "Mama","portrait": "res://Assets/Finales/whiteFemPortrait.png"},
+			{"text": "Hola papa y mama", "author": "clover", "name": "Clover","portrait": "res://Assets/Finales/whiteMascPortrait.png", "next": "Npc0.0.2"}
+		]
+	},
+
+	"Npc0.0.2":
+	{
+		"dialogs": [
+			{"text": "Vete a mirar la plaza.", "author": "clover", "name": "Papa", "portrait": "res://Assets/Finales/whiteMascPortrait.png"},
+			{"text": "Que es tu primer dia.", "author": "clover", "name": "Papa"}
+		]
+	},
+
+	"Npc0.1.1":
+	{
+		"dialogs": [
+			{"text": "Ya es tu segundo dia", "author": "clover", "name": "Papa", "portrait": "res://Assets/Finales/whiteMascPortrait.png"},
+			{"text": "Lo se papa", "author": "clover", "name": "Clover", "next": "Npc0.1.2"}
+		]
+	},
+	"Npc0.1.2":
+	{
+		"dialogs": [
+			{"text": "Vete a mirar la plaza otra vez.", "author": "clover", "name": "Papa", "portrait": "res://Assets/Finales/whiteMascPortrait.png"},
+			{"text": "Okaaay", "author": "clover", "name": "Clover"}
+		]
+	},
+
+
+	"Npc1.0.1":
+	{
+		"dialogs": [
+			{"text": "ñ! Hola Clover.", "author": "npc", "name": "Ellie", "portrait": "res://Assets/Finales/elliePortrait.png"},
+			{"text": "Hola Ellie.¿Sabes qué está pasando?", "author": "clover", "name": "Clover", "portrait": "res://Assets/Finales/whiteMascPortrait.png"},
+			{"text": "¡¿No te has enterado aún?! ¡No nos dejan en paz!", "author": "npc", "name": "Sam", "portrait": "res://Assets/Finales/samPortrait.png"},
+			{"text": "¡Se creen que pueden decidir por nosotros y que vamos a hacerles caso!", "author": "npc", "name": "Sam"},
+			{"text": "Sam tranquilízate. Si gritas tanto solo se van a enfadar más con nosotros.", "author": "npc", "name": "Ellie", "portrait": "res://Assets/Finales/elliePortrait.png"},
+			{"text": "Eso no es justo. ¿Nos están intentando echar y encima no me puedo enfadar por ello?", "author": "npc", "name": "Sam", "portrait": "res://Assets/Finales/samPortrait.png"},
+			{"text": "Espera, ¿qué?", "author": "clover"},
+			{"text": "Algunas ovejas del pueblo están tan… en desacuerdo con el aspecto que queremos adoptar,", "author": "npc", "name": "Charlie", "portrait": "res://Assets/Finales/charliePortrait.png"}
+			
+		],
+		"options": [
+			{ "response": "Pero entonces no es que os quieran echar, ¿no?", "gain": 1, "next": "Npc1.0.1.1" },
+			{ "response": "¿Por qué tendríais que seguir las pautas de otras ovejas?", "gain": 1, "next": "Npc1.0.1.2" },
+			{ "response": "La verdad es que es muy raro que os veáis tan diferentes a los demás.", "gain": -1, "next": "Npc1.0.1.3" }
+		]
+	},
+
+	"Npc1.0.1.1":
+	{
+		"dialogs": [
+			{"text": "No, para nada.", "author": "npc", "name": "Sam", "portrait": "res://Assets/Finales/samPortrait.png"},
+			{"text": "Solo quieren que cambiemos totalmente nuestras vidas conforme a  ellos les apetece,", "author": "npc", "name": "Sam"},
+			{"text": "bajo pena de exilio.", "author": "npc", "name": "Sam"},
+			{"text": "Déjalo, no esperaba que Clover lo entendiese.", "author": "npc", "name": "Ellie", "portrait": "res://Assets/Finales/elliePortrait.png"},
+			{"text": "No debería hacer falta entender nada.", "author": "npc", "name": "Charlie", "portrait": "res://Assets/Finales/charliePortrait.png"},
+			{"text": "Solo queremos que nos dejen en paz.", "author": "npc", "name": "Charlie", "next":  "Npc1.0.2"}
+		]
+	},
+
+	"Npc1.0.2":
+	{
+		"dialogs": [
+			{
+			"author": "clover",
+			"quadrant_thought": {
+				"pos_act_pos_mor": "*No me puedo creer que todo este barullo se haya montado por algo tan tonto. Deberían de dejarlos tranquilos.*",
+				"pos_act_neg_mor": "*¿Tanto les cuesta hacer lo mismo que los demás? Así estarían tranquilos*",
+				"neg_act_pos_mor": "*¿Tanto les cuesta hacer lo mismo que los demás? Así estarían tranquilos*",
+				"neg_act_neg_mor": "*¿Tanto les cuesta hacer lo mismo que los demás? Así estarían tranquilos*"
+				}
+			},
+			{"text": "Solo espero que la votación vaya a nuestro favor.", "author": "npc", "name": "Charlie", "portrait": "res://Assets/Finales/charliePortrait.png"},
+			{"text": "No estoy segura de eso, Charlie.", "author": "npc", "name": "Ellie", "portrait": "res://Assets/Finales/elliePortrait.png"},
+			{"text": "No puedo más con este pueblo.", "author": "npc", "name": "Sam", "portrait": "res://Assets/Finales/samPortrait.png"}
+		
+		]
+	},
+
+	"Npc1.0.repetido":
+	{
+		"dialogs": [
+			{"text": "ESTO ES DIALOGO REPE", "author": "npc", "name": "Charlie", "portrait": "res://Assets/Finales/charliePortrait.png"},
+			{"text": "EL QUE YO QUIERO", "author": "npc", "name": "Ellie", "portrait": "res://Assets/Finales/elliePortrait.png"},
+			{"text": "EL QUE ME DA LA GANA", "author": "npc", "name": "Sam", "portrait": "res://Assets/Finales/samPortrait.png"}
+		]
+	},
+
+	
+	"House_Main":
+	{
+		"dialogs": [
+			{"text": "El día ha sido largo...", "author": "clover"},
+			{"text": "¿Quieres irte a casa sin votar?", "author": "clover"}
+		],
+		"options": [
+			{ "response": "Sí, a casa ya.", "gain": 0, "next": "House_AttemptSleep" },
+			{ "response": "No, aún tengo cosas que hacer.", "gain": 0, "next": "House_Exit" }
+		]
+	},
+
+	"House_Sleep_Success":
+	{
+		"dialogs": [
+			{"text": "A ver los resultados wowowow", "author": "clover"}
+		]
+	},
+
+	"House_Exit":
+	{
+		"dialogs": [
+			{"text": "Mejor me quedo un rato más.", "author": "clover"}
+		]
+	}
+
+}

@@ -1,0 +1,176 @@
+{
+	"PruebaEvento1":
+	{
+		"dialogs": [
+			{"text": "Hello Clover.", "author": "npc"},
+			{"text": "*It's Pepita, a childhood friend*", "author": "clover"},
+			{"text": "They want to kick me out.", "author": "npc"},
+			{"text": "What do you think?", "author": "npc"},
+			{"text": "WHAAAT?", "author": "clover"}
+		],
+
+		"options": [
+			{ 
+				"response": "It doesn't make any sense. How can I help you?", 
+				"gain": 1,
+				"next": "PruebaEvento1.1" 
+			},
+			{ 
+				"response": "Buah, I don't know about that.", 
+				"gain": -1,
+				"next": "PruebaEvento1.2" 
+			},
+			{ 
+				"response": "Looks great for me. Out!", 
+				"gain": -1,
+				"next": "PruebaEvento1.3" 
+			}
+				
+		]
+	},
+
+	"PruebaEvento1.1":
+	{
+		"dialogs": [
+			{"text": "I know, it seems it's going to be decided by vote.", "author": "npc"},
+			{"text": "Everyone will have to decide if they want us in or out of the village.", "author": "npc"},
+			{"text": "What are you going to do?", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "I will vote in favor of you leaving, without a doubt.", 
+				"gain": -1,
+				"next": "FinalMalo" 
+			},
+			{ 
+				"response": "I will do nothing.", 
+				"gain": -1,
+				"next": "FinalNeutro" 
+			},
+			{ 
+				"response": "Obviously, I'll vote against.", 
+				"gain": 1,
+				"next": "FinalBueno" 
+			}
+				
+		]
+	},
+
+	"PruebaEvento1.2":
+	{
+		"dialogs": [
+			{"text": "Well, you should do some research then.", "author": "npc"},
+			{"text": "Everyone will have to decide if they want us in or out of the village.", "author": "npc"},
+			{"text": "What are you going to do?", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "I will vote in favor of you leaving, without a doubt.", 
+				"gain": -1,
+				"next": "FinalMalo" 
+			},
+			{ 
+				"response": "I will do nothing.", 
+				"gain": -1,
+				"next": "FinalNeutro" 
+			},
+			{ 
+				"response": "Obviously, I'll vote against.", 
+				"gain": 1,
+				"next": "FinalBueno" 
+			}
+				
+		]
+	},
+
+	"PruebaEvento1.3":
+	{
+		"dialogs": [
+			{"text": "But I didn't do anything wrong!", "author": "npc"},
+			{"text": "Everyone will have to decide if they want us in or out of the village.", "author": "npc"},
+			{"text": "What are you going to do?", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "I will vote in favor of you leaving, without a doubt.", 
+				"gain": -1,
+				"next": "FinalMalo" 
+			},
+			{ 
+				"response": "I will do nothing.", 
+				"gain": -1,
+				"next": "FinalNeutro" 
+			},
+			{ 
+				"response": "Obviously, I'll vote against.", 
+				"gain": 1,
+				"next": "FinalBueno" 
+			}
+				
+		]
+	},
+
+	"FinalBueno":
+	{
+		"dialogs": [
+			{"text": "Thanks Clover, I really appreciate your help.", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "I'll do what I can to help.", 
+				"gain": 1,
+				"next": "Final" 
+			}
+				
+		]
+	},
+
+	"FinalNeutro":
+	{
+		"dialogs": [
+			{"text": "I don't know how I feel about this...", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "Bye bye", 
+				"gain": -1,
+				"next": "Final" 
+			}
+				
+		]
+	},
+
+	"FinalMalo":
+	{
+		"dialogs": [
+			{"text": "Okay, Clover, screw you!", "author": "npc"}
+		],
+
+		"options": [
+			{ 
+				"response": "That's what I should say", 
+				"gain": -1,
+				"next": "Final" 
+			}
+				
+		]
+	},
+
+	"Final":
+	{
+		"dialogs": [
+			{"text": "What am I going to do...?", "author": "npc"}
+		],
+
+		"options": [
+		]
+	}
+
+	
+
+}

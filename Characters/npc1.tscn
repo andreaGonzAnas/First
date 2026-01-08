@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=3 uid="uid://botpm38gyy6m"]
+
+[ext_resource type="Script" uid="uid://chktt01d8p3en" path="res://Characters/npc.gd" id="1_kn4vo"]
+[ext_resource type="Texture2D" uid="uid://cwiqoafhijbqs" path="res://Assets/Finales/Ellie.png" id="2_2w2fh"]
+[ext_resource type="PackedScene" uid="uid://b25e8hdtkori1" path="res://Components/interactable.tscn" id="3_2w2fh"]
+[ext_resource type="Texture2D" uid="uid://cj0poq37ple0j" path="res://Assets/Finales/Charlie.png" id="4_2w2fh"]
+[ext_resource type="Texture2D" uid="uid://nm03wyn5qhrh" path="res://Assets/Finales/Sam.png" id="5_2w2fh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_32lk6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ybb6"]
+size = Vector3(1, 1, 0.08459473)
+
+[node name="NPC" type="CharacterBody3D"]
+script = ExtResource("1_kn4vo")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+texture = ExtResource("2_2w2fh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 4.065, 0, 0, -0.69)
+shape = SubResource("BoxShape3D_32lk6")
+
+[node name="Interactable" parent="." instance=ExtResource("3_2w2fh")]
+interact_name = "[E]"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 2.4831753)
+shape = SubResource("BoxShape3D_6ybb6")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -4, 0, -1.56)
+texture = ExtResource("4_2w2fh")
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 4, 0, -1.56)
+texture = ExtResource("5_2w2fh")

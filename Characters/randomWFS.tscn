@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://pbqfvkif7k33"]
+
+[ext_resource type="Texture2D" uid="uid://bdf6l73m3x3he" path="res://Assets/Finales/WhiteF.png" id="2_fq8g6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_32lk6"]
+
+[node name="NPC" type="CharacterBody3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+texture = ExtResource("2_fq8g6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_32lk6")

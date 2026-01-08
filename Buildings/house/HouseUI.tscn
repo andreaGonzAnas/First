@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsh0cq5kk81o8"]
+
+[ext_resource type="Script" uid="uid://b4lq6f1byj1jy" path="res://Buildings/house/HouseUI.gd" id="1_x6r5l"]
+
+[node name="HouseInterface" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x6r5l")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1

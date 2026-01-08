@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://q4kekiq32k7y"]
+
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="1_vkphr"]
+[ext_resource type="Script" uid="uid://upxe2oq3f34a" path="res://Buildings/hairdresser/mingame_building.gd" id="2_21arx"]
+[ext_resource type="PackedScene" uid="uid://bfoa6kax1rg5k" path="res://Buildings/hairdresser/HairdresserGame.tscn" id="3_t678a"]
+[ext_resource type="Texture2D" uid="uid://b7mef3iacrxg0" path="res://Assets/Temporales/peluqueria.png" id="4_72q5q"]
+
+[node name="NPC" instance=ExtResource("1_vkphr")]
+script = ExtResource("2_21arx")
+minigame_scene = ExtResource("3_t678a")
+reward_amount = 20
+payment_per_client = 7
+allowed_round = 0
+dialog_closed = "Minigame_Closed"
+dialog_intro = "Hairdresser_Intro"
+
+[node name="Sprite3D" parent="." index="0"]
+texture = ExtResource("4_72q5q")
+
+[node name="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 3, 0, 0, 0.5)
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0, 0)

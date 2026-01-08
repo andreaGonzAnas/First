@@ -1,0 +1,353 @@
+[gd_scene load_steps=24 format=3 uid="uid://tqvckr0nktmj"]
+
+[ext_resource type="Script" uid="uid://djh0xn7ljbu18" path="res://Scenes/dialogTestScene/Dialog.gd" id="1_lclmp"]
+[ext_resource type="FontFile" uid="uid://buklh0o58ew5g" path="res://Assets/Fonts/lucidagrande.ttf" id="2_8mpqh"]
+[ext_resource type="Texture2D" uid="uid://cx2u12ouxyfl2" path="res://Assets/Finales/npcRect.png" id="2_a16nd"]
+[ext_resource type="Texture2D" uid="uid://jqe2kyi4i8tk" path="res://Assets/Finales/CloverRect.png" id="4_a16nd"]
+[ext_resource type="Texture2D" uid="uid://dh4rm3qu7fwrp" path="res://Assets/Finales/nameRect.png" id="4_lclmp"]
+[ext_resource type="Texture2D" uid="uid://bs5yi5x0o1mjx" path="res://Assets/Finales/option.png" id="5_xpmky"]
+[ext_resource type="Texture2D" uid="uid://ydfcgy4ouvcq" path="res://Assets/Finales/optionSelected.png" id="6_0s6lr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xpmky"]
+texture = ExtResource("2_a16nd")
+
+[sub_resource type="LabelSettings" id="LabelSettings_xpmky"]
+font = ExtResource("2_8mpqh")
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_70ltn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_rojcw"]
+resource_name = "showText"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ia1km"]
+_data = {
+&"RESET": SubResource("Animation_70ltn"),
+&"showText": SubResource("Animation_rojcw")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_0s6lr"]
+font = ExtResource("2_8mpqh")
+font_size = 26
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0s6lr"]
+texture = ExtResource("4_a16nd")
+
+[sub_resource type="LabelSettings" id="LabelSettings_lclmp"]
+font = ExtResource("2_8mpqh")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wkhvj"]
+font = ExtResource("2_8mpqh")
+font_size = 28
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lclmp"]
+texture = ExtResource("5_xpmky")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cjgmv"]
+texture = ExtResource("6_0s6lr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r0p0w"]
+texture = ExtResource("6_0s6lr")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lclmp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_867wj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t84xo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wkhvj"]
+texture = ExtResource("5_xpmky")
+
+[node name="PruebaDialogo" type="Node3D"]
+
+[node name="DialogueManager" type="Control" parent="." node_paths=PackedStringArray("npc_s_rect", "npc_label_text", "npc_portrait_rect", "npc_name_label", "clover_rect", "label_text", "clover_rect_portrait", "clover_rect_name_label", "options_rect", "response_buttons")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_lclmp")
+npc_s_rect = NodePath("CanvasLayer/NpcsRect")
+npc_label_text = NodePath("CanvasLayer/NpcsRect/Label")
+npc_portrait_rect = NodePath("CanvasLayer/NpcsRect/NpcPortraitRect")
+npc_name_label = NodePath("CanvasLayer/NpcsRect/NpcNameLabel")
+clover_rect = NodePath("CanvasLayer/Clover\'s answers")
+label_text = NodePath("CanvasLayer/Clover\'s answers/Label")
+clover_rect_portrait = NodePath("CanvasLayer/Clover\'s answers/CloverRectPortrait")
+clover_rect_name_label = NodePath("CanvasLayer/Clover\'s answers/CloverRectNameLabel")
+options_rect = NodePath("CanvasLayer/OptionsColorRect")
+response_buttons = [NodePath("CanvasLayer/OptionsColorRect/OptionsContainer/Response1"), NodePath("CanvasLayer/OptionsColorRect/OptionsContainer/Response2"), NodePath("CanvasLayer/OptionsColorRect/OptionsContainer/Response3")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="DialogueManager"]
+layer = 2
+
+[node name="NpcsRect" type="Panel" parent="DialogueManager/CanvasLayer"]
+custom_minimum_size = Vector2(570.075, 140)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -182.0
+offset_top = 107.0
+offset_right = 342.865
+offset_bottom = 283.923
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xpmky")
+
+[node name="Label" type="Label" parent="DialogueManager/CanvasLayer/NpcsRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 82.60498
+offset_top = -44.461502
+offset_right = 520.605
+offset_bottom = 60.538498
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 61
+text = "Me cago en tus muertosds"
+label_settings = SubResource("LabelSettings_xpmky")
+autowrap_mode = 3
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogueManager/CanvasLayer/NpcsRect"]
+libraries = {
+&"": SubResource("AnimationLibrary_ia1km")
+}
+
+[node name="NpcPortraitRect" type="TextureRect" parent="DialogueManager/CanvasLayer/NpcsRect"]
+custom_minimum_size = Vector2(142.94, 124.605)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -118.39502
+offset_top = -77.923
+offset_right = 24.544983
+offset_bottom = 46.682007
+grow_vertical = 0
+
+[node name="NameRect" type="TextureRect" parent="DialogueManager/CanvasLayer/NpcsRect"]
+custom_minimum_size = Vector2(144, 43)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -134.39505
+offset_top = -103.4615
+offset_right = 53.60495
+offset_bottom = -12.461502
+grow_vertical = 2
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("4_lclmp")
+
+[node name="NpcNameLabel" type="Label" parent="DialogueManager/CanvasLayer/NpcsRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -108.39501
+offset_top = -75.4615
+offset_right = 42.239983
+offset_bottom = -22.461502
+grow_vertical = 2
+scale = Vector2(1.08, 1)
+theme_override_font_sizes/font_size = 20
+label_settings = SubResource("LabelSettings_0s6lr")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Clover\'s answers" type="Panel" parent="DialogueManager/CanvasLayer"]
+custom_minimum_size = Vector2(965, 151)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = -265.0
+offset_right = 500.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_0s6lr")
+
+[node name="Label" type="Label" parent="DialogueManager/CanvasLayer/Clover\'s answers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -373.0
+offset_top = -46.0
+offset_right = 438.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Pues yo me cago en tu pelo bonito"
+label_settings = SubResource("LabelSettings_lclmp")
+autowrap_mode = 3
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogueManager/CanvasLayer/Clover\'s answers"]
+libraries = {
+&"": SubResource("AnimationLibrary_ia1km")
+}
+
+[node name="CloverRectPortrait" type="TextureRect" parent="DialogueManager/CanvasLayer/Clover\'s answers"]
+custom_minimum_size = Vector2(118, 107)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -112.0
+offset_top = -102.0
+offset_right = 6.0
+offset_bottom = 5.0
+grow_vertical = 0
+scale = Vector2(1.2, 1.2)
+
+[node name="CloverRectNameRect" type="TextureRect" parent="DialogueManager/CanvasLayer/Clover\'s answers"]
+custom_minimum_size = Vector2(144, 43)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = -122.0
+offset_right = 67.0
+offset_bottom = -41.0
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_lclmp")
+
+[node name="CloverRectNameLabel" type="Label" parent="DialogueManager/CanvasLayer/Clover\'s answers"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -79.0
+offset_top = -85.0
+offset_right = 71.0
+offset_bottom = -49.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+label_settings = SubResource("LabelSettings_wkhvj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsColorRect" type="ColorRect" parent="DialogueManager/CanvasLayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -230.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(1, 1, 1, 0)
+
+[node name="OptionsContainer" type="VBoxContainer" parent="DialogueManager/CanvasLayer/OptionsColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -492.5
+offset_top = -250.0
+offset_right = 492.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = -9
+
+[node name="Response1" type="Button" parent="DialogueManager/CanvasLayer/OptionsColorRect/OptionsContainer"]
+custom_minimum_size = Vector2(1250, 68)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.3414208, 0.22488761, 0.1581186, 1)
+theme_override_colors/font_focus_color = Color(0.34117648, 0.22352941, 0.15686275, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.7294118, 0.4627451, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.7137255, 0.4509804, 1)
+theme_override_fonts/font = ExtResource("2_8mpqh")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_lclmp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cjgmv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_r0p0w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lclmp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_867wj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t84xo")
+text = "Pues yo me cago en tu familia"
+
+[node name="Response2" type="Button" parent="DialogueManager/CanvasLayer/OptionsColorRect/OptionsContainer"]
+custom_minimum_size = Vector2(1250, 68)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.3414208, 0.22488761, 0.1581186, 1)
+theme_override_colors/font_focus_color = Color(0.34117648, 0.22352941, 0.15686275, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.7294118, 0.4627451, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.7137255, 0.4509804, 1)
+theme_override_fonts/font = ExtResource("2_8mpqh")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_wkhvj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cjgmv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_r0p0w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lclmp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_867wj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t84xo")
+text = "Pues yo me cago en tu pelo bonito"
+
+[node name="Response3" type="Button" parent="DialogueManager/CanvasLayer/OptionsColorRect/OptionsContainer"]
+custom_minimum_size = Vector2(1250, 68)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.3414208, 0.22488761, 0.1581186, 1)
+theme_override_colors/font_focus_color = Color(0.34117648, 0.22352941, 0.15686275, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.7294118, 0.4627451, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.7137255, 0.4509804, 1)
+theme_override_fonts/font = ExtResource("2_8mpqh")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_wkhvj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cjgmv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_r0p0w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lclmp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_867wj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t84xo")
+text = "Pues yo me cago en tu sudadera tonta"

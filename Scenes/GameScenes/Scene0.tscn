@@ -1,0 +1,114 @@
+[gd_scene load_steps=26 format=3 uid="uid://bhwl272ylp67c"]
+
+[ext_resource type="PackedScene" uid="uid://cww17u4c26p4h" path="res://Scenes/trial_scene.tscn" id="1_7tm4m"]
+[ext_resource type="Script" uid="uid://cagpa0spo2i0n" path="res://Scenes/GameScenes/Scene1.gd" id="1_cnp2a"]
+[ext_resource type="Script" uid="uid://dxak12m63mq8d" path="res://Buildings/shop/ShopItemData.gd" id="2_qdamk"]
+[ext_resource type="Texture2D" uid="uid://cqrhfi5pstj3q" path="res://Assets/Finales/trebol.png" id="3_notr6"]
+[ext_resource type="Texture2D" uid="uid://dqkvkoq57338h" path="res://Assets/Finales/trebolOveja.PNG" id="4_0x66y"]
+[ext_resource type="Texture2D" uid="uid://dvvxepepq1qrc" path="res://Assets/Finales/cascos.png" id="5_4jtq5"]
+[ext_resource type="Texture2D" uid="uid://djuhycwhaun4w" path="res://Assets/Finales/cascosOveja.png" id="6_cnp2a"]
+[ext_resource type="Texture2D" uid="uid://rt35ooxd07t1" path="res://Assets/Finales/panuelo.png" id="7_1na5x"]
+[ext_resource type="Texture2D" uid="uid://bidpbmxgn0fug" path="res://Assets/Finales/panueloOveja.png" id="8_eo528"]
+[ext_resource type="Texture2D" uid="uid://cqaadpopdgpss" path="res://Assets/Finales/gafas.png" id="9_dlqwn"]
+[ext_resource type="Texture2D" uid="uid://dt75waibj2nev" path="res://Assets/Finales/gafasOveja.png" id="10_vadha"]
+[ext_resource type="Texture2D" uid="uid://mv6tekr1hegb" path="res://Assets/Finales/certificado.png" id="11_kn6j2"]
+[ext_resource type="PackedScene" uid="uid://duby6anw1jamv" path="res://Characters/randomBS.tscn" id="17_1na5x"]
+[ext_resource type="PackedScene" uid="uid://ch6gya5gh23d0" path="res://Characters/randomBFS.tscn" id="18_eo528"]
+[ext_resource type="PackedScene" uid="uid://pbqfvkif7k33" path="res://Characters/randomWFS.tscn" id="19_dlqwn"]
+[ext_resource type="PackedScene" uid="uid://bnaexsjxr5s6t" path="res://Characters/randomWS.tscn" id="20_vadha"]
+[ext_resource type="PackedScene" uid="uid://botpm38gyy6m" path="res://Characters/npc1.tscn" id="35_w5vbh"]
+[ext_resource type="PackedScene" uid="uid://ctnkrj7jolsne" path="res://Characters/npc4.tscn" id="36_dyue2"]
+[ext_resource type="PackedScene" uid="uid://jbid7xsced7i" path="res://Characters/npc2.tscn" id="37_iy53e"]
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="38_r3bee"]
+
+[sub_resource type="Resource" id="Resource_wgon7"]
+script = ExtResource("2_qdamk")
+item_id = "trebol"
+dialog_event = "Shop"
+cost = 5
+texture = ExtResource("4_0x66y")
+itemInShop = ExtResource("3_notr6")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_pqhdr"]
+script = ExtResource("2_qdamk")
+item_id = "auriculares"
+dialog_event = "Shop"
+cost = 15
+texture = ExtResource("6_cnp2a")
+itemInShop = ExtResource("5_4jtq5")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_1738n"]
+script = ExtResource("2_qdamk")
+item_id = "panuelo"
+dialog_event = "Shop"
+cost = 20
+texture = ExtResource("8_eo528")
+itemInShop = ExtResource("7_1na5x")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_rxp0a"]
+script = ExtResource("2_qdamk")
+item_id = "gafas"
+dialog_event = "Shop"
+cost = 25
+texture = ExtResource("10_vadha")
+itemInShop = ExtResource("9_dlqwn")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_ikvon"]
+script = ExtResource("2_qdamk")
+item_id = "certificado"
+dialog_event = "Shop"
+cost = 100
+texture = ExtResource("11_kn6j2")
+itemInShop = ExtResource("11_kn6j2")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_cnp2a")
+
+[node name="TrialScene" parent="." instance=ExtResource("1_7tm4m")]
+
+[node name="ShopBuilding" parent="TrialScene" index="5"]
+round_items = Array[ExtResource("2_qdamk")]([SubResource("Resource_wgon7"), SubResource("Resource_pqhdr"), SubResource("Resource_1738n"), SubResource("Resource_rxp0a"), SubResource("Resource_ikvon")])
+
+[node name="HouseBuilding" parent="TrialScene" index="6"]
+current_dialog_event = "HomeRound1"
+
+[node name="NPC1" parent="TrialScene" instance=ExtResource("35_w5vbh")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 13.739609, 10, 52)
+npc_id = 1
+
+[node name="NPC2" parent="TrialScene" instance=ExtResource("37_iy53e")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 144.34335, 10, 56.756546)
+npc_id = 2
+
+[node name="NPC3" parent="TrialScene" instance=ExtResource("38_r3bee")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -128.54503, 10, 88.55442)
+npc_id = 3
+
+[node name="NPC4" parent="TrialScene" instance=ExtResource("36_dyue2")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -104.81749, 10, -139.27803)
+npc_id = 4
+
+[node name="NPC5" parent="TrialScene" instance=ExtResource("17_1na5x")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 265, 11, -48)
+
+[node name="NPC" parent="TrialScene" instance=ExtResource("18_eo528")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 240, 10, -35)
+
+[node name="NPC6" parent="TrialScene" instance=ExtResource("17_1na5x")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -185, 11, 162)
+
+[node name="NPC7" parent="TrialScene" instance=ExtResource("19_dlqwn")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -155, 10, -35)
+
+[node name="NPC9" parent="TrialScene" instance=ExtResource("20_vadha")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 180, 10, 170)
+
+[node name="NPC8" parent="TrialScene" instance=ExtResource("19_dlqwn")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -180, 10, -30)
+
+[editable path="TrialScene"]

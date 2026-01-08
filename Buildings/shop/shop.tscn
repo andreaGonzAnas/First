@@ -1,0 +1,77 @@
+[gd_scene load_steps=20 format=3 uid="uid://dxhd7dnnpbwgc"]
+
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="1_vkphr"]
+[ext_resource type="Script" uid="uid://3dog6dksx8ns" path="res://Buildings/shop/shop.gd" id="2_81xg2"]
+[ext_resource type="Texture2D" uid="uid://37dhi5yi154l" path="res://Assets/Finales/tienda_interior.png" id="3_ae2ij"]
+[ext_resource type="Script" uid="uid://dxak12m63mq8d" path="res://Buildings/shop/ShopItemData.gd" id="3_oosyj"]
+[ext_resource type="Texture2D" uid="uid://6ftrvaj3tgu6" path="res://Assets/Finales/Shop.png" id="4_ae2ij"]
+[ext_resource type="Texture2D" uid="uid://cqrhfi5pstj3q" path="res://Assets/Finales/trebol.png" id="5_1738n"]
+[ext_resource type="Texture2D" uid="uid://dqkvkoq57338h" path="res://Assets/Finales/trebolOveja.PNG" id="6_4fmpe"]
+[ext_resource type="Texture2D" uid="uid://dvvxepepq1qrc" path="res://Assets/Finales/cascos.png" id="7_adap7"]
+[ext_resource type="Texture2D" uid="uid://djuhycwhaun4w" path="res://Assets/Finales/cascosOveja.png" id="8_hh4fv"]
+[ext_resource type="Texture2D" uid="uid://rt35ooxd07t1" path="res://Assets/Finales/panuelo.png" id="9_pqhdr"]
+[ext_resource type="Texture2D" uid="uid://bidpbmxgn0fug" path="res://Assets/Finales/panueloOveja.png" id="10_5821m"]
+[ext_resource type="Texture2D" uid="uid://cqaadpopdgpss" path="res://Assets/Finales/gafas.png" id="11_oecpb"]
+[ext_resource type="Texture2D" uid="uid://dt75waibj2nev" path="res://Assets/Finales/gafasOveja.png" id="12_63r1k"]
+[ext_resource type="Texture2D" uid="uid://mv6tekr1hegb" path="res://Assets/Finales/certificado.png" id="13_q1aiq"]
+
+[sub_resource type="Resource" id="Resource_wgon7"]
+script = ExtResource("3_oosyj")
+item_id = "trebol"
+dialog_event = "Shop"
+cost = 10
+texture = ExtResource("6_4fmpe")
+itemInShop = ExtResource("5_1738n")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_pqhdr"]
+script = ExtResource("3_oosyj")
+item_id = "auriculares"
+dialog_event = "Shop"
+cost = 15
+texture = ExtResource("8_hh4fv")
+itemInShop = ExtResource("7_adap7")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_1738n"]
+script = ExtResource("3_oosyj")
+item_id = "panuelo"
+dialog_event = "Shop"
+cost = 20
+texture = ExtResource("10_5821m")
+itemInShop = ExtResource("9_pqhdr")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_rxp0a"]
+script = ExtResource("3_oosyj")
+item_id = "gafas"
+dialog_event = "Shop"
+cost = 25
+texture = ExtResource("12_63r1k")
+itemInShop = ExtResource("11_oecpb")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_ikvon"]
+script = ExtResource("3_oosyj")
+item_id = "certificado"
+dialog_event = "Shop"
+cost = 100
+texture = ExtResource("13_q1aiq")
+itemInShop = ExtResource("13_q1aiq")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[node name="NPC" instance=ExtResource("1_vkphr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9666865, 1.9100475, -0.114614725)
+script = ExtResource("2_81xg2")
+shop_ui_scene = null
+shop_background_image = ExtResource("3_ae2ij")
+round_items = Array[ExtResource("3_oosyj")]([SubResource("Resource_wgon7"), SubResource("Resource_pqhdr"), SubResource("Resource_1738n"), SubResource("Resource_rxp0a"), SubResource("Resource_ikvon")])
+
+[node name="Sprite3D" parent="." index="0"]
+texture = ExtResource("4_ae2ij")
+
+[node name="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 3, 0, 0, 0.5)
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0, 0)

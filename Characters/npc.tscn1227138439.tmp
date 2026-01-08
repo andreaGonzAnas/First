@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4neeerux0e3y"]
+
+[ext_resource type="Script" uid="uid://chktt01d8p3en" path="res://Characters/npc.gd" id="1_6ybb6"]
+[ext_resource type="Texture2D" uid="uid://bhpfw5psay6ds" path="res://Assets/Temporales/ovejaF.png" id="1_32lk6"]
+[ext_resource type="PackedScene" uid="uid://b25e8hdtkori1" path="res://Components/interactable.tscn" id="1_64dcp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_32lk6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ybb6"]
+
+[node name="NPC" type="CharacterBody3D"]
+script = ExtResource("1_6ybb6")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+texture = ExtResource("1_32lk6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_32lk6")
+
+[node name="Interactable" parent="." instance=ExtResource("1_64dcp")]
+interact_name = "[E]"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0)
+shape = SubResource("BoxShape3D_6ybb6")

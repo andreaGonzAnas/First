@@ -1,0 +1,153 @@
+[gd_scene load_steps=20 format=3 uid="uid://b0hglxp0cy1mk"]
+
+[ext_resource type="FontFile" uid="uid://cvtyjvr7vc0pi" path="res://Assets/Fonts/lucidagrande-bold.otf" id="1_cxxd4"]
+[ext_resource type="Script" uid="uid://buypfj26tx1rt" path="res://Scenes/Votation.gd" id="1_xbx5r"]
+[ext_resource type="Texture2D" uid="uid://d3u1ugvdoajeq" path="res://Assets/Finales/fondoVotacion.png" id="2_knmq7"]
+[ext_resource type="FontFile" uid="uid://buklh0o58ew5g" path="res://Assets/Fonts/lucidagrande.ttf" id="2_mvyfu"]
+[ext_resource type="Texture2D" uid="uid://s4u1wcpexp45" path="res://Assets/Finales/aFavorButton.png" id="5_etejq"]
+[ext_resource type="Texture2D" uid="uid://dwkj8preprj3k" path="res://Assets/Finales/enContraButton.png" id="6_hxwsm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mvyfu"]
+font = ExtResource("1_cxxd4")
+font_size = 55
+font_color = Color(0.3755153, 0.24650022, 0.18002954, 1)
+outline_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mvyfu"]
+bg_color = Color(0.38, 0.24826668, 0.1824, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xbx5r"]
+font = ExtResource("2_mvyfu")
+font_size = 34
+font_color = Color(0.3764706, 0.24705882, 0.18039216, 1)
+outline_size = 5
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxwsm"]
+texture = ExtResource("5_etejq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n22bf"]
+texture = ExtResource("5_etejq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mvaad"]
+texture = ExtResource("5_etejq")
+modulate_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hxwsm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0wlo5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0wlo5"]
+texture = ExtResource("6_hxwsm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_72snd"]
+texture = ExtResource("6_hxwsm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hcncj"]
+texture = ExtResource("6_hxwsm")
+modulate_color = Color(0.585062, 0.5850621, 0.5850618, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ylgvr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_krg2f"]
+
+[node name="Votacion" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xbx5r")
+_possible_descriptions = Array[String](["DESCRP_ROUND_1", "DESCRP_ROUND_2", "DESCRP_ROUND_3", "DESCRP_ROUND_4", "DESCRP_ROUND_5"])
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Panel" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_knmq7")
+
+[node name="Tittle" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.505
+anchor_right = 0.505
+offset_left = -242.59998
+offset_top = 126.0
+offset_right = 244.40002
+offset_bottom = 202.0
+grow_horizontal = 2
+text = "ELECTION_TITLE"
+label_settings = SubResource("LabelSettings_mvyfu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescripPanel" type="Panel" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -391.0
+offset_top = 333.0
+offset_right = 391.0
+offset_bottom = 507.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mvyfu")
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/DescripPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -12.0000305
+offset_top = -129.0
+offset_right = 32.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Expulsar del pueblo a todas aquellas ovejas cuyos vínculos afectivos o comportamientos sociales difieran de lo considerado apropiado, así como a todas aquellas que incurran en actos considerados moralmente reprobables o delictivos, con el fin de preservar el orden, la moral colectiva y los valores tradicionales de la comunidad."
+label_settings = SubResource("LabelSettings_xbx5r")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FavorButton" type="Button" parent="CanvasLayer/Panel"]
+custom_minimum_size = Vector2(402.805, 273)
+layout_mode = 0
+offset_left = 64.99999
+offset_top = 514.0
+offset_right = 467.805
+offset_bottom = 787.0
+rotation = -0.2268928
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_hxwsm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_n22bf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_mvaad")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_hxwsm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0wlo5")
+icon_alignment = 1
+
+[node name="AgainstButton" type="Button" parent="CanvasLayer/Panel"]
+custom_minimum_size = Vector2(402.805, 273)
+layout_mode = 0
+offset_left = 1470.0
+offset_top = 429.0
+offset_right = 1872.8049
+offset_bottom = 702.0
+rotation = 0.2268928
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_0wlo5")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_72snd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hcncj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ylgvr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_krg2f")
+icon_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/Panel/FavorButton" to="." method="_on_favor_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/AgainstButton" to="." method="_on_against_pressed"]

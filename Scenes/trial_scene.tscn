@@ -1,0 +1,1394 @@
+[gd_scene load_steps=104 format=3 uid="uid://cww17u4c26p4h"]
+
+[ext_resource type="Texture2D" uid="uid://cnu48pc3vqrom" path="res://Assets/Finales/CloverAnim1.png" id="1_hkrqw"]
+[ext_resource type="Texture2D" uid="uid://sxk0hx56053o" path="res://Assets/Finales/WhiteM.png" id="1_vgb05"]
+[ext_resource type="PackedScene" uid="uid://wb43sj03rdhh" path="res://Components/interacting_component.tscn" id="2_47pop"]
+[ext_resource type="Texture2D" uid="uid://5wkgp4r1su53" path="res://Assets/Finales/CloverAnim2.png" id="2_u3qvb"]
+[ext_resource type="Texture2D" uid="uid://ceqbewssreve3" path="res://Assets/Finales/CloverAnim3.png" id="3_u4s5u"]
+[ext_resource type="Texture2D" uid="uid://bq788l0mp1uib" path="res://Assets/Finales/background.png" id="4_1ygjx"]
+[ext_resource type="Texture2D" uid="uid://0a0ybiqr5uw7" path="res://Assets/Finales/CloverAmin4.png" id="4_gourd"]
+[ext_resource type="PackedScene" uid="uid://tqvckr0nktmj" path="res://Scenes/dialogTestScene/PruebaDialogo.tscn" id="5_1ygjx"]
+[ext_resource type="Texture2D" uid="uid://b6xi18rwm3chp" path="res://Assets/Skybox/skyfin.png" id="6_rw7ca"]
+[ext_resource type="Texture2D" uid="uid://cbx65b0ypyejg" path="res://Assets/Finales/PobCont.png" id="7_3tr1f"]
+[ext_resource type="FontFile" uid="uid://cvtyjvr7vc0pi" path="res://Assets/Fonts/lucidagrande-bold.otf" id="7_idgxt"]
+[ext_resource type="Shader" uid="uid://ivr18hjbjf27" path="res://Scenes/trial_scene.gdshader" id="8_0w1t4"]
+[ext_resource type="Texture2D" uid="uid://dkureqhew4ajb" path="res://Assets/Temporales/siluetaOveja.png" id="8_otljr"]
+[ext_resource type="Texture2D" uid="uid://clgnafno3ilx2" path="res://Assets/Temporales/moneda.png" id="9_tcxub"]
+[ext_resource type="Script" uid="uid://huo211ar685y" path="res://Scenes/Ui.gd" id="9_u4s5u"]
+[ext_resource type="Texture2D" uid="uid://brpdgyhsdth5m" path="res://Assets/Finales/DineroCont.png" id="10_3tr1f"]
+[ext_resource type="FontFile" uid="uid://buklh0o58ew5g" path="res://Assets/Fonts/lucidagrande.ttf" id="11_2bx17"]
+[ext_resource type="PackedScene" uid="uid://cdof2mqmvfv4" path="res://Buildings/fountain/fountain.tscn" id="13_sjf4i"]
+[ext_resource type="Texture2D" uid="uid://w62drei7bai1" path="res://Assets/Finales/redBar.png" id="14_1hhg6"]
+[ext_resource type="Texture2D" uid="uid://dfg4f6dvn7ht1" path="res://Assets/Finales/neutralBar.png" id="14_xwpop"]
+[ext_resource type="Texture2D" uid="uid://roo6xxfproqq" path="res://Assets/Finales/pauseMenu.png" id="15_gourd"]
+[ext_resource type="Texture2D" uid="uid://bwaaa0qwotmul" path="res://Assets/Finales/greenBar.png" id="15_lvywo"]
+[ext_resource type="FontFile" uid="uid://dmulbr4d8hail" path="res://Assets/Fonts/lucidagrande-black.otf" id="16_0a0i2"]
+[ext_resource type="Texture2D" uid="uid://g0fxvehubyq2" path="res://Assets/Finales/BarraBase.png" id="16_lvywo"]
+[ext_resource type="Texture2D" uid="uid://dyf5335wn0yn5" path="res://Assets/Finales/pauseButton.png" id="17_dk21r"]
+[ext_resource type="Texture2D" uid="uid://iy3j72qyyucp" path="res://Assets/Finales/pauseButton_hover.png" id="18_j7kpb"]
+[ext_resource type="PackedScene" uid="uid://dxhd7dnnpbwgc" path="res://Buildings/shop/shop.tscn" id="20_b0xse"]
+[ext_resource type="PackedScene" uid="uid://dof62bbfme1oo" path="res://Buildings/shop/ShopUI.tscn" id="21_uoy6p"]
+[ext_resource type="Texture2D" uid="uid://bht5ffdifhqkt" path="res://Assets/Temporales/tienda_interior.png" id="22_gnnw3"]
+[ext_resource type="Texture2D" uid="uid://7n7jrqqf74ra" path="res://Assets/Finales/unmuted.png" id="22_r3qgj"]
+[ext_resource type="Script" uid="uid://dxak12m63mq8d" path="res://Buildings/shop/ShopItemData.gd" id="23_gnnw3"]
+[ext_resource type="Texture2D" uid="uid://cqrhfi5pstj3q" path="res://Assets/Finales/trebol.png" id="24_7d6da"]
+[ext_resource type="Texture2D" uid="uid://dqkvkoq57338h" path="res://Assets/Finales/trebolOveja.PNG" id="25_vgb05"]
+[ext_resource type="PackedScene" uid="uid://bakl3atutqoh4" path="res://Buildings/house/house.tscn" id="26_5xohv"]
+[ext_resource type="Texture2D" uid="uid://dvvxepepq1qrc" path="res://Assets/Finales/cascos.png" id="26_vgb05"]
+[ext_resource type="PackedScene" uid="uid://bsh0cq5kk81o8" path="res://Buildings/house/HouseUI.tscn" id="27_2u5nn"]
+[ext_resource type="Texture2D" uid="uid://djuhycwhaun4w" path="res://Assets/Finales/cascosOveja.png" id="27_qrccw"]
+[ext_resource type="PackedScene" uid="uid://xwfgav6lvtdl" path="res://Buildings/fountain/votingPlace.tscn" id="28_esuwq"]
+[ext_resource type="PackedScene" uid="uid://b7yfew4u7r5il" path="res://Buildings/fountain/library.tscn" id="29_fmqb3"]
+[ext_resource type="Texture2D" uid="uid://rt35ooxd07t1" path="res://Assets/Finales/panuelo.png" id="35_llkra"]
+[ext_resource type="Texture2D" uid="uid://bidpbmxgn0fug" path="res://Assets/Finales/panueloOveja.png" id="36_f4cnd"]
+[ext_resource type="PackedScene" uid="uid://dsmbgkgtw2naw" path="res://Buildings/fountain/restaurant.tscn" id="37_afxky"]
+[ext_resource type="Texture2D" uid="uid://cqaadpopdgpss" path="res://Assets/Finales/gafas.png" id="37_slury"]
+[ext_resource type="PackedScene" uid="uid://bbhp5xyyae1t7" path="res://Buildings/fountain/flowerShop.tscn" id="38_47y3x"]
+[ext_resource type="PackedScene" uid="uid://bbu7nbaujbi63" path="res://Buildings/fountain/peluqueria.tscn" id="38_hkvmd"]
+[ext_resource type="Texture2D" uid="uid://dt75waibj2nev" path="res://Assets/Finales/gafasOveja.png" id="38_ih35n"]
+[ext_resource type="Texture2D" uid="uid://mv6tekr1hegb" path="res://Assets/Finales/certificado.png" id="39_17n3u"]
+[ext_resource type="PackedScene" uid="uid://dgxdikhrhx5q5" path="res://Buildings/bar/House1.tscn" id="40_mm4s1"]
+[ext_resource type="Texture2D" uid="uid://bharegsqxxgja" path="res://Assets/Finales/arbusto.png" id="41_0a0i2"]
+[ext_resource type="PackedScene" uid="uid://cfm3jbgbw2hnm" path="res://Buildings/bar/bar.tscn" id="41_471qm"]
+[ext_resource type="PackedScene" uid="uid://8875vvk5kb4f" path="res://Buildings/bar/house2.tscn" id="42_mue65"]
+[ext_resource type="Texture2D" uid="uid://dmkqvq0a1r2ve" path="res://Assets/Finales/valla1.png" id="42_p6a8h"]
+[ext_resource type="Texture2D" uid="uid://oh5udeexs2h" path="res://Assets/Finales/valla2.png" id="43_it3d0"]
+[ext_resource type="PackedScene" uid="uid://nj7dub8xadio" path="res://Buildings/bar/House3.tscn" id="43_rw7ca"]
+[ext_resource type="Script" uid="uid://beufvaqaaox2g" path="res://Buildings/fountain/VotingPlace.gd" id="44_edvyl"]
+[ext_resource type="PackedScene" uid="uid://c4l87vdt64sn4" path="res://Buildings/bar/backHouse1.tscn" id="44_xmqod"]
+[ext_resource type="PackedScene" uid="uid://blj8xvo3ob4de" path="res://Buildings/bar/backHouse2.tscn" id="45_o2ql6"]
+[ext_resource type="PackedScene" uid="uid://b0hglxp0cy1mk" path="res://Scenes/Votacion.tscn" id="45_r3qgj"]
+[ext_resource type="PackedScene" uid="uid://b1yddxdknokwu" path="res://Buildings/bar/BackHouseGrande.tscn" id="46_0w1t4"]
+[ext_resource type="Script" uid="uid://dncme8e7jpm0" path="res://Buildings/bar/generic_house.gd" id="49_ih35n"]
+[ext_resource type="Texture2D" uid="uid://c47oa3bu1jcgv" path="res://Assets/Finales/cesped.png" id="51_xmqod"]
+[ext_resource type="Texture2D" uid="uid://dwvul5ok38gly" path="res://Assets/Finales/cachocesped.png" id="52_o2ql6"]
+
+[sub_resource type="GDScript" id="GDScript_s1vyc"]
+script/source = "extends CharacterBody3D
+
+@export var speed: float = 100.0
+@export var moral: int = 0
+@export var activity: int = 0
+@onready var sheep_sprite = $Sheep/Accesory
+
+@export var walk_frames: Array[Texture2D]   # sprites del walk
+@export var idle_frame: Texture2D           # sprite idle
+
+@onready var sheep_anim = $Sheep          # AHORA se apunta al sprite correcto
+
+var frame_index := 0
+var frame_timer := 0.0
+var frame_speed := 0.2   # segundos por frame
+
+func get_input() -> void:
+	# no procesar input si el movimiento está bloqueado
+	if not GameState.can_move:
+		print(\"jasfjasfja\")
+		return
+
+	var input_dir = Vector3.ZERO
+	
+	# Dir
+	if Input.is_action_pressed(\"Up\"):
+		input_dir.z -= 1
+	if Input.is_action_pressed(\"Down\"):
+		input_dir.z += 1
+	if Input.is_action_pressed(\"Left\"):
+		input_dir.x -= 1
+	if Input.is_action_pressed(\"Right\"):
+		input_dir.x += 1
+
+	input_dir = input_dir.normalized()
+
+	velocity.x = input_dir.x * speed
+	velocity.z = input_dir.z * speed
+	
+
+func _physics_process(delta):
+	# si el movimiento está bloqueado, detener al personaje completamente
+	if not GameState.can_move:
+		velocity = Vector3.ZERO
+		move_and_slide()
+		set_idle_sprite()  # <-- aquí ponemos el sprite idle
+		return
+
+	get_input()
+	move_and_slide()
+
+	# Llamadas a animación
+	animate_walk(delta)  # animar caminata según velocidad
+	flip_sprite()       # voltear sprite si va izquierda/derecha
+	$Camera_Controller.position = lerp($Camera_Controller.position, position, 0.1)
+	
+	
+func change_moral(amount: int) -> void:
+	moral += amount
+	moral = clamp(moral, -100, 100) # Entre -100 y 100 por ahora
+	print(\"Nueva moral:\", moral)
+
+func set_moral(value: int) -> void:
+
+	moral = clamp(value, 0, 100)
+	print(\"Moral establecida a:\", moral)
+
+func change_activity(amount: int) -> void:
+	activity += amount
+	activity = clamp(activity, -100, 100) # Entre -100 y 100 por ahora
+	print(\"Actividad:\", activity)
+
+func set_activity(value: int) -> void:
+
+	activity = clamp(value, 0, 100)
+	print(\"Actividad establecida a:\", activity)
+
+func set_player_sprite(new_texture: Texture2D):
+	if not sheep_sprite:
+		print(\"Error: 'Sheep' Sprite3D node no encontrado.\")
+		return
+
+	if new_texture:
+		sheep_sprite.texture = new_texture
+		print(\"Player sprite actualizado.\")
+	else:
+		print(\"Error: Se pasó una textura nula.\")
+		
+func animate_walk(delta: float) -> void:
+	if velocity.length() < 0.1:
+		set_idle_sprite()
+		return
+
+	frame_timer += delta
+	if frame_timer >= frame_speed:
+		frame_timer = 0.0
+		frame_index = (frame_index + 1) % walk_frames.size()
+
+		if sheep_anim and walk_frames.size() > 0:
+			sheep_anim.texture = walk_frames[frame_index]
+
+
+func set_idle_sprite():
+	if idle_frame and sheep_anim:
+		sheep_anim.texture = idle_frame
+		frame_index = 0
+		frame_timer = 0
+
+
+func flip_sprite():
+	if abs(velocity.x) > 0.1:
+		if velocity.x > 0:
+			sheep_anim.scale.x = -abs(sheep_anim.scale.x)  
+		else:
+			sheep_anim.scale.x = abs(sheep_anim.scale.x) 
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s1vyc"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_rw7ca"]
+panorama = ExtResource("6_rw7ca")
+
+[sub_resource type="Sky" id="Sky_o2ql6"]
+sky_material = SubResource("PanoramaSkyMaterial_rw7ca")
+
+[sub_resource type="Environment" id="Environment_it3d0"]
+background_mode = 2
+background_color = Color(0.792, 0.87413335, 0.88, 1)
+sky = SubResource("Sky_o2ql6")
+volumetric_fog_density = 0.0341
+adjustment_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yao5g"]
+render_priority = 0
+shader = ExtResource("8_0w1t4")
+shader_parameter/albedo_texture = ExtResource("52_o2ql6")
+shader_parameter/edge_softness = 0.6670000316825
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s1vyc"]
+material = SubResource("ShaderMaterial_yao5g")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7khpe"]
+shading_mode = 0
+albedo_texture = ExtResource("4_1ygjx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xwpop"]
+texture = ExtResource("10_3tr1f")
+
+[sub_resource type="LabelSettings" id="LabelSettings_otljr"]
+font = ExtResource("7_idgxt")
+font_size = 38
+font_color = Color(0.23137255, 0.07450981, 0.015686275, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2am7v"]
+texture = ExtResource("7_3tr1f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dk21r"]
+texture = ExtResource("15_gourd")
+
+[sub_resource type="LabelSettings" id="LabelSettings_sjf4i"]
+font = ExtResource("16_0a0i2")
+font_size = 54
+font_color = Color(0.34901962, 0.23921569, 0.16470589, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j7kpb"]
+texture = ExtResource("17_dk21r")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3qgj"]
+texture = ExtResource("18_j7kpb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0a0i2"]
+texture = ExtResource("18_j7kpb")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r3qgj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3phtu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gvj8u"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3phtu"]
+texture = ExtResource("18_j7kpb")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oywae"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_860af"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dr338"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b0xse"]
+texture = ExtResource("14_xwpop")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jhioe"]
+texture = ExtResource("14_1hhg6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1hhg6"]
+texture = ExtResource("15_lvywo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lvywo"]
+texture = ExtResource("16_lvywo")
+
+[sub_resource type="LabelSettings" id="LabelSettings_gvj8u"]
+font = ExtResource("16_0a0i2")
+font_size = 30
+font_color = Color(0.39215687, 0.23529412, 0.18431373, 1)
+outline_size = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ih35n"]
+texture = ExtResource("15_gourd")
+
+[sub_resource type="LabelSettings" id="LabelSettings_3phtu"]
+font = ExtResource("16_0a0i2")
+font_size = 28
+font_color = Color(0.36078432, 0.2509804, 0.1764706, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ih35n"]
+font_size = 25
+font_color = Color(0.34901962, 0.23921569, 0.16470589, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_edvyl"]
+font = ExtResource("16_0a0i2")
+font_size = 24
+font_color = Color(0.34901962, 0.23921569, 0.16470589, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_17n3u"]
+font_size = 21
+font_color = Color(0.34901962, 0.23921569, 0.16470589, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r3qgj"]
+font_size = 21
+font_color = Color(0.34901962, 0.23921569, 0.16470589, 1)
+
+[sub_resource type="Resource" id="Resource_mgg7j"]
+script = ExtResource("23_gnnw3")
+item_id = "trebol"
+dialog_event = "Shop"
+cost = 5
+texture = ExtResource("25_vgb05")
+itemInShop = ExtResource("24_7d6da")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_yiynj"]
+script = ExtResource("23_gnnw3")
+item_id = "cascos"
+dialog_event = "Shop"
+cost = 6
+texture = ExtResource("27_qrccw")
+itemInShop = ExtResource("26_vgb05")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_0w1t4"]
+script = ExtResource("23_gnnw3")
+item_id = "panuelo"
+dialog_event = "Shop"
+cost = 8
+texture = ExtResource("36_f4cnd")
+itemInShop = ExtResource("35_llkra")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_llkra"]
+script = ExtResource("23_gnnw3")
+item_id = "gafas"
+dialog_event = "Shop"
+cost = 10
+texture = ExtResource("38_ih35n")
+itemInShop = ExtResource("37_slury")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="Resource" id="Resource_edvyl"]
+script = ExtResource("23_gnnw3")
+item_id = "certificado"
+dialog_event = "Shop"
+cost = 100
+texture = ExtResource("39_17n3u")
+itemInShop = ExtResource("39_17n3u")
+metadata/_custom_type_script = "uid://dxak12m63mq8d"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j7kpb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0w1t4"]
+albedo_texture = ExtResource("52_o2ql6")
+uv1_scale = Vector3(1.5, 1.5, 1.5)
+uv1_offset = Vector3(2, 0, 0)
+uv1_triplanar = true
+
+[node name="TrialScene" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 0.16986847, 10, 158.67035)
+motion_mode = 1
+script = SubResource("GDScript_s1vyc")
+walk_frames = Array[Texture2D]([ExtResource("1_hkrqw"), ExtResource("2_u3qvb"), ExtResource("3_u4s5u"), ExtResource("4_gourd")])
+idle_frame = ExtResource("1_vgb05")
+
+[node name="Sheep" type="Sprite3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+layers = 2
+pixel_size = 0.05
+texture = ExtResource("1_vgb05")
+
+[node name="Accesory" type="Sprite3D" parent="Player/Sheep"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+layers = 2
+pixel_size = 0.05
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
+shape = SubResource("BoxShape3D_s1vyc")
+debug_color = Color(0.88235295, 0, 0.5137255, 1)
+
+[node name="Camera_Controller" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 10, 7)
+top_level = true
+
+[node name="Camera_Target" type="Node3D" parent="Player/Camera_Controller"]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 260, 240)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Camera_Controller/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0)
+environment = SubResource("Environment_it3d0")
+doppler_tracking = 2
+current = true
+fov = 37.849285
+
+[node name="InteractingComponent" parent="Player" instance=ExtResource("2_47pop")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(300, 0, 0, 0, 300, 0, 0, 0, 250, 2.1316282e-14, -3, -1.3113416e-07)
+mesh = SubResource("PlaneMesh_s1vyc")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7khpe")
+
+[node name="UI" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("9_u4s5u")
+
+[node name="nDinero" type="Panel" parent="UI"]
+custom_minimum_size = Vector2(100, 0)
+offset_left = 43.0
+offset_top = 44.999985
+offset_right = 192.0
+offset_bottom = 128.99998
+scale = Vector2(1.1, 1.1)
+theme_override_styles/panel = SubResource("StyleBoxTexture_xwpop")
+
+[node name="Label" type="Label" parent="UI/nDinero"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = -17.0
+offset_right = -28.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "55"
+label_settings = SubResource("LabelSettings_otljr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/nDinero"]
+visible = false
+layout_mode = 0
+offset_left = 19.999987
+offset_top = 13.1828785
+offset_right = 60.374985
+offset_bottom = 55.572876
+texture = ExtResource("9_tcxub")
+expand_mode = 1
+
+[node name="nPoblacion" type="Panel" parent="UI"]
+custom_minimum_size = Vector2(100, 0)
+offset_left = 45.0
+offset_top = 154.0
+offset_right = 191.0
+offset_bottom = 242.0
+scale = Vector2(1.1, 1.1)
+theme_override_styles/panel = SubResource("StyleBoxTexture_2am7v")
+
+[node name="Label" type="Label" parent="UI/nPoblacion"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -78.0
+offset_top = -17.0
+offset_right = -24.666672
+offset_bottom = 24.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "55"
+label_settings = SubResource("LabelSettings_otljr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="UI/nPoblacion"]
+visible = false
+modulate = Color(0.23137255, 0.07450981, 0.015686275, 1)
+layout_mode = 0
+offset_left = 20.833332
+offset_top = 13.958342
+offset_right = 64.24333
+offset_bottom = 51.83834
+texture = ExtResource("8_otljr")
+expand_mode = 1
+
+[node name="PausePanel" type="Panel" parent="UI"]
+custom_minimum_size = Vector2(600, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dk21r")
+
+[node name="Pause" type="Label" parent="UI/PausePanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -186.0
+offset_top = 91.0
+offset_right = 186.0
+offset_bottom = 147.0
+grow_horizontal = 2
+text = "PAUSE_TITLE"
+label_settings = SubResource("LabelSettings_sjf4i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -35.0
+offset_right = 250.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="MainMenuButton" type="Button" parent="UI/PausePanel/VBoxContainer"]
+custom_minimum_size = Vector2(500, 60)
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0.19, 0.12958, 0.08930001, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9019608, 0.85490197, 1)
+theme_override_fonts/font = ExtResource("11_2bx17")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_j7kpb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_r3qgj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0a0i2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_r3qgj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3phtu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gvj8u")
+text = "MAIN_MENU_BUTTON"
+
+[node name="ResumeButton" type="Button" parent="UI/PausePanel/VBoxContainer"]
+custom_minimum_size = Vector2(500, 60)
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0.19, 0.12958, 0.08930001, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9019608, 0.85490197, 1)
+theme_override_fonts/font = ExtResource("11_2bx17")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_j7kpb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3phtu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0a0i2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oywae")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_860af")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dr338")
+text = "RESUME_BUTTON"
+
+[node name="MuteButton" type="TextureButton" parent="UI/PausePanel"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 300.0
+offset_right = 780.0
+offset_bottom = 767.0
+scale = Vector2(0.18, 0.18)
+texture_normal = ExtResource("22_r3qgj")
+
+[node name="OpinionBar" type="Control" parent="UI"]
+custom_minimum_size = Vector2(681, 69)
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -380.0
+offset_top = 14.0
+offset_right = 302.0
+offset_bottom = 83.0
+grow_horizontal = 2
+scale = Vector2(1.1, 1.1)
+
+[node name="NeutralBar" type="Panel" parent="UI/OpinionBar"]
+custom_minimum_size = Vector2(649, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -314.0
+offset_top = -15.25
+offset_right = 335.0
+offset_bottom = 44.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_b0xse")
+
+[node name="RedBar" type="Panel" parent="UI/OpinionBar"]
+custom_minimum_size = Vector2(10, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -311.0
+offset_top = -14.25
+offset_right = -48.50006
+offset_bottom = 45.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jhioe")
+
+[node name="GreenBar" type="Panel" parent="UI/OpinionBar"]
+custom_minimum_size = Vector2(10, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 134.0
+offset_top = -15.5
+offset_right = 345.25
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1hhg6")
+
+[node name="Deco" type="Panel" parent="UI/OpinionBar"]
+custom_minimum_size = Vector2(681, 71)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -324.5
+offset_top = -23.0
+offset_right = 356.5
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_lvywo")
+
+[node name="Label" type="Label" parent="UI/OpinionBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.53300005
+anchor_top = 0.73300004
+anchor_right = 0.53300005
+anchor_bottom = 0.73300004
+offset_left = -156.23332
+offset_top = -15.486095
+offset_right = 155.76666
+offset_bottom = 15.513908
+grow_horizontal = 2
+grow_vertical = 2
+text = "OPINIÓN POPULAR "
+label_settings = SubResource("LabelSettings_gvj8u")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MissionPanel" type="Panel" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -412.0
+offset_top = 19.0
+offset_right = -43.0
+offset_bottom = 383.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ih35n")
+
+[node name="MainMision Text" type="Label" parent="UI/MissionPanel"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 61.0
+offset_right = 311.0
+offset_bottom = 90.0
+text = "Tarea principal"
+label_settings = SubResource("LabelSettings_3phtu")
+
+[node name="MainMissionLabel" type="Label" parent="UI/MissionPanel"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 103.0
+offset_right = 317.0
+offset_bottom = 174.0
+text = "• Compra el certificado"
+label_settings = SubResource("LabelSettings_ih35n")
+autowrap_mode = 3
+
+[node name="SubMissionText" type="Label" parent="UI/MissionPanel"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 181.0
+offset_right = 329.0
+offset_bottom = 210.12
+text = "Tareas secundarias"
+label_settings = SubResource("LabelSettings_edvyl")
+
+[node name="TalkLabel" type="Label" parent="UI/MissionPanel"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_left = 39.0
+offset_top = 224.0
+offset_right = 309.0
+offset_bottom = 264.0
+text = "• Mision Hablar"
+label_settings = SubResource("LabelSettings_17n3u")
+autowrap_mode = 3
+
+[node name="ExploreLabel" type="Label" parent="UI/MissionPanel"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_left = 39.0
+offset_top = 270.0
+offset_right = 318.0
+offset_bottom = 310.0
+text = "• Trabaja para ganar dinero"
+label_settings = SubResource("LabelSettings_r3qgj")
+autowrap_mode = 3
+
+[node name="PruebaDialogo" parent="." instance=ExtResource("5_1ygjx")]
+
+[node name="Fountain" parent="." instance=ExtResource("13_sjf4i")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 6, 37, 6)
+current_dialog_event = "Fountain"
+build_name = "Fountain"
+
+[node name="ShopBuilding" parent="." node_paths=PackedStringArray("ui") instance=ExtResource("20_b0xse")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 252.03955, 30.858383, 115.88513)
+ui = NodePath("../UI")
+shop_ui_scene = ExtResource("21_uoy6p")
+round_items = Array[ExtResource("23_gnnw3")]([SubResource("Resource_mgg7j"), SubResource("Resource_yiynj"), SubResource("Resource_0w1t4"), SubResource("Resource_llkra"), SubResource("Resource_edvyl")])
+
+[node name="HouseBuilding" parent="." instance=ExtResource("26_5xohv")]
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 0, 47.44557, 225.76097)
+current_dialog_event = ""
+house_ui_scene = ExtResource("27_2u5nn")
+house_background_image = ExtResource("22_gnnw3")
+
+[node name="VotingPlace" parent="." instance=ExtResource("28_esuwq")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 25, -227.52551)
+script = ExtResource("44_edvyl")
+vote_ui_scene = ExtResource("45_r3qgj")
+
+[node name="Library" parent="." instance=ExtResource("29_fmqb3")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -246.20102, 35, -48.741203)
+current_dialog_event = "BookShop"
+build_name = "BookShop"
+
+[node name="Restaurant" parent="." instance=ExtResource("37_afxky")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 242.01147, 35.142723, -105.38143)
+current_dialog_event = "Restaurant"
+build_name = "Restaurant"
+
+[node name="Peluqueria" parent="." instance=ExtResource("38_hkvmd")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -238.84227, 32.67015, 134.23195)
+current_dialog_event = "Hairdresser_Closed"
+build_name = "Hairdresser"
+
+[node name="FlowerShop" parent="." instance=ExtResource("38_47y3x")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -124.91037, 34.457962, -196.9293)
+current_dialog_event = "FlowerShop"
+build_name = "FlowerShop"
+
+[node name="House1" parent="." instance=ExtResource("40_mm4s1")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -229.40164, 37.43074, -154.1148)
+script = ExtResource("49_ih35n")
+current_dialog_event = "GenericHouse"
+
+[node name="Bar" parent="." instance=ExtResource("41_471qm")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.48514, 32.491684, -214.44208)
+current_dialog_event = "Bar_Closed"
+build_name = "Bar"
+
+[node name="House2" parent="." instance=ExtResource("42_mue65")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -161.21553, 28.88739, 42.78833)
+script = ExtResource("49_ih35n")
+current_dialog_event = "GenericHouse"
+
+[node name="House3" parent="." instance=ExtResource("43_rw7ca")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 177.25122, 34.726913, 17.56672)
+script = ExtResource("49_ih35n")
+current_dialog_event = "OliverHouse"
+
+[node name="BackHouse1" parent="." instance=ExtResource("44_xmqod")]
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 226.12563, 28.36303, 232.3334)
+script = ExtResource("49_ih35n")
+current_dialog_event = "GenericHouse"
+
+[node name="BackHouse2" parent="." instance=ExtResource("45_o2ql6")]
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 132.46729, 29.88797, 232.04729)
+script = ExtResource("49_ih35n")
+current_dialog_event = "GenericHouse"
+
+[node name="BackHouseGrande" parent="." instance=ExtResource("46_0w1t4")]
+transform = Transform3D(16.5, 0, 0, 0, 13, 0, 0, 0, 13, -156.8486, 29.62297, 232.32204)
+script = ExtResource("49_ih35n")
+current_dialog_event = "GenericHouse"
+
+[node name="Deco" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Deco"]
+transform = Transform3D(600, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 262)
+shape = SubResource("BoxShape3D_j7kpb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Deco"]
+transform = Transform3D(600, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, -248)
+shape = SubResource("BoxShape3D_j7kpb")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Deco"]
+transform = Transform3D(-2.6226833e-05, 0, 30, 0, 30, 0, -600, 0, -1.3113416e-06, 300, 0, 3)
+shape = SubResource("BoxShape3D_j7kpb")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Deco"]
+transform = Transform3D(-2.6226833e-05, 0, 30, 0, 30, 0, -600, 0, -1.3113416e-06, -300, 0, 3.0000262)
+shape = SubResource("BoxShape3D_j7kpb")
+
+[node name="Vallas" type="Node3D" parent="Deco"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas"]
+transform = Transform3D(10, 0, 0, 0, 8.660254, 5, 0, -5, 8.660254, -290, 20, 260)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6999998, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("43_it3d0")
+
+[node name="Valla2" type="Sprite3D" parent="Deco/Vallas"]
+transform = Transform3D(-4.371139e-07, 0.87155735, 9.961947, 0, 9.961947, -0.87155735, -10, -3.8096985e-08, -4.3545054e-07, 320.375, 10, 241)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla2/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("43_it3d0")
+
+[node name="Valla3" type="Sprite3D" parent="Deco/Vallas"]
+transform = Transform3D(-4.371139e-07, -0.87155735, 9.961947, 0, 9.961947, 0.87155735, -10, 3.8096985e-08, -4.3545054e-07, -320.375, 10, 241)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla3/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("43_it3d0")
+
+[node name="Valla4" type="Sprite3D" parent="Deco/Vallas"]
+transform = Transform3D(10, 0, 0, 0, 8.660254, 5, 0, -5, 8.660254, -290, 10, -285)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("42_p6a8h")
+
+[node name="Valla" type="Sprite3D" parent="Deco/Vallas/Valla4/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla/Valla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6999998, 0, 0)
+sorting_offset = 10.0
+texture = ExtResource("43_it3d0")
+
+[node name="Lado" type="Node3D" parent="Deco"]
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado"]
+transform = Transform3D(12, 0, 0, 0, 10.392304, 6, 0, -6, 10.392304, -290, 20, 250)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 3, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 5.7, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto/Arbusto"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 9.299999, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto/Arbusto/Arbusto"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 3.2999992, 0, 0.8)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto2" type="Sprite3D" parent="Deco/Lado/Arbusto"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 48.2, 0, 0.095)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto2"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 3, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto2/Arbusto"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 5.7, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto2/Arbusto/Arbusto"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 9.299999, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado/Arbusto/Arbusto2/Arbusto/Arbusto/Arbusto"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 3.2999992, 0, 0.8)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado"]
+transform = Transform3D(10, 0, 0, 0, 8.660254, 5, 0, -5, 8.660254, -236.7, 20, 255.46)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, -2, 2.995)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado/Cosa/Cosa"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 2.9802322e-08, 0, -2.9802322e-08, 1, 37.999996, 1, -0.46500206)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado/Cosa/Cosa/Cosa"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 2.9802322e-08, 0, -2.9802322e-08, 1, -57.999996, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 2.9802322e-08, 0, -2.9802322e-08, 1, 6, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1.1999999, 0, 0, 0, 1.2, 5.9604645e-08, 0, -5.9604645e-08, 1.2, 38.1, -0.23077488, 0.6239681)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Lado2" type="Node3D" parent="Deco"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -496)
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2"]
+transform = Transform3D(12, 0, 0, 0, 10.392304, 6, 0, -6, 10.392304, -290, 20, 250)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 3, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 5.7, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto/Arbusto"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 9.299999, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto/Arbusto/Arbusto"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 3.2999992, 0, 0.8)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto2" type="Sprite3D" parent="Deco/Lado2/Arbusto"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 48.2, 0, 0.095)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto2"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 3, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto2/Arbusto"]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 5.7, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto2/Arbusto/Arbusto"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 9.299999, 0, 0)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Arbusto" type="Sprite3D" parent="Deco/Lado2/Arbusto/Arbusto2/Arbusto/Arbusto/Arbusto"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 3.2999992, 0, 0.8)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado2"]
+transform = Transform3D(10, 0, 0, 0, 8.660254, 5, 0, -5, 8.660254, -236.7, 20, 255.46)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado2/Cosa"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 2.9802322e-08, 0, -2.9802322e-08, 1, 15.999999, -1.999999, 2.994999)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado2/Cosa/Cosa"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, -5.9604645e-08, 0, 5.9604645e-08, 1, 33.000008, 1.2866011, -1.4601426)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado2/Cosa/Cosa/Cosa"]
+transform = Transform3D(9.999999, 0, 0, 0, 8.660254, 5.0000005, 0, -5.0000005, 8.660254, -276.69992, 6.476776, -307.96277)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado2/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(12.999998, 0, 0, 0, 11.258329, 6.500001, 0, -6.500001, 11.258329, -36.699966, 16.476746, -290.64227)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Deco/Lado2/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(20, 0, 0, 0, 17.320507, 10.000002, 0, -10.000002, 17.320507, 20.300022, 16.88591, -297.93365)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(700, 0, 0, 0, 700, 0, 0, 0, 583.334, 0, -10, 0)
+mesh = SubResource("PlaneMesh_s1vyc")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_0w1t4")
+
+[node name="Lado3" type="Node3D" parent="."]
+
+[node name="Cosa" type="Sprite3D" parent="Lado3"]
+transform = Transform3D(3.4202015, 0, 9.396926, 0, 10, 0, -9.396926, 0, 3.4202015, -299.5171, 19.769236, 226.6007)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.39999998, -2)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 11, 0.79999995, -2.2)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.39999998, -2)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -4)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.39999998, -2)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.6, 11)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.6, -2)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Lado3/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -0.39999998, -6)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Lado4" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 15.999998, 0, 23.000002)
+
+[node name="Cosa" type="Sprite3D" parent="Lado4"]
+transform = Transform3D(3.4202015, 0, -9.396926, 0, 10, 0, 9.396926, 0, 3.4202015, 305.78165, 19.769236, -196.25586)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa"]
+transform = Transform3D(3.420201, 0, -9.396925, 0, 9.999999, 0, 9.396925, 0, 3.420201, 304.42737, 15.769236, -153.19582)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 11, 0.79999995, 4.2799997)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa/Cosa"]
+transform = Transform3D(4.1042414, 0, -11.27631, 0, 11.999999, 0, 11.27631, 0, 4.1042414, 305.84375, 18.969234, 14.428722)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4.1)
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(4.1042414, 0, -11.27631, 0, 11.999999, 0, 11.27631, 0, 4.1042414, 298.2156, 26.169235, 221.52725)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("41_0a0i2")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -30, 0.6, -8.000002)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -1.4, -0.8)
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")
+
+[node name="Cosa" type="Sprite3D" parent="Lado4/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa/Cosa"]
+transform = Transform3D(4.104242, 0, -11.27631, 0, 11.999999, 0, 11.27631, 0, 4.104242, 310.48694, 11.769236, 114.89981)
+top_level = true
+sorting_offset = 5.0
+texture = ExtResource("51_xmqod")

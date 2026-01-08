@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqnfebyi0digl"]
+
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="1_tu8mb"]
+[ext_resource type="Script" uid="uid://cd6tnrx73uwqe" path="res://Buildings/fountain/fountain.gd" id="2_l2stm"]
+[ext_resource type="Texture2D" uid="uid://dsqk6hydk2mmy" path="res://Assets/Finales/FlowerShopClosed.png" id="3_tu8mb"]
+
+[node name="NPC" instance=ExtResource("1_tu8mb")]
+script = ExtResource("2_l2stm")
+current_dialog_event = ""
+build_name = ""
+
+[node name="Sprite3D" parent="." index="0"]
+texture = ExtResource("3_tu8mb")
+
+[node name="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 3, 0, 0, 0.5)
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0, 0)

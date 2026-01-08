@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bakl3atutqoh4"]
+
+[ext_resource type="PackedScene" uid="uid://d4neeerux0e3y" path="res://Characters/npc.tscn" id="1_tbyje"]
+[ext_resource type="Script" uid="uid://ouu8jnkx8vs0" path="res://Buildings/house/house.gd" id="2_hoqh2"]
+[ext_resource type="Texture2D" uid="uid://c565vn6gvinvu" path="res://Assets/Finales/tucasa.png" id="3_hoqh2"]
+
+[node name="NPC" instance=ExtResource("1_tbyje")]
+script = ExtResource("2_hoqh2")
+house_ui_scene = null
+house_background_image = null
+
+[node name="Sprite3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, -0.605, 1)
+sorting_offset = -10.0
+texture = ExtResource("3_hoqh2")
+
+[node name="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(5.308, 0, 0, 0, 7, 0, 0, 0, 2.814, 0, 0, 0.5)
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0, 0, 0)

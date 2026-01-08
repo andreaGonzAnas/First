@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://c0rrgjk4w5jti"]
+
+[ext_resource type="Script" uid="uid://chktt01d8p3en" path="res://Characters/npc.gd" id="1_xuycy"]
+[ext_resource type="Texture2D" uid="uid://sxk0hx56053o" path="res://Assets/Finales/WhiteM.png" id="2_om1i8"]
+[ext_resource type="PackedScene" uid="uid://b25e8hdtkori1" path="res://Components/interactable.tscn" id="3_yfofr"]
+[ext_resource type="Texture2D" uid="uid://bdf6l73m3x3he" path="res://Assets/Finales/WhiteF.png" id="4_xuycy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_32lk6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ybb6"]
+size = Vector3(0.9321289, 1, 0.08459473)
+
+[node name="NPC" type="CharacterBody3D"]
+script = ExtResource("1_xuycy")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -1.51, 0, 0)
+texture = ExtResource("2_om1i8")
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -3.523, 0, -2)
+texture = ExtResource("2_om1i8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(11.708539, 0, 0, 0, 3.9559321, 0, 0, 0, 3.6090682, 0.45116937, 0, -1.4432783)
+shape = SubResource("BoxShape3D_32lk6")
+
+[node name="Interactable" parent="." instance=ExtResource("3_yfofr")]
+transform = Transform3D(2.609353, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+interact_name = "[E]"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 4.676094, 0.16860014, 0, 2.4831753)
+shape = SubResource("BoxShape3D_6ybb6")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 2.4119787, 0, -0.47)
+texture = ExtResource("4_xuycy")
+
+[node name="Sprite3D4" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 4.55321, 0, -2)
+texture = ExtResource("4_xuycy")

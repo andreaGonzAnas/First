@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://wb43sj03rdhh"]
+
+[ext_resource type="Script" uid="uid://cb5nid6ac3c8x" path="res://Components/interacting_component.gd" id="1_61o4b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ioo8l"]
+
+[node name="InteractingComponent" type="Node3D"]
+script = ExtResource("1_61o4b")
+
+[node name="InteractRange" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractRange"]
+shape = SubResource("BoxShape3D_ioo8l")
+
+[node name="InteractLable" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+layers = 4
+billboard = 1
+render_priority = 2
+outline_render_priority = 0
+outline_modulate = Color(0.23137255, 0.07450981, 0.015686275, 1)
+text = "[E]"
+outline_size = 15
+
+[connection signal="area_entered" from="InteractRange" to="." method="_on_interact_range_area_entered"]
+[connection signal="area_exited" from="InteractRange" to="." method="_on_interact_range_area_exited"]

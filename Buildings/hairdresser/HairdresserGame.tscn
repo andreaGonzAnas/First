@@ -1,0 +1,241 @@
+[gd_scene load_steps=38 format=3 uid="uid://bfoa6kax1rg5k"]
+
+[ext_resource type="Script" uid="uid://du8res367vpqg" path="res://Buildings/hairdresser/HairdresserGame.gd" id="1_nhybn"]
+[ext_resource type="Texture2D" uid="uid://baadsa8vtwey3" path="res://Assets/Finales/fondoPeluq.png" id="2_nhybn"]
+[ext_resource type="Texture2D" uid="uid://b58uqol4seh1s" path="res://Assets/Finales/tijeras_hover.png" id="3_ophx0"]
+[ext_resource type="Texture2D" uid="uid://w5hva8wbrdtx" path="res://Assets/Finales/tijeras_icon.png" id="3_v5sm6"]
+[ext_resource type="Texture2D" uid="uid://bomu01sceddcg" path="res://Assets/Finales/jabon_icon.png" id="4_ophx0"]
+[ext_resource type="Texture2D" uid="uid://y3mtfbhxxeoe" path="res://Assets/Finales/secador_icon.png" id="5_xfyws"]
+[ext_resource type="Texture2D" uid="uid://bivmbats6kyvu" path="res://Assets/Finales/jabon_hover.png" id="6_xfyws"]
+[ext_resource type="Texture2D" uid="uid://bgxxyl8ipiumy" path="res://Assets/Finales/secador_hover.png" id="8_rsd1f"]
+[ext_resource type="Texture2D" uid="uid://b8guoy15syufl" path="res://Assets/Finales/pelu_text_box.png" id="9_4q5f8"]
+[ext_resource type="Texture2D" uid="uid://r5yj0wlfvber" path="res://Assets/Finales/estrella_peluqueria.png" id="10_hrxvh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rsd1f"]
+texture = ExtResource("3_v5sm6")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xfyws"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ophx0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ldkn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xfyws"]
+texture = ExtResource("3_ophx0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o0ft4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ddj5s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2wu2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e5py6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vlas"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8tfyx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4q5f8"]
+texture = ExtResource("4_ophx0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ophx0"]
+texture = ExtResource("6_xfyws")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrxvh"]
+texture = ExtResource("5_xfyws")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v5sm6"]
+texture = ExtResource("8_rsd1f")
+
+[sub_resource type="LabelSettings" id="LabelSettings_6p677"]
+font_size = 46
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nhybn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cpdys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fojkb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f027f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3qy01"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2hlbx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr3bo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gtcnx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sa2bq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eahcs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqsmu"]
+
+[node name="HairdresserGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_nhybn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nhybn")
+
+[node name="Cortar" type="Button" parent="CanvasLayer"]
+offset_left = 944.0
+offset_top = 719.0
+offset_right = 1349.0
+offset_bottom = 1124.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/normal = SubResource("StyleBoxTexture_rsd1f")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_xfyws")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ophx0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_3ldkn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xfyws")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o0ft4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ddj5s")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_u2wu2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e5py6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7vlas")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8tfyx")
+
+[node name="Lavar" type="Button" parent="CanvasLayer"]
+offset_left = 1256.0
+offset_top = 577.0
+offset_right = 1661.0
+offset_bottom = 982.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/normal = SubResource("StyleBoxTexture_4q5f8")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_xfyws")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ophx0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_3ldkn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ophx0")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o0ft4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ddj5s")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_u2wu2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e5py6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7vlas")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8tfyx")
+
+[node name="Secar" type="Button" parent="CanvasLayer"]
+offset_left = 517.00006
+offset_top = 760.0
+offset_right = 922.00006
+offset_bottom = 1165.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/normal = SubResource("StyleBoxTexture_hrxvh")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_xfyws")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ophx0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_3ldkn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_v5sm6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o0ft4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ddj5s")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_u2wu2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e5py6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7vlas")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8tfyx")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+offset_left = 35.0
+offset_top = 203.0
+offset_right = 540.0
+offset_bottom = 708.0
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("9_4q5f8")
+
+[node name="ClienteLabel" type="Label" parent="CanvasLayer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(13.205, 11.065)
+offset_left = 123.0
+offset_top = 272.0
+offset_right = 501.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 71
+text = "CLIENTE"
+label_settings = SubResource("LabelSettings_6p677")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(13.205, 11.065)
+offset_left = 114.0
+offset_top = 436.0
+offset_right = 464.0
+offset_bottom = 504.0
+theme_override_font_sizes/font_size = 71
+text = "CORTA EL PELO"
+label_settings = SubResource("LabelSettings_6p677")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ClientZone" type="Button" parent="CanvasLayer"]
+offset_left = 797.0
+offset_top = 27.000008
+offset_right = 806.71265
+offset_bottom = 35.000008
+scale = Vector2(59.098396, 95.81807)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nhybn")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_cpdys")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fojkb")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_f027f")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3qy01")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2hlbx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vr3bo")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_gtcnx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sa2bq")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_eahcs")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eqsmu")
+
+[node name="ToolCursor" type="TextureRect" parent="CanvasLayer"]
+visible = false
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+expand = true
+
+[node name="StarsContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 740.0
+offset_top = 31.0
+offset_right = 1792.0
+offset_bottom = 375.0
+scale = Vector2(0.6, 0.5879728)
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("10_hrxvh")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("10_hrxvh")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("10_hrxvh")
+
+[connection signal="pressed" from="CanvasLayer/Cortar" to="." method="_on_cut_pressed"]
+[connection signal="pressed" from="CanvasLayer/Lavar" to="." method="_on_wash_pressed"]
+[connection signal="pressed" from="CanvasLayer/Secar" to="." method="_on_dry_pressed"]
+[connection signal="pressed" from="CanvasLayer/ClientZone" to="." method="_on_client_zone_pressed"]
